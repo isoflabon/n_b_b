@@ -1,0 +1,15 @@
+current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+/Users/e155745/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171003-33188-7e7q5w.rb extconf.rb
+creating Makefile
+
+current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" clean
+
+current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR="
+compiling cruby.c
+linking shared-object bindex/cruby.bundle
+
+current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/bindex-0.5.0/ext/bindex
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 cruby.bundle ./.gem.20171003-33188-16hiwc0/bindex
