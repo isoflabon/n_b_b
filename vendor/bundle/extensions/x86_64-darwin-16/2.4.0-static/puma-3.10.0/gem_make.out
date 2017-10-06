@@ -1,14 +1,26 @@
+<<<<<<< HEAD
+current directory: /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/puma-3.10.0/ext/puma_http11
+/Users/e155756/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171003-73425-cetpcy.rb extconf.rb
+=======
 current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/puma-3.10.0/ext/puma_http11
 /Users/e155745/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171003-33188-wb97wc.rb extconf.rb
+>>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 checking for BIO_read() in -lcrypto... yes
 checking for SSL_CTX_new() in -lssl... yes
 checking for openssl/bio.h... yes
 creating Makefile
 
+<<<<<<< HEAD
+current directory: /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/puma-3.10.0/ext/puma_http11
+make "DESTDIR=" clean
+
+current directory: /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/puma-3.10.0/ext/puma_http11
+=======
 current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/puma-3.10.0/ext/puma_http11
 make "DESTDIR=" clean
 
 current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/puma-3.10.0/ext/puma_http11
+>>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 make "DESTDIR="
 compiling http11_parser.c
 compiling io_buffer.c
@@ -16,6 +28,12 @@ compiling mini_ssl.c
 compiling puma_http11.c
 linking shared-object puma/puma_http11.bundle
 
+<<<<<<< HEAD
+current directory: /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/puma-3.10.0/ext/puma_http11
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20171003-73425-o3u73t/puma
+=======
 current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/puma-3.10.0/ext/puma_http11
 make "DESTDIR=" install
 /usr/bin/install -c -m 0755 puma_http11.bundle ./.gem.20171003-33188-1v4v0at/puma
+>>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf

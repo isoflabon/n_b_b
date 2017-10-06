@@ -1,8 +1,72 @@
+<<<<<<< HEAD
+current directory: /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri
+/Users/e155756/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171003-73425-gprhkp.rb extconf.rb
+checking if the C compiler accepts ... yes
+checking if the C compiler accepts -Wno-error=unused-command-line-argument-hard-error-in-future... no
+Building nokogiri using packaged libraries.
+Using mini_portile version 2.3.0
+checking for iconv.h... yes
+checking for gzdopen() in -lz... yes
+checking for iconv... yes
+************************************************************************
+IMPORTANT NOTICE:
+
+Building Nokogiri with a packaged version of libxml2-2.9.5.
+
+Team Nokogiri will keep on doing their best to provide security
+updates in a timely manner, but if this is a concern for you and want
+to use the system library instead; abort this installation process and
+reinstall nokogiri as follows:
+
+    gem install nokogiri -- --use-system-libraries
+        [--with-xml2-config=/path/to/xml2-config]
+        [--with-xslt-config=/path/to/xslt-config]
+
+If you are using Bundler, tell it to use the option:
+
+    bundle config build.nokogiri --use-system-libraries
+    bundle install
+
+Note, however, that nokogiri is not fully compatible with arbitrary
+versions of libxml2 provided by OS/package vendors.
+************************************************************************
+Extracting libxml2-2.9.5.tar.gz into tmp/x86_64-apple-darwin16.5.0/ports/libxml2/2.9.5... OK
+Running 'configure' for libxml2 2.9.5... OK
+Running 'compile' for libxml2 2.9.5... OK
+Running 'install' for libxml2 2.9.5... OK
+Activating libxml2 2.9.5 (from /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/nokogiri-1.8.1/ports/x86_64-apple-darwin16.5.0/libxml2/2.9.5)...
+************************************************************************
+IMPORTANT NOTICE:
+
+Building Nokogiri with a packaged version of libxslt-1.1.30.
+
+Team Nokogiri will keep on doing their best to provide security
+updates in a timely manner, but if this is a concern for you and want
+to use the system library instead; abort this installation process and
+reinstall nokogiri as follows:
+
+    gem install nokogiri -- --use-system-libraries
+        [--with-xml2-config=/path/to/xml2-config]
+        [--with-xslt-config=/path/to/xslt-config]
+
+If you are using Bundler, tell it to use the option:
+
+    bundle config build.nokogiri --use-system-libraries
+    bundle install
+************************************************************************
+Extracting libxslt-1.1.30.tar.gz into tmp/x86_64-apple-darwin16.5.0/ports/libxslt/1.1.30... OK
+Running 'configure' for libxslt 1.1.30... OK
+Running 'compile' for libxslt 1.1.30... OK
+Running 'install' for libxslt 1.1.30... OK
+Activating libxslt 1.1.30 (from /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/nokogiri-1.8.1/ports/x86_64-apple-darwin16.5.0/libxslt/1.1.30)...
+checking for -llzma... yes
+=======
 current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri
 /Users/e155745/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171003-33188-1h07tj0.rb extconf.rb --use-system-libraries --with-xml2-include=/usr/local/opt/libxml2/include/libxml2
 checking if the C compiler accepts ... yes
 checking if the C compiler accepts -Wno-error=unused-command-line-argument-hard-error-in-future... no
 Building nokogiri using system libraries.
+>>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 checking for xmlParseDoc() in libxml/parser.h... yes
 checking for xsltParseStylesheetDoc() in libxslt/xslt.h... yes
 checking for exsltFuncRegister() in libexslt/exslt.h... yes
@@ -15,10 +79,17 @@ checking for xmlSchemaSetValidStructuredErrors()... yes
 checking for xmlSchemaSetParserStructuredErrors()... yes
 creating Makefile
 
+<<<<<<< HEAD
+current directory: /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri
+make "DESTDIR=" clean
+
+current directory: /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri
+=======
 current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri
 make "DESTDIR=" clean
 
 current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri
+>>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 make "DESTDIR="
 compiling html_document.c
 compiling html_element_description.c
@@ -35,7 +106,14 @@ xml_cdata.c:28:56: warning: passing 'const xmlChar *' (aka 'const unsigned char 
 /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/usr/include/string.h:82:28: note: passing argument to parameter '__s' here
 size_t   strlen(const char *__s);
                             ^
+<<<<<<< HEAD
+xml_cdata.c:28:49: warning: implicit conversion loses integer precision: 'unsigned long' to 'int' [-Wshorten-64-to-32]
+  content_str_len = (content_str == NULL) ? 0 : strlen(content_str);
+                  ~                             ^~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+=======
 1 warning generated.
+>>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 compiling xml_comment.c
 compiling xml_document.c
 compiling xml_document_fragment.c
@@ -84,26 +162,49 @@ compiling xslt_stylesheet.c
 xslt_stylesheet.c:217:21: warning: incompatible pointer to integer conversion passing 'void *' to parameter of type 'VALUE' (aka 'unsigned long') [-Wint-conversion]
     Data_Get_Struct(ctxt->style->_private, nokogiriXsltStylesheetTuple,
                     ^~~~~~~~~~~~~~~~~~~~~
+<<<<<<< HEAD
+/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/ruby.h:1188:41: note: expanded from macro 'Data_Get_Struct'
+    ((sval) = (type*)rb_data_object_get(obj))
+                                        ^~~
+/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/ruby.h:1352:26: note: passing argument to parameter 'obj' here
+=======
 /Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/ruby.h:1188:41: note: expanded from macro 'Data_Get_Struct'
     ((sval) = (type*)rb_data_object_get(obj))
                                         ^~~
 /Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/ruby.h:1352:26: note: passing argument to parameter 'obj' here
+>>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 rb_data_object_get(VALUE obj)
                          ^
 xslt_stylesheet.c:230:21: warning: incompatible pointer to integer conversion passing 'void *' to parameter of type 'VALUE' (aka 'unsigned long') [-Wint-conversion]
     Data_Get_Struct(ctxt->style->_private, nokogiriXsltStylesheetTuple,
                     ^~~~~~~~~~~~~~~~~~~~~
+<<<<<<< HEAD
+/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/ruby.h:1188:41: note: expanded from macro 'Data_Get_Struct'
+    ((sval) = (type*)rb_data_object_get(obj))
+                                        ^~~
+/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/ruby.h:1352:26: note: passing argument to parameter 'obj' here
+=======
 /Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/ruby.h:1188:41: note: expanded from macro 'Data_Get_Struct'
     ((sval) = (type*)rb_data_object_get(obj))
                                         ^~~
 /Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/ruby.h:1352:26: note: passing argument to parameter 'obj' here
+>>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 rb_data_object_get(VALUE obj)
                          ^
 2 warnings generated.
 linking shared-object nokogiri/nokogiri.bundle
 Cleaning files only used during build.
+<<<<<<< HEAD
+rm -rf /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/tmp/x86_64-apple-darwin16.5.0/ports
+rm -rf /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/nokogiri-1.8.1/ports
+
+current directory: /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20171003-73425-tb5s0r/nokogiri
+=======
 rm -rf /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/nokogiri-1.8.1/ports/archives
 
 current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri
 make "DESTDIR=" install
 /usr/bin/install -c -m 0755 nokogiri.bundle ./.gem.20171003-33188-110zpb9/nokogiri
+>>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf

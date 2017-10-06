@@ -1,3 +1,13 @@
+<<<<<<< HEAD
+current directory: /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver
+/Users/e155756/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171003-73425-1pm6lcx.rb extconf.rb
+creating Makefile
+
+current directory: /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver
+=======
 current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver
 /Users/e155745/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171003-33188-z1rkdj.rb extconf.rb
 creating Makefile
@@ -6,10 +16,17 @@ current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/websocke
 make "DESTDIR=" clean
 
 current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver
+>>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 make "DESTDIR="
 compiling websocket_mask.c
 linking shared-object websocket_mask.bundle
 
+<<<<<<< HEAD
+current directory: /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20171003-73425-mdqi1k
+=======
 current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver
 make "DESTDIR=" install
 /usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20171003-33188-kh4hp6
+>>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf

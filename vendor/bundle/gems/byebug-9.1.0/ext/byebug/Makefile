@@ -12,12 +12,21 @@ NULLCMD = :
 #### Start of system configuration section. ####
 
 srcdir = .
+<<<<<<< HEAD
+topdir = /Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0
+hdrdir = $(topdir)
+arch_hdrdir = /Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16
+PATH_SEPARATOR = :
+VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
+prefix = $(DESTDIR)/Users/e155756/.rbenv/versions/2.4.1
+=======
 topdir = /Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0
 hdrdir = $(topdir)
 arch_hdrdir = /Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16
 PATH_SEPARATOR = :
 VPATH = $(srcdir):$(arch_hdrdir)/ruby:$(hdrdir)/ruby
 prefix = $(DESTDIR)/Users/e155745/.rbenv/versions/2.4.1
+>>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 rubysitearchprefix = $(rubylibprefix)/$(sitearch)
 rubyarchprefix = $(rubylibprefix)/$(arch)
 rubylibprefix = $(libdir)/$(RUBY_BASE_NAME)
@@ -31,8 +40,13 @@ rubyhdrdir = $(includedir)/$(RUBY_VERSION_NAME)
 vendorarchdir = $(vendorlibdir)/$(sitearch)
 vendorlibdir = $(vendordir)/$(ruby_version)
 vendordir = $(rubylibprefix)/vendor_ruby
+<<<<<<< HEAD
+sitearchdir = $(DESTDIR)./.gem.20171003-73425-1g4l33s
+sitelibdir = $(DESTDIR)./.gem.20171003-73425-1g4l33s
+=======
 sitearchdir = $(DESTDIR)./.gem.20171003-33188-gp7dsl
 sitelibdir = $(DESTDIR)./.gem.20171003-33188-gp7dsl
+>>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 sitedir = $(rubylibprefix)/site_ruby
 rubyarchdir = $(rubylibdir)/$(arch)
 rubylibdir = $(rubylibprefix)/$(ruby_version)
@@ -81,6 +95,15 @@ optflags = -O3 -fno-fast-math
 debugflags = -ggdb3
 warnflags = -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens
 CCDLFLAGS = -fno-common
+<<<<<<< HEAD
+CFLAGS   = $(CCDLFLAGS) $(cflags)  -pipe $(ARCH_FLAG)
+INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir)
+DEFS     = 
+CPPFLAGS =  -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT $(DEFS) $(cppflags)
+CXXFLAGS = $(CCDLFLAGS) $(cxxflags) $(ARCH_FLAG)
+ldflags  = -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector
+dldflags = -L/Users/e155756/.rbenv/versions/2.4.1/lib  -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress 
+=======
 CFLAGS   = $(CCDLFLAGS)  -O3 -Wno-error=shorten-64-to-32  -pipe $(ARCH_FLAG)
 INCFLAGS = -I. -I$(arch_hdrdir) -I$(hdrdir)/ruby/backward -I$(hdrdir) -I$(srcdir)
 DEFS     = 
@@ -88,6 +111,7 @@ CPPFLAGS =  -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_D
 CXXFLAGS = $(CCDLFLAGS) $(cxxflags) $(ARCH_FLAG)
 ldflags  = -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector
 dldflags = -L/Users/e155745/.rbenv/versions/2.4.1/lib  -Wl,-undefined,dynamic_lookup -Wl,-multiply_defined,suppress 
+>>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 ARCH_FLAG = 
 DLDFLAGS = $(ldflags) $(dldflags) $(ARCH_FLAG)
 LDSHARED = $(CC) -dynamic -bundle

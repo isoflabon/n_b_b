@@ -2,7 +2,11 @@
 
 # libtool - Provide generalized library-building support services.
 # Generated automatically by config.status (libffi) 3.0.10
+<<<<<<< HEAD
+# Libtool was configured on host airi.local:
+=======
 # Libtool was configured on host Ibuki-no-MacBook-Pro.local:
+>>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 # NOTE: Changes made to this file will be lost: look at ltmain.sh.
 #
 #   Copyright (C) 1996, 1997, 1998, 1999, 2000, 2001, 2003, 2004, 2005,
@@ -63,6 +67,15 @@ ECHO="printf %s\\n"
 
 # The host system.
 host_alias=
+<<<<<<< HEAD
+host=x86_64-apple-darwin16.5.0
+host_os=darwin16.5.0
+
+# The build system.
+build_alias=
+build=x86_64-apple-darwin16.5.0
+build_os=darwin16.5.0
+=======
 host=x86_64-apple-darwin16.4.0
 host_os=darwin16.4.0
 
@@ -70,6 +83,7 @@ host_os=darwin16.4.0
 build_alias=
 build=x86_64-apple-darwin16.4.0
 build_os=darwin16.4.0
+>>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 
 # A sed program that does not truncate output.
 SED="/usr/bin/sed"

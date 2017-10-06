@@ -20,6 +20,7 @@
 
 /node_modules
 /yarn-error.log
+/vender
 
 .byebug_history
 

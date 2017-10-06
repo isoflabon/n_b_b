@@ -2,9 +2,231 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63b283d6-7a4c-435b-a8e8-aa951e0d1f2c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/cache/pg-0.18.4.gem" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/.gemtest" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/data/random_binary_data" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/pg-0.18.4/gem_make.out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/pg-0.18.4/mkmf.log" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/BSDL" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ChangeLog" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/Contributors.rdoc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/History.rdoc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/Manifest.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/POSTGRES" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/README-OS_X.rdoc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/README-Windows.rdoc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/README.ja.rdoc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/README.rdoc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/Rakefile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/Rakefile.cross" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/errorcodes.def" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/errorcodes.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/errorcodes.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/extconf.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/gvl_wrappers.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/gvl_wrappers.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_binary_decoder.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_binary_encoder.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_coder.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_connection.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_copy_coder.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_errors.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_result.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_text_decoder.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_text_encoder.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_type_map.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_type_map_all_strings.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_type_map_by_class.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_type_map_by_column.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_type_map_by_mri_type.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_type_map_by_oid.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_type_map_in_ruby.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/util.c" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/util.h" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/vc/pg.sln" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/vc/pg_18/pg.vcproj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/vc/pg_19/pg_19.vcproj" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/lib/pg.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/lib/pg/basic_type_mapping.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/lib/pg/coder.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/lib/pg/connection.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/lib/pg/constants.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/lib/pg/exceptions.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/lib/pg/result.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/lib/pg/text_decoder.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/lib/pg/text_encoder.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/lib/pg/type_map_by_column.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/array_insert.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/async_api.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/async_copyto.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/async_mixed.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/check_conn.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/copyfrom.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/copyto.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/cursor.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/disk_usage_report.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/issue-119.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/losample.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/minimal-testcase.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/notify_wait.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/pg_statistics.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/replication_monitor.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/test_binary_values.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/wal_shipper.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/warehouse_partitions.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/data/expected_trace.out" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/helpers.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/pg/basic_type_mapping_spec.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/pg/connection_spec.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/pg/result_spec.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/pg/type_map_by_class_spec.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/pg/type_map_by_column_spec.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/pg/type_map_by_mri_type_spec.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/pg/type_map_by_oid_spec.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/pg/type_map_in_ruby_spec.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/pg/type_map_spec.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/pg/type_spec.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/pg_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/bindex-0.5.0/bindex/cruby.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/bindex-0.5.0/bindex/cruby.bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/byebug-9.1.0/byebug/byebug.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/byebug-9.1.0/byebug/byebug.bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/ffi-1.9.18/ffi_c.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/ffi-1.9.18/ffi_c.bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nio4r-2.1.0/nio4r_ext.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nio4r-2.1.0/nio4r_ext.bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nokogiri-1.8.1/nokogiri/nokogiri.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nokogiri-1.8.1/nokogiri/nokogiri.bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/puma-3.10.0/puma/puma_http11.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/puma-3.10.0/puma/puma_http11.bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/sqlite3-1.3.13/sqlite3/sqlite3_native.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/sqlite3-1.3.13/sqlite3/sqlite3_native.bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/websocket-driver-0.6.5/websocket_mask.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/websocket-driver-0.6.5/websocket_mask.bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/breakpoint.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/breakpoint.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/byebug.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/byebug.bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/byebug.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/byebug.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/context.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/context.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/locker.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/locker.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/threads.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/threads.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/lib/byebug/byebug.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/lib/byebug/byebug.bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/AbstractMemory.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/AbstractMemory.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/ArrayType.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/ArrayType.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Buffer.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Buffer.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Call.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Call.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/ClosurePool.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/ClosurePool.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/DataConverter.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/DataConverter.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/DynamicLibrary.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/DynamicLibrary.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Function.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Function.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/FunctionInfo.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/FunctionInfo.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/LastError.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/LastError.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/LongDouble.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/LongDouble.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/MappedType.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/MappedType.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/MemoryPointer.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/MemoryPointer.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/MethodHandle.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/MethodHandle.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Platform.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Platform.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Pointer.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Pointer.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Struct.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Struct.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/StructByReference.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/StructByReference.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/StructByValue.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/StructByValue.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/StructLayout.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/StructLayout.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Thread.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Thread.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Type.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Type.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Types.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Types.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Variadic.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Variadic.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/ffi.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/ffi.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/ffi_c.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/ffi_c.bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/.libs/libffi.5.dylib" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/.libs/libffi.5.dylib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/.libs/libffi_convenience.a" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/.libs/libffi_convenience.a" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/closures.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/closures.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/debug.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/debug.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/java_raw_api.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/java_raw_api.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/prep_cif.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/prep_cif.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/raw_api.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/raw_api.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/types.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/types.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/x86/.libs/ffi.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/x86/.libs/ffi.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/x86/.libs/ffi64.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/x86/.libs/ffi64.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/lib/ffi_c.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/lib/ffi_c.bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/html_document.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/html_document.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/html_element_description.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/html_element_description.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/html_entity_lookup.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/html_entity_lookup.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/html_sax_parser_context.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/html_sax_parser_context.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/html_sax_push_parser.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/html_sax_push_parser.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/nokogiri.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/nokogiri.bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/nokogiri.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/nokogiri.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_attr.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_attr.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_attribute_decl.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_attribute_decl.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_cdata.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_cdata.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_comment.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_comment.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_document.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_document.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_document_fragment.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_document_fragment.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_dtd.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_dtd.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_element_content.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_element_content.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_element_decl.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_element_decl.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_encoding_handler.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_encoding_handler.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_entity_decl.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_entity_decl.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_entity_reference.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_entity_reference.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_io.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_io.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_libxml2_hacks.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_libxml2_hacks.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_namespace.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_namespace.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_node.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_node.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_node_set.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_node_set.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_processing_instruction.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_processing_instruction.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_reader.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_reader.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_relax_ng.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_relax_ng.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_sax_parser.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_sax_parser.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_sax_parser_context.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_sax_parser_context.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_sax_push_parser.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_sax_push_parser.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_schema.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_schema.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_syntax_error.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_syntax_error.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_text.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_text.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_xpath_context.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_xpath_context.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xslt_stylesheet.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xslt_stylesheet.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/lib/nokogiri/nokogiri.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/lib/nokogiri/nokogiri.bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/http11_parser.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/http11_parser.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/io_buffer.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/io_buffer.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/mini_ssl.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/mini_ssl.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/puma_http11.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/puma_http11.bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/puma_http11.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/puma_http11.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/lib/puma/puma_http11.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/lib/puma/puma_http11.bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/backup.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/backup.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/database.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/database.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/exception.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/exception.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/sqlite3.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/sqlite3.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/sqlite3_native.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/sqlite3_native.bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/statement.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/statement.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/lib/sqlite3/sqlite3_native.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/lib/sqlite3/sqlite3_native.bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver/websocket_mask.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver/websocket_mask.bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver/websocket_mask.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver/websocket_mask.o" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/websocket-driver-0.6.5/lib/websocket_mask.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/websocket-driver-0.6.5/lib/websocket_mask.bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/bindex-0.5.0/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/bindex-0.5.0/gem_make.out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/byebug-9.1.0/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/byebug-9.1.0/gem_make.out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/ffi-1.9.18/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/ffi-1.9.18/gem_make.out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/ffi-1.9.18/mkmf.log" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/ffi-1.9.18/mkmf.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nio4r-2.1.0/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nio4r-2.1.0/gem_make.out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nio4r-2.1.0/mkmf.log" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nio4r-2.1.0/mkmf.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nokogiri-1.8.1/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nokogiri-1.8.1/gem_make.out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nokogiri-1.8.1/mkmf.log" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nokogiri-1.8.1/mkmf.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/puma-3.10.0/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/puma-3.10.0/gem_make.out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/puma-3.10.0/mkmf.log" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/puma-3.10.0/mkmf.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/sqlite3-1.3.13/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/sqlite3-1.3.13/gem_make.out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/sqlite3-1.3.13/mkmf.log" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/sqlite3-1.3.13/mkmf.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/websocket-driver-0.6.5/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/websocket-driver-0.6.5/gem_make.out" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/bindex-0.5.0/ext/bindex/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/bindex-0.5.0/ext/bindex/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/config.log" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/config.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/config.status" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/config.status" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/include/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/include/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/include/ffitarget.h" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/include/ffitarget.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/libtool" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/libtool" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/man/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/man/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/testsuite/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/testsuite/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nio4r-2.1.0/ext/nio4r/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nio4r-2.1.0/ext/nio4r/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver/Makefile" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -30,11 +252,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="posts_controller.rb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="posts_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
               <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile.lock" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1465">
+              <caret line="68" column="17" lean-forward="false" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="9">
+              <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -71,6 +313,7 @@
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
+        <option value="$PROJECT_DIR$/Gemfile.lock" />
       </list>
     </option>
   </component>
@@ -545,16 +788,15 @@
       <updated>1507013316766</updated>
       <workItem from="1507013319628" duration="165000" />
       <workItem from="1507013746588" duration="1790000" />
-      <workItem from="1507269482051" duration="1190000" />
+      <workItem from="1507269482051" duration="2002000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3145000" />
+    <option name="totallyTimeSpent" value="3957000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="17" y="30" width="1260" height="698" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -562,7 +804,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32977098" sideWeight="0.4936508" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32977098" sideWeight="0.4936508" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -646,6 +888,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1465">
+          <caret line="68" column="17" lean-forward="false" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
           <folding />
         </state>
       </provider>
