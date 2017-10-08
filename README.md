@@ -1,10 +1,13 @@
 # README
 
-## n_b_b "Stuch"
-* Elevator Pitch: 勉強がわからないときに人に聞いた方が効率よく勉強できるから誰かに教えてほしいという課題を解決したい人から教わるときに遠慮する人向けの報酬を与えることで教わる側の気持ちが軽くなる「Stuch(スタッチ)」。これは勉強がわかる人、わからない人を学内でマッチングすることができ、学サポとは違って教わる人を選べるし、教える人を選べる圧倒的優位性が備わっています。
+## n_b_b "Perfect Boyfriend"
+* Elevator Pitch: 女心がわからないけど恋愛を円滑にしたいという女心が知りたい男性向けの「Perfect Boyfriend(仮)」というプロダクトは、男目線の恋愛の悩みを解決するサービスである。これはリアルな女子の意見を多く聞くことができ、ネットのまとめサイト、yahoo知恵袋とは違って、自分の状況に応じて他のサービスよりも悩みを投稿しやすい昨日が備わっている。
+
 
 * Product Backlog: https://trello.com/b/k4vTOLVZ
-* Service URL : "herokuのurl"
+* Service URL : https://young-wildwood-75077.herokuapp.com/posts/index
 * Business Hours: Friday 12:50 - 16:10
-* notes :
+* notes : デイリースクラムは18:00~22:00
+
+
 

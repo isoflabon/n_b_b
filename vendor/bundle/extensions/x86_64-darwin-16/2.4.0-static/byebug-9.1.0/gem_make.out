@@ -1,0 +1,36 @@
+<<<<<<< HEAD
+current directory: /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+/Users/e155756/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171003-73425-1unki0y.rb extconf.rb
+creating Makefile
+
+current directory: /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+=======
+current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+/Users/e155745/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171003-33188-3lmrg9.rb extconf.rb
+creating Makefile
+
+current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+>>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+<<<<<<< HEAD
+current directory: /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20171003-73425-1g4l33s/byebug
+=======
+current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/byebug-9.1.0/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20171003-33188-gp7dsl/byebug
+>>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
