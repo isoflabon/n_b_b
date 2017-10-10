@@ -15,9 +15,9 @@
 https://trello.com/b/k4vTOLVZ
 
 ## Members
-* e155745(Ibuki Kawamitsu)
+* e155745(Ibuki Kawamitsu):PO
 * irish15(Airi Kinjo)
-* zanaka(Rika Nakaza)
+* zanaka(Rika Nakaza):SM
 * kyan-syoya(Syoya Kyan)
 * e155714(Umi Shinjo)
 * e155737(Naoya Matsumoto)
