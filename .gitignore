@@ -22,6 +22,6 @@
 /yarn-error.log
 /vender
 
-.byebug_history
+/.byebug_history
 
-.workspace
+/.workspace
