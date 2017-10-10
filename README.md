@@ -8,6 +8,3 @@
 * Service URL : https://young-wildwood-75077.herokuapp.com/posts/index
 * Business Hours: Friday 12:50 - 16:10
 * notes : デイリースクラムは18:00~22:00
-
-
-
