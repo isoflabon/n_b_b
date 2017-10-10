@@ -1,2 +1,14 @@
-<h1>Posts#index</h1>
-<p>Find me in app/views/posts/index.html.erb</p>
+<h1>投稿一覧</h1>
+
+<div class="main posts-index">
+  <div class="container">
+    <% @posts.each do |post| %>
+      <div class="posts-index-item">
+        <%= link_to(post.content, "/posts/#{post.id}") %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<br>
+<a href="/posts/new"> 新規投稿ページ </a>
