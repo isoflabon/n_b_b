@@ -15,21 +15,23 @@
 https://trello.com/b/k4vTOLVZ
 
 ## Members
-* e155745
-* irish15
-* zanaka 
-* kyan-syoya
+* e155745(Ibuki Kawamitsu):PO
+* irish15(Airi Kinjo)
+* zanaka(Rika Nakaza):SM
+* kyan-syoya(Syoya Kyan)
+* e155714(Umi Shinjo)
+* e155737(Naoya Matsumoto)
 
 ## Service URL
 https://n-b-b.herokuapp.com/posts/index
 
 ## Business Hours
-開発チーム同士で集まって作業するコアタイム
-18:00 - 20:00 on Tuesday
-16:20 - 20:00 on Thursday
+開発チーム同士で集まって作業するコアタイム  
+18:00 - 20:00 on Tuesday  
+16:20 - 20:00 on Thursday  
 
-スプリントの進捗確認
-12:50 - 16:10 on Friday
+スプリントの進捗確認  
+12:50 - 16:10 on Friday  
 
 ## notes
 デイリースクラムはslackにて18:00~22:00の間行う
