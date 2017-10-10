@@ -1,13 +1,30 @@
-# README
+# "Perfect Boyfriend" by n_b_b
 
-## n_b_b "Perfect Boyfriend"
-* Elevator Pitch: 女心がわからないけど恋愛を円滑にしたいという女心が知りたい男性向けの「Perfect Boyfriend(仮)」というプロダクトは、男目線の恋愛の悩みを解決するサービスである。これはリアルな女子の意見を多く聞くことができ、ネットのまとめサイト、yahoo知恵袋とは違って、自分の状況に応じて他のサービスよりも悩みを投稿しやすい昨日が備わっている。
+```
+## Elevator Pitch
+*[恋愛を円滑に]したい
+*[女心が知りたい男性]向けの
+*[Perfect Boyfriend(仮)」というプロダクトは
+*[男性目線の恋愛の悩みを解決するサービス]である。
+*これは[女性のリアルな意見を多く聞くこと]ができ
+*[ネットのまとめサイト、yahoo知恵袋]とは違って
+*[自分の状況に応じて他のサービスよりも悩みを投稿しやすい機能が]備わっている。
+```
 
+## Product Backlog
+https://trello.com/b/k4vTOLVZ
 
-* Product Backlog: https://trello.com/b/k4vTOLVZ
-* Service URL : https://young-wildwood-75077.herokuapp.com/posts/index
-* Business Hours: Friday 12:50 - 16:10
-* notes : デイリースクラムは18:00~22:00
+## Members
+*e155745
+*irish15
+*zanaka
+*kyan-syoya
 
+## Service URL
+https://n-b-b.herokuapp.com/posts/index
 
+## Business Hours
+Friday 12:50 - 16:10
 
+## notes
+デイリースクラムは18:00~22:00
