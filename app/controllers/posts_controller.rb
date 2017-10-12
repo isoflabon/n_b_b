@@ -8,11 +8,17 @@ class PostsController < ApplicationController
   end
 
   def create
-    @post = Post.new(content: params[:content])
+    @post = Post.new(title: params[:title],
+                     content: params[:content])
     if @post.save
       redirect_to("/posts/index")
     else
       render("posts/new")
     end
   end
+
+  def about
+    @post = Post.find_by(id: params[:id])
+  end
+
 end
