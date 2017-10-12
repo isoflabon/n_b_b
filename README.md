@@ -5,6 +5,6 @@
 
 
 * Product Backlog: https://trello.com/b/k4vTOLVZ
-* Service URL : https://young-wildwood-75077.herokuapp.com/posts/index
+* Service URL : https://n_b_b.herokuapp.com/posts/index
 * Business Hours: Friday 12:50 - 16:10
 * notes : デイリースクラムは18:00~22:00
