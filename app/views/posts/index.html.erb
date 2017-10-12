@@ -4,11 +4,10 @@
   <div class="container">
     <% @posts.each do |post| %>
       <div class="posts-index-item">
-        <%= link_to(post.content, "/posts/#{post.id}") %>
+        <%= link_to(post.content.truncate(20), "/posts/#{post.id}") %>
       </div>
     <% end %>
   </div>
 </div>
-
 <br>
 <a href="/posts/new"> 新規投稿ページ </a>
