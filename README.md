@@ -35,3 +35,4 @@ https://n-b-b.herokuapp.com/posts/index
 
 ## notes
 デイリースクラムはslackにて18:00~22:00の間行う
+
