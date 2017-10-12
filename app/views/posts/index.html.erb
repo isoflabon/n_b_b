@@ -4,7 +4,10 @@
   <div class="container">
     <% @posts.each do |post| %>
       <div class="posts-index-item">
-        <%= link_to(post.content.truncate(20), "/posts/#{post.id}") %>
+        title:   <%= post.title %> <br>
+        content: <%= post.content.truncate(20) %>
+        <%= link_to("もっと見る", "/posts/#{post.id}") %> <br>
+        ---------------------------------------------------------------------------------------
       </div>
     <% end %>
   </div>
