@@ -23,7 +23,7 @@ https://trello.com/b/k4vTOLVZ
 * e155737(Naoya Matsumoto)
 
 ## Service URL
-https://n-b-b.herokuapp.com/posts/index
+https://n-b-b.herokuapp.com
 
 ## Business Hours
 開発チーム同士で集まって作業するコアタイム  

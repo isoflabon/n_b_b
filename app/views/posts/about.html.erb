@@ -1,6 +1,15 @@
 <h1>詳細ページ</h1>
-<%= link_to("投稿一覧ページ", "/posts/index") %>
+<%= link_to("投稿一覧ページ", "/") %>
 <div class="posts-index-item">
-  <%= @post.content %>
+title:  <%= @post.title %> <br>
+content:  <%= @post.content %>
 </div>
 
+<%= form_tag("replies/create") do %>
+<div class="form">
+  <div class="form-comment">
+    comment:<br>
+    <textarea name="comment"></textarea>
+    <input type="submit" value="コメントする">
+  </div>
+</div>
