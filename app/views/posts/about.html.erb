@@ -4,3 +4,12 @@
 title:  <%= @post.title %> <br>
 content:  <%= @post.content %>
 </div>
+
+<%= form_tag("replies/create") do %>
+<div class="form">
+  <div class="form-comment">
+    comment:<br>
+    <textarea name="comment"></textarea>
+    <input type="submit" value="コメントする">
+  </div>
+</div>
