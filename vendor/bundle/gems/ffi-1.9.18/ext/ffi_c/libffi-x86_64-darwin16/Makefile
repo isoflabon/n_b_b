@@ -16,11 +16,7 @@
 
 
 
-<<<<<<< HEAD
-VPATH = /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi
-=======
 VPATH = /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 pkgdatadir = $(datadir)/libffi
 pkgincludedir = $(includedir)/libffi
 pkglibdir = $(libdir)/libffi
@@ -37,15 +33,9 @@ POST_INSTALL = :
 NORMAL_UNINSTALL = :
 PRE_UNINSTALL = :
 POST_UNINSTALL = :
-<<<<<<< HEAD
-build_triplet = x86_64-apple-darwin16.5.0
-host_triplet = x86_64-apple-darwin16.5.0
-target_triplet = x86_64-apple-darwin16.5.0
-=======
 build_triplet = x86_64-apple-darwin16.4.0
 host_triplet = x86_64-apple-darwin16.4.0
 target_triplet = x86_64-apple-darwin16.4.0
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 #am__append_1 = src/mips/ffi.c src/mips/o32.S src/mips/n32.S
 #am__append_2 = src/x86/ffi.c src/x86/sysv.S
 #am__append_3 = src/x86/ffi.c src/x86/freebsd.S
@@ -286,17 +276,6 @@ DIST_ARCHIVES = $(distdir).tar.gz
 GZIP_ENV = --best
 distuninstallcheck_listfiles = find . -type f -print
 distcleancheck_listfiles = find . -type f -print
-<<<<<<< HEAD
-ACLOCAL = ${SHELL} /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi/missing --run aclocal-1.11
-ALLOCA = 
-AMTAR = ${SHELL} /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi/missing --run tar
-AM_LTLDFLAGS = 
-AM_RUNTESTFLAGS = 
-AR = ar
-AUTOCONF = ${SHELL} /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi/missing --run autoconf
-AUTOHEADER = ${SHELL} /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi/missing --run autoheader
-AUTOMAKE = ${SHELL} /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi/missing --run automake-1.11
-=======
 ACLOCAL = ${SHELL} /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi/missing --run aclocal-1.11
 ALLOCA = 
 AMTAR = ${SHELL} /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi/missing --run tar
@@ -306,7 +285,6 @@ AR = ar
 AUTOCONF = ${SHELL} /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi/missing --run autoconf
 AUTOHEADER = ${SHELL} /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi/missing --run autoheader
 AUTOMAKE = ${SHELL} /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi/missing --run automake-1.11
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 AWK = awk
 CC = clang
 CCAS = clang
@@ -345,15 +323,9 @@ LIPO = lipo
 LN_S = ln -s
 LTLIBOBJS = 
 MAINT = #
-<<<<<<< HEAD
-MAKEINFO = ${SHELL} /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi/missing --run makeinfo
-MANIFEST_TOOL = :
-MKDIR_P = /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi/install-sh -c -d
-=======
 MAKEINFO = ${SHELL} /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi/missing --run makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi/install-sh -c -d
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 NM = /usr/bin/nm -B
 NMEDIT = nmedit
 OBJDUMP = objdump
@@ -377,17 +349,10 @@ STRIP = strip
 TARGET = X86_DARWIN
 TARGETDIR = x86
 VERSION = 3.0.10
-<<<<<<< HEAD
-abs_builddir = /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16
-abs_srcdir = /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi
-abs_top_builddir = /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16
-abs_top_srcdir = /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi
-=======
 abs_builddir = /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16
 abs_srcdir = /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi
 abs_top_builddir = /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16
 abs_top_srcdir = /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 ac_ct_AR = ar
 ac_ct_CC = clang
 ac_ct_DUMPBIN = 
@@ -398,17 +363,10 @@ am__tar = ${AMTAR} chof - "$$tardir"
 am__untar = ${AMTAR} xf -
 ax_enable_builddir_sed = sed
 bindir = ${exec_prefix}/bin
-<<<<<<< HEAD
-build = x86_64-apple-darwin16.5.0
-build_alias = 
-build_cpu = x86_64
-build_os = darwin16.5.0
-=======
 build = x86_64-apple-darwin16.4.0
 build_alias = 
 build_cpu = x86_64
 build_os = darwin16.4.0
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 build_vendor = apple
 builddir = .
 datadir = ${datarootdir}
@@ -416,36 +374,21 @@ datarootdir = ${prefix}/share
 docdir = ${datarootdir}/doc/${PACKAGE_TARNAME}
 dvidir = ${docdir}
 exec_prefix = ${prefix}
-<<<<<<< HEAD
-host = x86_64-apple-darwin16.5.0
-host_alias = 
-host_cpu = x86_64
-host_os = darwin16.5.0
-=======
 host = x86_64-apple-darwin16.4.0
 host_alias = 
 host_cpu = x86_64
 host_os = darwin16.4.0
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 host_vendor = apple
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-<<<<<<< HEAD
-install_sh = ${SHELL} /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi/install-sh
-=======
 install_sh = ${SHELL} /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi/install-sh
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
 localstatedir = ${prefix}/var
 mandir = ${datarootdir}/man
-<<<<<<< HEAD
-mkdir_p = /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi/install-sh -c -d
-=======
 mkdir_p = /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi/install-sh -c -d
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 oldincludedir = /usr/include
 pdfdir = ${docdir}
 prefix = /usr/local
@@ -453,15 +396,6 @@ program_transform_name = s,x,x,
 psdir = ${docdir}
 sbindir = ${exec_prefix}/sbin
 sharedstatedir = ${prefix}/com
-<<<<<<< HEAD
-srcdir = /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi
-sys_symbol_underscore = 
-sysconfdir = ${prefix}/etc
-target = x86_64-apple-darwin16.5.0
-target_alias = 
-target_cpu = x86_64
-target_os = darwin16.5.0
-=======
 srcdir = /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi
 sys_symbol_underscore = 
 sysconfdir = ${prefix}/etc
@@ -469,17 +403,12 @@ target = x86_64-apple-darwin16.4.0
 target_alias = 
 target_cpu = x86_64
 target_os = darwin16.4.0
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 target_vendor = apple
 toolexecdir = $(libdir)/gcc-lib/$(target_alias)
 toolexeclibdir = $(libdir)/
 top_build_prefix = 
 top_builddir = .
-<<<<<<< HEAD
-top_srcdir = /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi
-=======
 top_srcdir = /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 AUTOMAKE_OPTIONS = foreign subdir-objects
 SUBDIRS = include testsuite man
 EXTRA_DIST = LICENSE ChangeLog.v1 ChangeLog.libgcj configure.host	\

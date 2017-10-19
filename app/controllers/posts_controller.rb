@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+
   def index
     @posts = Post.all.order(created_at: :desc)
   end
@@ -11,14 +12,14 @@ class PostsController < ApplicationController
     @post = Post.new(title: params[:title],
                      content: params[:content])
     if @post.save
-      redirect_to("/posts/index")
+      redirect_to("/")
     else
       render("posts/new")
     end
   end
 
-  def about
+  def show
     @post = Post.find_by(id: params[:id])
+    @replies = Reply.where(post_id: @post.id).order(created_at: :desc)
   end
-
 end

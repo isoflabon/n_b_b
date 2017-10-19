@@ -1,12 +1,7 @@
 "pkg-config --exists sqlite3"
 | pkg-config --libs sqlite3
-<<<<<<< HEAD
-=> "-L/usr/local/Cellar/sqlite/3.17.0/lib -lsqlite3\n"
-"clang -o conftest -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe conftest.c  -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
-=======
 => "-lsqlite3\n"
 "clang -o conftest -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector     -lruby-static -framework CoreFoundation  -lpthread -ldl -lobjc "
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -17,11 +12,7 @@ checked program was:
 6: }
 /* end */
 
-<<<<<<< HEAD
-"clang -o conftest -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe conftest.c  -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector     -lruby-static -framework CoreFoundation -L/usr/local/Cellar/sqlite/3.17.0/lib -lsqlite3 -lpthread -ldl -lobjc "
-=======
 "clang -o conftest -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe conftest.c  -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector     -lruby-static -framework CoreFoundation -lsqlite3 -lpthread -ldl -lobjc "
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -33,31 +24,19 @@ checked program was:
 /* end */
 
 | pkg-config --cflags-only-I sqlite3
-<<<<<<< HEAD
-=> "-I/usr/local/Cellar/sqlite/3.17.0/include\n"
-=======
 => "\n"
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 | pkg-config --cflags-only-other sqlite3
 => "\n"
 | pkg-config --libs-only-l sqlite3
 => "-lsqlite3\n"
 package configuration for sqlite3
 cflags: 
-<<<<<<< HEAD
-ldflags: -L/usr/local/Cellar/sqlite/3.17.0/lib
-=======
 ldflags: 
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 libs: -lsqlite3
 
 find_header: checking for sqlite3.h... -------------------- yes
 
-<<<<<<< HEAD
-"clang -E -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe   conftest.c -o conftest.i"
-=======
 "clang -E -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe   conftest.c -o conftest.i"
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -69,11 +48,7 @@ checked program was:
 
 find_library: checking for pthread_create() in -lpthread... -------------------- yes
 
-<<<<<<< HEAD
-"clang -o conftest -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe  conftest.c  -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector -L/usr/local/Cellar/sqlite/3.17.0/lib     -lsqlite3 -lruby-static -framework CoreFoundation -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
-=======
 "clang -o conftest -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c  -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector      -lsqlite3 -lruby-static -framework CoreFoundation -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 conftest.c:13:57: error: use of undeclared identifier 'pthread_create'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))pthread_create; return !p; }
                                                         ^
@@ -95,11 +70,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))pthread_create; return !p; }
 /* end */
 
-<<<<<<< HEAD
-"clang -o conftest -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe  conftest.c  -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector -L/usr/local/Cellar/sqlite/3.17.0/lib     -lsqlite3 -lruby-static -framework CoreFoundation -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
-=======
 "clang -o conftest -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c  -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector      -lsqlite3 -lruby-static -framework CoreFoundation -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -122,11 +93,7 @@ checked program was:
 
 find_library: checking for sqlite3_libversion_number() in -lsqlite3... -------------------- yes
 
-<<<<<<< HEAD
-"clang -o conftest -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe  conftest.c  -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector -L/usr/local/Cellar/sqlite/3.17.0/lib    -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
-=======
 "clang -o conftest -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c  -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector     -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 conftest.c:13:57: error: use of undeclared identifier 'sqlite3_libversion_number'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_libversion_number; return !p; }
                                                         ^
@@ -148,11 +115,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_libversion_number; return !p; }
 /* end */
 
-<<<<<<< HEAD
-"clang -o conftest -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe  conftest.c  -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector -L/usr/local/Cellar/sqlite/3.17.0/lib    -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
-=======
 "clang -o conftest -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c  -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector     -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -175,11 +138,7 @@ checked program was:
 
 have_func: checking for rb_proc_arity()... -------------------- yes
 
-<<<<<<< HEAD
-"clang -o conftest -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe  conftest.c  -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector -L/usr/local/Cellar/sqlite/3.17.0/lib    -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
-=======
 "clang -o conftest -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c  -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector     -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -201,11 +160,7 @@ checked program was:
 
 have_func: checking for rb_integer_pack()... -------------------- yes
 
-<<<<<<< HEAD
-"clang -o conftest -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe  conftest.c  -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector -L/usr/local/Cellar/sqlite/3.17.0/lib    -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
-=======
 "clang -o conftest -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c  -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector     -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -227,11 +182,7 @@ checked program was:
 
 have_func: checking for sqlite3_initialize()... -------------------- yes
 
-<<<<<<< HEAD
-"clang -o conftest -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe  conftest.c  -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector -L/usr/local/Cellar/sqlite/3.17.0/lib    -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
-=======
 "clang -o conftest -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c  -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector     -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 conftest.c:13:57: error: use of undeclared identifier 'sqlite3_initialize'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_initialize; return !p; }
                                                         ^
@@ -253,11 +204,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_initialize; return !p; }
 /* end */
 
-<<<<<<< HEAD
-"clang -o conftest -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe  conftest.c  -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector -L/usr/local/Cellar/sqlite/3.17.0/lib    -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
-=======
 "clang -o conftest -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c  -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector     -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -280,11 +227,7 @@ checked program was:
 
 have_func: checking for sqlite3_backup_init()... -------------------- yes
 
-<<<<<<< HEAD
-"clang -o conftest -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe  conftest.c  -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector -L/usr/local/Cellar/sqlite/3.17.0/lib    -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
-=======
 "clang -o conftest -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c  -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector     -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 conftest.c:13:57: error: use of undeclared identifier 'sqlite3_backup_init'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_backup_init; return !p; }
                                                         ^
@@ -306,11 +249,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_backup_init; return !p; }
 /* end */
 
-<<<<<<< HEAD
-"clang -o conftest -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe  conftest.c  -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector -L/usr/local/Cellar/sqlite/3.17.0/lib    -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
-=======
 "clang -o conftest -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c  -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector     -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -333,11 +272,7 @@ checked program was:
 
 have_func: checking for sqlite3_column_database_name()... -------------------- yes
 
-<<<<<<< HEAD
-"clang -o conftest -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe  conftest.c  -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector -L/usr/local/Cellar/sqlite/3.17.0/lib    -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
-=======
 "clang -o conftest -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c  -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector     -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 conftest.c:13:57: error: use of undeclared identifier 'sqlite3_column_database_name'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_column_database_name; return !p; }
                                                         ^
@@ -359,11 +294,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_column_database_name; return !p; }
 /* end */
 
-<<<<<<< HEAD
-"clang -o conftest -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe  conftest.c  -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector -L/usr/local/Cellar/sqlite/3.17.0/lib    -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
-=======
 "clang -o conftest -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c  -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector     -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -386,11 +317,7 @@ checked program was:
 
 have_func: checking for sqlite3_enable_load_extension()... -------------------- yes
 
-<<<<<<< HEAD
-"clang -o conftest -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe  conftest.c  -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector -L/usr/local/Cellar/sqlite/3.17.0/lib    -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
-=======
 "clang -o conftest -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c  -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector     -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 conftest.c:13:57: error: use of undeclared identifier 'sqlite3_enable_load_extension'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_enable_load_extension; return !p; }
                                                         ^
@@ -412,11 +339,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_enable_load_extension; return !p; }
 /* end */
 
-<<<<<<< HEAD
-"clang -o conftest -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe  conftest.c  -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector -L/usr/local/Cellar/sqlite/3.17.0/lib    -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
-=======
 "clang -o conftest -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c  -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector     -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -439,11 +362,7 @@ checked program was:
 
 have_func: checking for sqlite3_load_extension()... -------------------- yes
 
-<<<<<<< HEAD
-"clang -o conftest -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe  conftest.c  -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector -L/usr/local/Cellar/sqlite/3.17.0/lib    -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
-=======
 "clang -o conftest -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c  -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector     -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 conftest.c:13:57: error: use of undeclared identifier 'sqlite3_load_extension'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_load_extension; return !p; }
                                                         ^
@@ -465,11 +384,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_load_extension; return !p; }
 /* end */
 
-<<<<<<< HEAD
-"clang -o conftest -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe  conftest.c  -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector -L/usr/local/Cellar/sqlite/3.17.0/lib    -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
-=======
 "clang -o conftest -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c  -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector     -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -492,11 +407,7 @@ checked program was:
 
 have_func: checking for sqlite3_open_v2()... -------------------- yes
 
-<<<<<<< HEAD
-"clang -o conftest -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe  conftest.c  -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector -L/usr/local/Cellar/sqlite/3.17.0/lib    -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
-=======
 "clang -o conftest -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c  -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector     -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 conftest.c:13:57: error: use of undeclared identifier 'sqlite3_open_v2'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_open_v2; return !p; }
                                                         ^
@@ -518,11 +429,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_open_v2; return !p; }
 /* end */
 
-<<<<<<< HEAD
-"clang -o conftest -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe  conftest.c  -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector -L/usr/local/Cellar/sqlite/3.17.0/lib    -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
-=======
 "clang -o conftest -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c  -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector     -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -545,11 +452,7 @@ checked program was:
 
 have_func: checking for sqlite3_prepare_v2()... -------------------- yes
 
-<<<<<<< HEAD
-"clang -o conftest -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe  conftest.c  -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector -L/usr/local/Cellar/sqlite/3.17.0/lib    -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
-=======
 "clang -o conftest -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c  -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector     -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 conftest.c:13:57: error: use of undeclared identifier 'sqlite3_prepare_v2'
 int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_prepare_v2; return !p; }
                                                         ^
@@ -571,11 +474,7 @@ checked program was:
 13: int t(void) { void ((*volatile p)()); p = (void ((*)()))sqlite3_prepare_v2; return !p; }
 /* end */
 
-<<<<<<< HEAD
-"clang -o conftest -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe  conftest.c  -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155756/.rbenv/versions/2.4.1/lib  -fstack-protector -L/usr/local/Cellar/sqlite/3.17.0/lib    -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
-=======
 "clang -o conftest -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe  conftest.c  -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib -L/usr/local/opt/sqlite/lib -L. -L/Users/e155745/.rbenv/versions/2.4.1/lib  -fstack-protector     -lsqlite3 -lpthread  -lsqlite3 -lruby-static -framework CoreFoundation -lsqlite3 -lpthread  -lsqlite3 -lpthread -ldl -lobjc "
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 checked program was:
 /* begin */
  1: #include "ruby.h"
@@ -598,11 +497,7 @@ checked program was:
 
 have_type: checking for sqlite3_int64 in sqlite3.h... -------------------- yes
 
-<<<<<<< HEAD
-"clang -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe    -c conftest.c"
-=======
 "clang -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe    -c conftest.c"
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 checked program was:
 /* begin */
 1: #include "ruby.h"
@@ -618,11 +513,7 @@ checked program was:
 
 have_type: checking for sqlite3_uint64 in sqlite3.h... -------------------- yes
 
-<<<<<<< HEAD
-"clang -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155756/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I. -I/usr/local/Cellar/sqlite/3.17.0/include -I/usr/local/opt/sqlite/include -I/Users/e155756/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT   -O3 -fno-fast-math -ggdb3 -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wno-tautological-compare -Wno-parentheses-equality -Wno-constant-logical-operand -Wno-self-assign -Wunused-variable -Wimplicit-int -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wshorten-64-to-32 -Wimplicit-function-declaration -Wdivision-by-zero -Wdeprecated-declarations -Wextra-tokens  -pipe    -c conftest.c"
-=======
 "clang -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/x86_64-darwin16 -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0/ruby/backward -I/Users/e155745/.rbenv/versions/2.4.1/include/ruby-2.4.0 -I.  -I/usr/local/opt/sqlite/include -I/Users/e155745/.rbenv/versions/2.4.1/include  -D_XOPEN_SOURCE -D_DARWIN_C_SOURCE -D_DARWIN_UNLIMITED_SELECT -D_REENTRANT    -O3 -Wno-error=shorten-64-to-32  -pipe    -c conftest.c"
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 checked program was:
 /* begin */
 1: #include "ruby.h"

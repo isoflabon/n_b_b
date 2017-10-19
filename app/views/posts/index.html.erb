@@ -1,13 +1,17 @@
 <h1>投稿一覧</h1>
 
-<div class="main posts-index">
+<br class="main posts-index">
+<%= link_to("新規投稿する","/posts/new")%><pre></pre>
   <div class="container">
     <% @posts.each do |post| %>
       <div class="posts-index-item">
-        <%= link_to(post.content.truncate(20), "/posts/#{post.id}") %>
+        title:   <%= post.title%><br>
+        content: <%= post.content.truncate(40) %>
+        <%= link_to("もっと見る", "/posts/#{post.id}") %> <br>
+        ---------------------------------------------------------------------------------------
       </div>
     <% end %>
   </div>
 </div>
 <br>
-<a href="/posts/new"> 新規投稿ページ </a>
+
