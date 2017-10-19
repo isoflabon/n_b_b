@@ -1,10 +1,5 @@
-<<<<<<< HEAD
-current directory: /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3
-/Users/e155756/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171003-73425-2r98vi.rb extconf.rb
-=======
 current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3
-/Users/e155745/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171003-33188-12f5jw4.rb extconf.rb
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
+/Users/e155745/.rbenv/versions/2.4.1/bin/ruby -r ./siteconf20171018-9137-1cbdhxx.rb extconf.rb
 checking for sqlite3.h... yes
 checking for pthread_create() in -lpthread... yes
 checking for sqlite3_libversion_number() in -lsqlite3... yes
@@ -21,17 +16,10 @@ checking for sqlite3_int64 in sqlite3.h... yes
 checking for sqlite3_uint64 in sqlite3.h... yes
 creating Makefile
 
-<<<<<<< HEAD
-current directory: /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3
-make "DESTDIR=" clean
-
-current directory: /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3
-=======
 current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3
 make "DESTDIR=" clean
 
 current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
 make "DESTDIR="
 compiling backup.c
 compiling database.c
@@ -40,12 +28,6 @@ compiling sqlite3.c
 compiling statement.c
 linking shared-object sqlite3/sqlite3_native.bundle
 
-<<<<<<< HEAD
-current directory: /Users/e155756/Documents/ie/B3/spec/enpit/n_b_b/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3
-make "DESTDIR=" install
-/usr/bin/install -c -m 0755 sqlite3_native.bundle ./.gem.20171003-73425-2udolz/sqlite3
-=======
 current directory: /Users/e155745/Desktop/exp4/n_b_b/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3
 make "DESTDIR=" install
-/usr/bin/install -c -m 0755 sqlite3_native.bundle ./.gem.20171003-33188-sh02wk/sqlite3
->>>>>>> ea3b5ecd6b26340ea008e5d05820ff616cadafdf
+/usr/bin/install -c -m 0755 sqlite3_native.bundle ./.gem.20171018-9137-1c5chd0/sqlite3
