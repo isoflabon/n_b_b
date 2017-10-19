@@ -36,7 +36,7 @@ class PostsController < ApplicationController
 
     @post.content = params[:content]
     if @post.save
-      redirect_to("/posts/index")
+      redirect_to("/posts/#{@post.id}")
     else
       render("posts/edit")
     end

@@ -4,6 +4,7 @@
 title:  <%= @post.title %> <br>
 content:  <%= @post.content %>
 </div>
+<%= link_to("編集","/posts/#{@post.id}/edit")%>
 
 <%= form_tag("/posts/#{@post.id}/replies") do %>
 <div class="form">
@@ -14,7 +15,6 @@ content:  <%= @post.content %>
   </div>
 </div>
 <%end %>
-<%= link_to("編集","/posts/#{@post.id}/edit")%>
 
 
 <div class="container">
