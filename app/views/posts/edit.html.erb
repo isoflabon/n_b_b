@@ -2,20 +2,14 @@
 <%= link_to("投稿一覧ページ", "/") %>
 <div class="posts-index-item">
 title:  <%= @post.title %> <br>
-content:  <%= @post.content %>
+content:<br>
+<textarea name="content"><%= @post.content%></textarea>
 </div>
+<!-- ここでform_tagを使ってroute先は/posts/:id/updateをする -->
+    保存ボタン
+<pre>
 
-<%= form_tag("/posts/#{@post.id}/replies") do %>
-<div class="form">
-  <div class="form-comment">
-    comment:<br>
-    <textarea name="content"></textarea>
-    <input type="submit" value="コメントする">
-  </div>
-</div>
-<%end %>
-<%= link_to("編集","/posts/#{@post.id}/edit")%>
-
+</pre>
 
 <div class="container">
   <% @replies.each do |reply| %>

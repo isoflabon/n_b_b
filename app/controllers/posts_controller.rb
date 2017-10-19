@@ -23,4 +23,23 @@ class PostsController < ApplicationController
 
     @replies = Reply.where(post_id: @post.id).order(created_at: :desc)
   end
+
+  def edit
+    @post = Post.find_by(id: params[:id])
+    @replies = Reply.where(post_id: @post.id).order(created_at: :desc)
+
+  end
+
+  def update
+    @post = Post.find_by(id: params[:id])
+    @replies = Reply.where(post_id: @post.id).order(created_at: :desc)
+
+    @post.content = params[:content]
+    if @post.save
+      redirect_to("/posts/index")
+    else
+      render("posts/edit")
+    end
+  end
+
 end
