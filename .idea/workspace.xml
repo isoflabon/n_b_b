@@ -1,1369 +1,1153 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-    <component name="ChangeListManager">
-        <list default="true" id="63b283d6-7a4c-435b-a8e8-aa951e0d1f2c" name="Default" comment="">
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/cache/pg-0.18.4.gem" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/pg-0.18.4/gem_make.out" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/pg-0.18.4/mkmf.log" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/.gemtest" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/BSDL" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ChangeLog" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/Contributors.rdoc" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/History.rdoc" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/LICENSE" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/Manifest.txt" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/POSTGRES" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/README-OS_X.rdoc" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/README-Windows.rdoc" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/README.ja.rdoc" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/README.rdoc" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/Rakefile" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/Rakefile.cross" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/errorcodes.def" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/errorcodes.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/errorcodes.txt" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/extconf.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/gvl_wrappers.c" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/gvl_wrappers.h" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg.c" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg.h" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_binary_decoder.c" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_binary_encoder.c" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_coder.c" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_connection.c" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_copy_coder.c" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_errors.c" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_result.c" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_text_decoder.c" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_text_encoder.c" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_type_map.c" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_type_map_all_strings.c" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_type_map_by_class.c" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_type_map_by_column.c" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_type_map_by_mri_type.c" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_type_map_by_oid.c" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/pg_type_map_in_ruby.c" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/util.c" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/util.h" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/vc/pg.sln" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/vc/pg_18/pg.vcproj" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/ext/vc/pg_19/pg_19.vcproj" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/lib/pg.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/lib/pg/basic_type_mapping.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/lib/pg/coder.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/lib/pg/connection.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/lib/pg/constants.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/lib/pg/exceptions.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/lib/pg/result.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/lib/pg/text_decoder.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/lib/pg/text_encoder.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/lib/pg/type_map_by_column.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/array_insert.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/async_api.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/async_copyto.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/async_mixed.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/check_conn.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/copyfrom.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/copyto.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/cursor.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/disk_usage_report.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/issue-119.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/losample.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/minimal-testcase.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/notify_wait.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/pg_statistics.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/replication_monitor.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/test_binary_values.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/wal_shipper.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/sample/warehouse_partitions.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/data/expected_trace.out" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/data/random_binary_data" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/helpers.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/pg/basic_type_mapping_spec.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/pg/connection_spec.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/pg/result_spec.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/pg/type_map_by_class_spec.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/pg/type_map_by_column_spec.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/pg/type_map_by_mri_type_spec.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/pg/type_map_by_oid_spec.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/pg/type_map_in_ruby_spec.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/pg/type_map_spec.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/pg/type_spec.rb" afterPath="" />
-            <change type="DELETED" beforePath="$PROJECT_DIR$/vendor/bundle/gems/pg-0.18.4/spec/pg_spec.rb" afterPath="" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/bindex-0.5.0/bindex/cruby.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/bindex-0.5.0/bindex/cruby.bundle" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/byebug-9.1.0/byebug/byebug.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/byebug-9.1.0/byebug/byebug.bundle" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/ffi-1.9.18/ffi_c.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/ffi-1.9.18/ffi_c.bundle" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nio4r-2.1.0/nio4r_ext.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nio4r-2.1.0/nio4r_ext.bundle" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nokogiri-1.8.1/nokogiri/nokogiri.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nokogiri-1.8.1/nokogiri/nokogiri.bundle" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/puma-3.10.0/puma/puma_http11.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/puma-3.10.0/puma/puma_http11.bundle" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/sqlite3-1.3.13/sqlite3/sqlite3_native.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/sqlite3-1.3.13/sqlite3/sqlite3_native.bundle" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/websocket-driver-0.6.5/websocket_mask.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/websocket-driver-0.6.5/websocket_mask.bundle" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/breakpoint.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/breakpoint.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/byebug.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/byebug.bundle" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/byebug.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/byebug.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/context.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/context.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/locker.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/locker.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/threads.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/threads.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/lib/byebug/byebug.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/lib/byebug/byebug.bundle" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/AbstractMemory.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/AbstractMemory.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/ArrayType.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/ArrayType.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Buffer.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Buffer.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Call.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Call.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/ClosurePool.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/ClosurePool.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/DataConverter.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/DataConverter.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/DynamicLibrary.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/DynamicLibrary.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Function.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Function.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/FunctionInfo.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/FunctionInfo.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/LastError.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/LastError.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/LongDouble.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/LongDouble.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/MappedType.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/MappedType.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/MemoryPointer.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/MemoryPointer.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/MethodHandle.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/MethodHandle.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Platform.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Platform.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Pointer.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Pointer.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Struct.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Struct.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/StructByReference.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/StructByReference.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/StructByValue.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/StructByValue.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/StructLayout.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/StructLayout.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Thread.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Thread.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Type.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Type.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Types.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Types.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Variadic.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Variadic.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/ffi.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/ffi.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/ffi_c.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/ffi_c.bundle" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/.libs/libffi.5.dylib" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/.libs/libffi.5.dylib" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/.libs/libffi_convenience.a" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/.libs/libffi_convenience.a" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/closures.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/closures.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/debug.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/debug.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/java_raw_api.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/java_raw_api.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/prep_cif.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/prep_cif.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/raw_api.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/raw_api.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/types.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/.libs/types.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/x86/.libs/ffi.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/x86/.libs/ffi.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/x86/.libs/ffi64.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/src/x86/.libs/ffi64.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/lib/ffi_c.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/lib/ffi_c.bundle" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/html_document.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/html_document.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/html_element_description.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/html_element_description.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/html_entity_lookup.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/html_entity_lookup.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/html_sax_parser_context.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/html_sax_parser_context.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/html_sax_push_parser.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/html_sax_push_parser.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/nokogiri.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/nokogiri.bundle" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/nokogiri.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/nokogiri.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_attr.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_attr.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_attribute_decl.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_attribute_decl.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_cdata.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_cdata.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_comment.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_comment.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_document.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_document.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_document_fragment.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_document_fragment.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_dtd.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_dtd.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_element_content.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_element_content.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_element_decl.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_element_decl.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_encoding_handler.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_encoding_handler.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_entity_decl.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_entity_decl.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_entity_reference.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_entity_reference.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_io.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_io.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_libxml2_hacks.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_libxml2_hacks.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_namespace.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_namespace.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_node.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_node.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_node_set.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_node_set.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_processing_instruction.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_processing_instruction.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_reader.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_reader.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_relax_ng.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_relax_ng.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_sax_parser.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_sax_parser.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_sax_parser_context.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_sax_parser_context.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_sax_push_parser.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_sax_push_parser.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_schema.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_schema.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_syntax_error.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_syntax_error.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_text.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_text.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_xpath_context.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xml_xpath_context.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xslt_stylesheet.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/xslt_stylesheet.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/lib/nokogiri/nokogiri.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/lib/nokogiri/nokogiri.bundle" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/http11_parser.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/http11_parser.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/io_buffer.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/io_buffer.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/mini_ssl.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/mini_ssl.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/puma_http11.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/puma_http11.bundle" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/puma_http11.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/puma_http11.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/lib/puma/puma_http11.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/lib/puma/puma_http11.bundle" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/backup.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/backup.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/database.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/database.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/exception.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/exception.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/sqlite3.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/sqlite3.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/sqlite3_native.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/sqlite3_native.bundle" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/statement.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/statement.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/lib/sqlite3/sqlite3_native.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/lib/sqlite3/sqlite3_native.bundle" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver/websocket_mask.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver/websocket_mask.bundle" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver/websocket_mask.o" afterPath="$PROJECT_DIR$/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver/websocket_mask.o" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/websocket-driver-0.6.5/lib/websocket_mask.bundle" afterPath="$PROJECT_DIR$/vendor/bundle/gems/websocket-driver-0.6.5/lib/websocket_mask.bundle" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/posts_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/bindex-0.5.0/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/bindex-0.5.0/gem_make.out" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/byebug-9.1.0/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/byebug-9.1.0/gem_make.out" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/ffi-1.9.18/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/ffi-1.9.18/gem_make.out" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/ffi-1.9.18/mkmf.log" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/ffi-1.9.18/mkmf.log" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nio4r-2.1.0/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nio4r-2.1.0/gem_make.out" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nio4r-2.1.0/mkmf.log" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nio4r-2.1.0/mkmf.log" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nokogiri-1.8.1/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nokogiri-1.8.1/gem_make.out" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nokogiri-1.8.1/mkmf.log" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/nokogiri-1.8.1/mkmf.log" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/puma-3.10.0/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/puma-3.10.0/gem_make.out" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/puma-3.10.0/mkmf.log" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/puma-3.10.0/mkmf.log" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/sqlite3-1.3.13/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/sqlite3-1.3.13/gem_make.out" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/sqlite3-1.3.13/mkmf.log" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/sqlite3-1.3.13/mkmf.log" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/websocket-driver-0.6.5/gem_make.out" afterPath="$PROJECT_DIR$/vendor/bundle/extensions/x86_64-darwin-16/2.4.0-static/websocket-driver-0.6.5/gem_make.out" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/bindex-0.5.0/ext/bindex/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/bindex-0.5.0/ext/bindex/Makefile" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/byebug-9.1.0/ext/byebug/Makefile" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/Makefile" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/Makefile" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/config.log" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/config.log" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/config.status" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/config.status" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/include/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/include/Makefile" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/include/ffitarget.h" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/include/ffitarget.h" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/libtool" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/libtool" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/man/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/man/Makefile" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/testsuite/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/ffi-1.9.18/ext/ffi_c/libffi-x86_64-darwin16/testsuite/Makefile" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nio4r-2.1.0/ext/nio4r/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nio4r-2.1.0/ext/nio4r/Makefile" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/nokogiri-1.8.1/ext/nokogiri/Makefile" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/puma-3.10.0/ext/puma_http11/Makefile" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/sqlite3-1.3.13/ext/sqlite3/Makefile" />
-            <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver/Makefile" afterPath="$PROJECT_DIR$/vendor/bundle/gems/websocket-driver-0.6.5/ext/websocket-driver/Makefile" />
-        </list>
-        <ignored path="$PROJECT_DIR$/.bundle/" />
-        <ignored path="$PROJECT_DIR$/components/" />
-        <ignored path="$PROJECT_DIR$/public/system/" />
-        <ignored path="$PROJECT_DIR$/tmp/" />
-        <ignored path="$PROJECT_DIR$/vendor/bundle/" />
-        <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-        <option name="TRACKING_ENABLED" value="true" />
-        <option name="SHOW_DIALOG" value="false" />
-        <option name="HIGHLIGHT_CONFLICTS" value="true" />
-        <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-        <option name="LAST_RESOLUTION" value="IGNORE" />
-    </component>
-    <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
-    <component name="FileEditorManager">
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-            <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
-                    <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="75">
-                            <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-                            <folding />
-                        </state>
-                    </provider>
-                </entry>
-            </file>
-            <file leaf-file-name="posts_controller.rb" pinned="false" current-in-tab="true">
-                <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
-                    <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="268">
-                            <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-                            <folding />
-                        </state>
-                    </provider>
-                </entry>
-            </file>
-            <file leaf-file-name="replies_controller.rb" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/app/controllers/replies_controller.rb">
-                    <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="210">
-                            <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-                            <folding />
-                        </state>
-                    </provider>
-                </entry>
-            </file>
-            <file leaf-file-name="reply.rb" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/app/models/reply.rb">
-                    <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="15">
-                            <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-                            <folding />
-                        </state>
-                    </provider>
-                </entry>
-            </file>
-            <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/Gemfile">
-                    <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="330">
-                            <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-                            <folding />
-                        </state>
-                    </provider>
-                </entry>
-            </file>
-            <file leaf-file-name="20171017104207_create_replies.rb" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/db/migrate/20171017104207_create_replies.rb">
-                    <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="150">
-                            <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-                            <folding />
-                        </state>
-                    </provider>
-                </entry>
-            </file>
-            <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/config/routes.rb">
-                    <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="15">
-                            <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-                            <folding />
-                        </state>
-                    </provider>
-                </entry>
-            </file>
-            <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
-                    <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="165">
-                            <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-                            <folding />
-                        </state>
-                    </provider>
-                </entry>
-            </file>
-            <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/.gitignore">
-                    <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="345">
-                            <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-                            <folding />
-                        </state>
-                    </provider>
-                </entry>
-            </file>
-            <file leaf-file-name="post.rb" pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/app/models/post.rb">
-                    <provider selected="true" editor-type-id="text-editor">
-                        <state relative-caret-position="75">
-                            <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-                            <folding />
-                        </state>
-                    </provider>
-                </entry>
-            </file>
-        </leaf>
-    </component>
-    <component name="FileTemplateManagerImpl">
-        <option name="RECENT_TEMPLATES">
-            <list>
-                <option value="Erb File" />
-            </list>
-        </option>
-    </component>
-    <component name="Git.Settings">
-        <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-    </component>
-    <component name="IdeDocumentHistory">
-        <option name="CHANGED_PATHS">
-            <list>
-                <option value="$PROJECT_DIR$/Gemfile.lock" />
-                <option value="$PROJECT_DIR$/db/migrate/20171006062819_create_posts.rb" />
-                <option value="$PROJECT_DIR$/db/migrate/20171010110246_add_title.rb" />
-                <option value="$PROJECT_DIR$/.gitignore" />
-                <option value="$PROJECT_DIR$/README.md" />
-                <option value="$PROJECT_DIR$/app/views/posts/index.html.erb" />
-                <option value="$PROJECT_DIR$/app/views/posts/about.html.erb" />
-                <option value="$PROJECT_DIR$/Gemfile" />
-                <option value="$PROJECT_DIR$/app/views/posts/new.html.erb" />
-                <option value="$PROJECT_DIR$/app/controllers/replies_controller.rb" />
-                <option value="$PROJECT_DIR$/app/models/post.rb" />
-                <option value="$PROJECT_DIR$/app/models/reply.rb" />
-                <option value="$PROJECT_DIR$/config/routes.rb" />
-                <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
-            </list>
-        </option>
-    </component>
-    <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-    <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-    <component name="JsGulpfileManager">
-        <detection-done>true</detection-done>
-        <sorting>DEFINITION_ORDER</sorting>
-    </component>
-    <component name="ProjectFrameBounds">
-        <option name="x" value="17" />
-        <option name="y" value="30" />
-        <option name="width" value="1260" />
-        <option name="height" value="698" />
-    </component>
-    <component name="ProjectView">
-        <navigator currentView="ProjectPane" proportions="" version="1">
-            <flattenPackages />
-            <showMembers />
-            <showModules />
-            <showLibraryContents />
-            <hideEmptyPackages />
-            <abbreviatePackageNames />
-            <autoscrollToSource />
-            <autoscrollFromSource />
-            <sortByType />
-            <manualOrder />
-            <foldersAlwaysOnTop value="true" />
-        </navigator>
-        <panes>
-            <pane id="Scope" />
-            <pane id="RailsProjectView" />
-            <pane id="ProjectPane">
-                <subPane>
-                    <PATH>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                    </PATH>
-                    <PATH>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="db" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                    </PATH>
-                    <PATH>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="db" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="migrate" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                    </PATH>
-                    <PATH>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="config" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                    </PATH>
-                    <PATH>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="config" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="locales" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                    </PATH>
-                    <PATH>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="config" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="initializers" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                    </PATH>
-                    <PATH>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="config" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="environments" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                    </PATH>
-                    <PATH>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="app" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="views" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                    </PATH>
-                    <PATH>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="app" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="views" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="posts" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                    </PATH>
-                    <PATH>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="app" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="models" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                    </PATH>
-                    <PATH>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="app" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                    </PATH>
-                    <PATH>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="n_b_b" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="app" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                        <PATH_ELEMENT>
-                            <option name="myItemId" value="controllers" />
-                            <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-                        </PATH_ELEMENT>
-                    </PATH>
-                </subPane>
-            </pane>
-            <pane id="Scratches" />
-        </panes>
-    </component>
-    <component name="PropertiesComponent">
-        <property name="WebServerToolWindowFactoryState" value="false" />
-        <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    </component>
-    <component name="RunDashboard">
-        <option name="ruleStates">
-            <list>
-                <RuleState>
-                    <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-                </RuleState>
-                <RuleState>
-                    <option name="name" value="StatusDashboardGroupingRule" />
-                </RuleState>
-            </list>
-        </option>
-    </component>
-    <component name="RunManager" selected="Rails.Development: n_b_b">
-        <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
-            <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
-            <module name="" />
-            <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-            <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
-            <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-            <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-            <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-            <envs />
-            <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-            <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-            <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-                <COVERAGE_PATTERN ENABLED="true">
-                    <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-                </COVERAGE_PATTERN>
-            </EXTENSION>
-            <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
-            <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-            <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-            <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
-            <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
-            <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="" />
-            <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
-            <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-            <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-            <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
-            <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-            <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-            <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-            <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
-            <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
-            <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
-            <method />
-        </configuration>
-        <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
-            <node-interpreter value="project" />
-            <working-dir value="" />
-            <envs />
-            <scope-kind value="ALL" />
-            <method />
-        </configuration>
-        <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
-            <config-file value="" />
-            <node-interpreter value="project" />
-            <envs />
-            <method />
-        </configuration>
-        <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
-            <method />
-        </configuration>
-        <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
-            <predefined_log_file id="RUBY_RSPEC" enabled="true" />
-            <module name="" />
-            <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-            <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
-            <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-            <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-            <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-            <envs />
-            <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-            <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-            <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-                <COVERAGE_PATTERN ENABLED="true">
-                    <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-                </COVERAGE_PATTERN>
-            </EXTENSION>
-            <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-            <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
-            <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
-            <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
-            <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
-            <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-            <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
-            <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
-            <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
-            <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-            <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-            <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-            <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
-            <method />
-        </configuration>
-        <configuration default="true" type="RailsRunConfigurationType" factoryName="Rails">
-            <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
-            <module name="" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-            <envs />
-            <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-            <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-            <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-                <COVERAGE_PATTERN ENABLED="true">
-                    <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-                </COVERAGE_PATTERN>
-            </EXTENSION>
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
-            <method />
-        </configuration>
-        <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
-            <module name="" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-            <envs />
-            <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-            <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-            <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-                <COVERAGE_PATTERN ENABLED="true">
-                    <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-                </COVERAGE_PATTERN>
-            </EXTENSION>
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
-            <method />
-        </configuration>
-        <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest">
-            <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
-            <module name="" />
-            <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-            <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
-            <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-            <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-            <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-            <envs />
-            <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-            <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-            <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-                <COVERAGE_PATTERN ENABLED="true">
-                    <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-                </COVERAGE_PATTERN>
-            </EXTENSION>
-            <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
-            <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
-            <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
-            <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
-            <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
-            <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
-            <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
-            <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
-            <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
-            <method />
-        </configuration>
-        <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-            <node-interpreter>project</node-interpreter>
-            <node-options />
-            <gulpfile />
-            <tasks />
-            <arguments />
-            <envs />
-            <method />
-        </configuration>
-        <configuration default="true" type="js.build_tools.npm" factoryName="npm">
-            <command value="run" />
-            <scripts />
-            <node-interpreter value="project" />
-            <envs />
-            <method />
-        </configuration>
-        <configuration default="false" name="test: n_b_b" type="RakeRunConfigurationType" factoryName="Rake">
-            <module name="n_b_b" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-            <envs>
-                <env name="RAILS_ENV" value="test" />
-            </envs>
-            <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-            <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-            <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-                <COVERAGE_PATTERN ENABLED="true">
-                    <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-                </COVERAGE_PATTERN>
-            </EXTENSION>
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="test" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":test_unit " />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
-            <method />
-        </configuration>
-        <configuration default="false" name="spec: n_b_b" type="RakeRunConfigurationType" factoryName="Rake">
-            <module name="n_b_b" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-            <envs />
-            <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-            <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-            <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-                <COVERAGE_PATTERN ENABLED="true">
-                    <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-                </COVERAGE_PATTERN>
-            </EXTENSION>
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="spec" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":rspec " />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
-            <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
-            <method />
-        </configuration>
-        <configuration default="false" name="Production: n_b_b" type="RailsRunConfigurationType" factoryName="Rails">
-            <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
-            <module name="n_b_b" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-            <envs />
-            <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-            <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-            <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-                <COVERAGE_PATTERN ENABLED="true">
-                    <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-                </COVERAGE_PATTERN>
-            </EXTENSION>
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="production" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
-            <method />
-        </configuration>
-        <configuration default="false" name="Development: n_b_b" type="RailsRunConfigurationType" factoryName="Rails">
-            <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
-            <module name="n_b_b" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-            <envs />
-            <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-            <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-            <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-                <COVERAGE_PATTERN ENABLED="true">
-                    <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-                </COVERAGE_PATTERN>
-            </EXTENSION>
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
-            <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
-            <method />
-        </configuration>
-        <list size="4">
-            <item index="0" class="java.lang.String" itemvalue="Rake.test: n_b_b" />
-            <item index="1" class="java.lang.String" itemvalue="Rake.spec: n_b_b" />
-            <item index="2" class="java.lang.String" itemvalue="Rails.Production: n_b_b" />
-            <item index="3" class="java.lang.String" itemvalue="Rails.Development: n_b_b" />
-        </list>
-    </component>
-    <component name="ShelveChangesManager" show_recycled="false">
-        <option name="remove_strategy" value="false" />
-    </component>
-    <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" />
-    <component name="TaskManager">
-        <task active="true" id="Default" summary="Default task">
-            <changelist id="63b283d6-7a4c-435b-a8e8-aa951e0d1f2c" name="Default" comment="" />
-            <created>1507013316766</created>
-            <option name="number" value="Default" />
-            <option name="presentableId" value="Default" />
-            <updated>1507013316766</updated>
-            <workItem from="1507013319628" duration="165000" />
-            <workItem from="1507013746588" duration="1790000" />
-            <workItem from="1507269482051" duration="3057000" />
-            <workItem from="1507593464952" duration="1924000" />
-            <workItem from="1507621841566" duration="2164000" />
-            <workItem from="1507632520202" duration="9000" />
-            <workItem from="1507632784891" duration="1836000" />
-            <workItem from="1507781924168" duration="3289000" />
-            <workItem from="1507871584387" duration="3542000" />
-            <workItem from="1507951992819" duration="61000" />
-            <workItem from="1508236339411" duration="7342000" />
-            <workItem from="1508313106842" duration="815000" />
-            <workItem from="1508314839614" duration="672000" />
-            <workItem from="1508390091319" duration="1508000" />
-            <workItem from="1508393409140" duration="352000" />
-            <workItem from="1508398164881" duration="162000" />
-        </task>
-        <servers />
-    </component>
-    <component name="TimeTrackingManager">
-        <option name="totallyTimeSpent" value="31011000" />
-    </component>
-    <component name="ToolWindowManager">
-        <frame x="17" y="30" width="1260" height="698" extended-state="0" />
-        <editor active="true" />
-        <layout>
-            <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-            <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-            <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3923664" sideWeight="0.55714285" order="7" side_tool="true" content_ui="tabs" />
-            <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-            <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-            <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-            <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3923664" sideWeight="0.44285715" order="8" side_tool="false" content_ui="tabs" />
-            <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-            <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-            <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-            <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-            <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-            <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-            <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-            <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.4968254" order="1" side_tool="false" content_ui="tabs" />
-            <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-            <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-        </layout>
-    </component>
-    <component name="TypeScriptGeneratedFilesManager">
-        <option name="processedProjectFiles" value="true" />
-    </component>
-    <component name="VcsContentAnnotationSettings">
-        <option name="myLimit" value="2678400000" />
-    </component>
-    <component name="XDebuggerManager">
-        <breakpoint-manager />
-        <watches-manager />
-    </component>
-    <component name="editorHistoryManager">
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                    <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-                    <folding />
-                </state>
-            </provider>
+  <component name="ChangeListManager">
+    <list default="true" id="63b283d6-7a4c-435b-a8e8-aa951e0d1f2c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+    </list>
+    <ignored path="$PROJECT_DIR$/.bundle/" />
+    <ignored path="$PROJECT_DIR$/components/" />
+    <ignored path="$PROJECT_DIR$/public/system/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <ignored path="$PROJECT_DIR$/vendor/bundle/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="new.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
         </entry>
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="89">
-                    <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
+      </file>
+      <file leaf-file-name="posts_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                    <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-                    <folding />
-                </state>
-            </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
         </entry>
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="9">
-                    <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1598">
-                    <caret line="68" column="17" lean-forward="false" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/README.md">
-            <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                    <first_editor relative-caret-position="105">
-                        <caret line="7" column="70" lean-forward="false" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
-                    </first_editor>
-                    <second_editor />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                    <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                    <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                    <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                    <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                    <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                    <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                    <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                    <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                    <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1020">
-                    <caret line="68" column="17" lean-forward="false" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/README.md">
-            <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                    <first_editor relative-caret-position="105">
-                        <caret line="7" column="70" lean-forward="false" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
-                    </first_editor>
-                    <second_editor />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                    <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                    <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                    <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                    <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                    <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1020">
-                    <caret line="68" column="17" lean-forward="false" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="195">
-                    <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                    <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                    <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/README.md">
-            <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                    <first_editor relative-caret-position="105">
-                        <caret line="7" column="70" lean-forward="false" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
-                    </first_editor>
-                    <second_editor />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                    <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                    <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                    <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                    <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1020">
-                    <caret line="68" column="17" lean-forward="false" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/app/views/home/top.html.erb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                    <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/db/schema.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                    <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                    <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/db/migrate/20171010110246_add_title.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                    <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/db/migrate/20171006062819_create_posts.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="60">
-                    <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                    <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/app/views/posts/about.erb" />
-        <entry file="file://$PROJECT_DIR$/README.md">
-            <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-                <state split_layout="SPLIT">
-                    <first_editor relative-caret-position="180">
-                        <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-                    </first_editor>
-                    <second_editor />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                    <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                    <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/app/models/post.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                    <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/app/models/reply.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                    <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/config/routes.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                    <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/.gitignore">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                    <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/db/migrate/20171017104207_create_replies.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="150">
-                    <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
-        <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                    <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-                    <folding />
-                </state>
-            </provider>
-        </entry>
+      </file>
+      <file leaf-file-name="replies_controller.rb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/replies_controller.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                    <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-                    <folding />
-                </state>
-            </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
         </entry>
-        <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                    <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-                    <folding />
-                </state>
-            </provider>
+      </file>
+      <file leaf-file-name="reply.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/reply.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
         </entry>
-        <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
-            <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="268">
-                    <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-                    <folding />
-                </state>
-            </provider>
+      </file>
+      <file leaf-file-name="20171017104207_create_replies.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/migrate/20171017104207_create_replies.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
         </entry>
-    </component>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="182">
+                <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="show.html.erb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="post.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/post.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Erb File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Gemfile.lock" />
+        <option value="$PROJECT_DIR$/db/migrate/20171006062819_create_posts.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20171010110246_add_title.rb" />
+        <option value="$PROJECT_DIR$/app/views/posts/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/posts/about.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/posts/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/post.rb" />
+        <option value="$PROJECT_DIR$/app/models/reply.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/posts_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/replies_controller.rb" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="17" />
+    <option name="y" value="30" />
+    <option name="width" value="1396" />
+    <option name="height" value="698" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrate" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="locales" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="initializers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="environments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="posts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="n_b_b" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+      <pane id="RailsProjectView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Rails.Development: n_b_b">
+    <configuration default="true" type="CucumberRunConfigurationType" factoryName="Cucumber">
+      <predefined_log_file id="RUBY_CUCUMBER" enabled="true" />
+      <module name="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*.feature" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_TAGS_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="TEST_NAME_FILTER" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_ARGS" VALUE="--color -r features" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="VERBOSE_OPTION" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="CUCUMBER_RUNNER_PATH" VALUE="" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_RUNNER" VALUE="false" />
+      <CUCUMBER_RUN_CONFIG_SETTINGS_ID NAME="SETTINGS_VERSION" VALUE="2" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="RSpecRunConfigurationType" factoryName="RSpec">
+      <predefined_log_file id="RUBY_RSPEC" enabled="true" />
+      <module name="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_RUNNER_PATH" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="**/*_spec.rb" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_EXAMPLE_NAME" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPEC_ARGS" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_VERSION" VALUE="" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="USE_CUSTOM_SPEC_RUNNER" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RSPEC_RUN_CONFIG_SETTINGS_ID NAME="FULL_BACKTRACE" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="RailsRunConfigurationType" factoryName="Rails">
+      <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
+      <module name="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
+      <module name="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestUnitRunConfigurationType" factoryName="Test::Unit/Shoulda/Minitest">
+      <predefined_log_file id="RUBY_TESTUNIT" enabled="true" />
+      <module name="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TESTS_FOLDER_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_SCRIPT_PATH" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_FILE_MASK" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_METHOD_NAME" VALUE="" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="TEST_TEST_TYPE" VALUE="TEST_SCRIPT" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="DRB" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="ZEUS" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="SPRING" VALUE="false" />
+      <RTEST_RUN_CONFIG_SETTINGS_ID NAME="RUNNER_OPTIONS" VALUE="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="test: n_b_b" type="RakeRunConfigurationType" factoryName="Rake">
+      <module name="n_b_b" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="test" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":test_unit " />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="spec: n_b_b" type="RakeRunConfigurationType" factoryName="Rake">
+      <module name="n_b_b" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="spec" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":rspec " />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Production: n_b_b" type="RailsRunConfigurationType" factoryName="Rails">
+      <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
+      <module name="n_b_b" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="production" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Development: n_b_b" type="RailsRunConfigurationType" factoryName="Rails">
+      <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
+      <module name="n_b_b" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs />
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <method />
+    </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="Rake.test: n_b_b" />
+      <item index="1" class="java.lang.String" itemvalue="Rake.spec: n_b_b" />
+      <item index="2" class="java.lang.String" itemvalue="Rails.Production: n_b_b" />
+      <item index="3" class="java.lang.String" itemvalue="Rails.Development: n_b_b" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SpringUtil" SPRING_PRE_LOADER_OPTION="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="63b283d6-7a4c-435b-a8e8-aa951e0d1f2c" name="Default" comment="" />
+      <created>1507013316766</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1507013316766</updated>
+      <workItem from="1507013319628" duration="165000" />
+      <workItem from="1507013746588" duration="1790000" />
+      <workItem from="1507269482051" duration="3057000" />
+      <workItem from="1507593464952" duration="1924000" />
+      <workItem from="1507621841566" duration="2164000" />
+      <workItem from="1507632520202" duration="9000" />
+      <workItem from="1507632784891" duration="1836000" />
+      <workItem from="1507781924168" duration="3289000" />
+      <workItem from="1507871584387" duration="3542000" />
+      <workItem from="1507951992819" duration="61000" />
+      <workItem from="1508236339411" duration="7342000" />
+      <workItem from="1508313106842" duration="815000" />
+      <workItem from="1508314839614" duration="672000" />
+      <workItem from="1508390091319" duration="1508000" />
+      <workItem from="1508393409140" duration="352000" />
+      <workItem from="1508398164881" duration="162000" />
+      <workItem from="1508399606940" duration="1811000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="32822000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="17" y="30" width="1396" height="698" extended-state="0" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2256447" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3923664" sideWeight="0.5594556" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3923664" sideWeight="0.44054443" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977098" sideWeight="0.4968254" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="processedProjectFiles" value="true" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="89">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1598">
+          <caret line="68" column="17" lean-forward="false" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="105">
+            <caret line="7" column="70" lean-forward="false" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="11" lean-forward="false" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="68" column="17" lean-forward="false" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="105">
+            <caret line="7" column="70" lean-forward="false" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="24" lean-forward="false" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="68" column="17" lean-forward="false" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="24" lean-forward="true" selection-start-line="13" selection-start-column="24" selection-end-line="13" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="105">
+            <caret line="7" column="70" lean-forward="false" selection-start-line="7" selection-start-column="70" selection-end-line="7" selection-end-column="70" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="68" column="17" lean-forward="false" selection-start-line="68" selection-start-column="17" selection-end-line="68" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/top.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20171010110246_add_title.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20171006062819_create_posts.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/about.erb" />
+    <entry file="file://$PROJECT_DIR$/app/views/posts/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="31" lean-forward="false" selection-start-line="7" selection-start-column="31" selection-end-line="7" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="16" lean-forward="false" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/post.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/reply.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/migrate/20171017104207_create_replies.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="28" lean-forward="false" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/posts/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="41" lean-forward="false" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/posts_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/replies_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="2" lean-forward="false" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="182">
+            <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+  </component>
 </project>
