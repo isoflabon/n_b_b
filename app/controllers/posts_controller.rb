@@ -20,6 +20,7 @@ class PostsController < ApplicationController
 
   def show
     @post = Post.find_by(id: params[:id])
+    @replies = Reply.where(post_id: @post.id).order(created_at: :desc)
   end
 
 

@@ -5,7 +5,7 @@ title:  <%= @post.title %> <br>
 content:  <%= @post.content %>
 </div>
 
-<%= form_tag("/replies/create") do %>
+<%= form_tag("/posts/#{@post.id}/replies") do %>
 <div class="form">
   <div class="form-comment">
     comment:<br>
@@ -14,3 +14,13 @@ content:  <%= @post.content %>
   </div>
 </div>
 <%end %>
+
+
+<div class="container">
+  <% @replies.each do |reply| %>
+    <div class="posts-index-item">
+          コメント: <%= reply.content %><br>
+      ---------------------------------------------------------------------------------------
+    </div>
+  <% end %>
+</div>
