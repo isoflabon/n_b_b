@@ -1,6 +1,7 @@
 <h1>詳細ページ</h1>
 <%= link_to("投稿一覧ページ", "/") %>
 
+<!-- rails routesでrouteをみると宛先わかりやすい -->
 <%= form_tag("/posts/#{@post.id}", method: 'put')  do %>
 <div class="posts-index-item">
 title:  <%= @post.title %> <br>
