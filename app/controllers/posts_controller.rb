@@ -19,12 +19,14 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find_by(id: params[:id])
 
+    @post = Post.find_by(id: params[:id])
     @replies = Reply.where(post_id: @post.id).order(created_at: :desc)
+
   end
 
   def edit
+
     @post = Post.find_by(id: params[:id])
     @replies = Reply.where(post_id: @post.id).order(created_at: :desc)
 
@@ -35,11 +37,13 @@ class PostsController < ApplicationController
     @replies = Reply.where(post_id: @post.id).order(created_at: :desc)
 
     @post.content = params[:content]
+
     if @post.save
       redirect_to("/posts/#{@post.id}")
     else
       render("posts/edit")
     end
+
   end
 
 end
