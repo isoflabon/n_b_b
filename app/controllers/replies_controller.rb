@@ -8,7 +8,7 @@ class RepliesController < ApplicationController
     if @reply.save
       redirect_to("/posts/#{@post.id}")
     else
-      render("posts/show")
+      redirect_to("/posts/#{@post.id}")
     end
   end
 end
