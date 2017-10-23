@@ -6,6 +6,8 @@ content:  <%= @post.content %>
 </div>
 <%= link_to("編集","/posts/#{@post.id}/edit")%>
 
+<%= link_to "削除", @resource,　method: :delete, data: {confirm: 'この投稿を削除しますか？'} %>
+
 <%= form_tag("/posts/#{@post.id}/replies") do %>
 <div class="form">
   <div class="form-comment">
