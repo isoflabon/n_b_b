@@ -13,4 +13,8 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require rails-ujs
+
 //= require_tree .
+//= require turbolinks
+//= require data-confirm-modal
+
