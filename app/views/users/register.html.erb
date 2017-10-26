@@ -1,0 +1,22 @@
+<h1> アカウント登録 </h1>
+ <div class="main users-new">
+   <div class="container">
+     <p class="form-heading"></p>
+
+     <%= form_tag("/users") do %>
+       <div class="form">
+         <div class="form-id">
+           ID:<br>
+           <textarea name="id"></textarea>
+         </div>
+
+         <div class="form-pass">
+           Password:<br>
+           <textarea name="pass"></textarea>
+           <input type="submit" value="登録">
+         </div>
+       </div>
+     <% end %>
+   </div>
+ </div>
+<%= link_to("投稿一覧ページ","/")%>
