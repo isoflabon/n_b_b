@@ -1,24 +1,38 @@
-<h1> 新規投稿 </h1>
+<head>
+  <%= stylesheet_link_tag    'new' %>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+<!--最小限のビューポート設定-->
+<meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+<ul class="page">
+<li class="center"> 悩みを投稿する </li>
+<li class="Button Radius5" id="IconList1">
+    <a href="#">く</a>
+  </li>
+</ul>
  <div class="main posts-new">
    <div class="container">
      <p class="form-heading"></p>
-
      <%= form_tag("/posts", method: :post) do %>
        <div class="form">
          <div class="form-title">
-           title:<br>
-           <textarea name="title"></textarea>
+           タイトル
+           <textarea name="title" rows="2" cols="60"></textarea>
          </div>
 
          <div class="form-body">
-           content:<br>
-           <textarea name="content"></textarea>
-           <input type="submit" value="投稿">
+           内容
+           <textarea name="content" rows="5" cols="60"></textarea>
          </div>
+         タグ
+         <textarea name="content" rows="2" cols="60"></textarea>
        </div>
      <% end %>
    </div>
  </div>
+ <li class="contribution"> <input type="submit" value="投稿"></li>
 <%= link_to("投稿一覧ページ","/")%>
-
-
+</body>
