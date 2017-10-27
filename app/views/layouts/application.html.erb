@@ -10,8 +10,11 @@
   </head>
 
   <body>
-    <li><%= link_to 'LOGOUT', destroy_user_session_path, method: :delete %></li>
-    <li><%= link_to '投稿一覧', root_url, method: :get %></li>
+    <ul>
+      <li><%= link_to 'ログイン', '/users/sign_in' %></li>
+      <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+      <li><%= link_to '投稿一覧', root_url, method: :get %></li>
+    </ul>
     <% if notice %>
       <p class="alert alert-success"><%= notice %></p>
       <% end %>
