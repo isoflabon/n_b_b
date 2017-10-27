@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   get 'home/top'
   root "posts#index"
   resources :posts, only: [:index, :show, :new, :create, :edit, :update, :destroy] do
