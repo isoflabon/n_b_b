@@ -11,12 +11,13 @@
 
   <body>
     <li><%= link_to 'LOGOUT', destroy_user_session_path, method: :delete %></li>
+    <li><%= link_to '投稿一覧', root_url, method: :get %></li>
     <% if notice %>
-  <p class="alert alert-success"><%= notice %></p>
-<% end %>
-<% if alert %>
-  <p class="alert alert-danger"><%= alert %></p>
-<% end %>
+      <p class="alert alert-success"><%= notice %></p>
+      <% end %>
+    <% if alert %>
+      <p class="alert alert-danger"><%= alert %></p>
+    <% end %>
     <%= yield %>
   </body>
 </html>
