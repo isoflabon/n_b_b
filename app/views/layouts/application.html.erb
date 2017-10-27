@@ -10,6 +10,13 @@
   </head>
 
   <body>
+    <li><%= link_to 'LOGOUT', destroy_user_session_path, method: :delete %></li>
+    <% if notice %>
+  <p class="alert alert-success"><%= notice %></p>
+<% end %>
+<% if alert %>
+  <p class="alert alert-danger"><%= alert %></p>
+<% end %>
     <%= yield %>
   </body>
 </html>
