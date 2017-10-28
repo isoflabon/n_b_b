@@ -14,8 +14,9 @@
 <li><%= @current_user.id%></li>
 <% end %>
     <ul>
-      <li><%= link_to 'ログイン', '/users/sign_in' %></li>
       <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+      <li><%= link_to 'ログイン', '/users/sign_in' %></li>
+      <li><%= link_to '会員登録', new_user_registration_path, method: :get %></li>
       <li><%= link_to '投稿一覧', root_url, method: :get %></li>
     </ul>
     <!-- アラートやメッセーじを表示する -->
