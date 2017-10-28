@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  devise_for :users
+  # devise_for :users
+  # このようなルーティングにすることでSessionsControllerを任意に設定できる
+  # controllers側ではアクションのコメントを外すこと忘れずに!
+  devise_for :users, :controllers => {
+    :sessions => 'user/sessions'
+  }
   get 'home/top'
   root "posts#index"
   resources :posts, only: [:index, :show, :new, :create, :edit, :update, :destroy] do
