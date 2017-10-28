@@ -18,6 +18,7 @@
       <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
       <li><%= link_to '投稿一覧', root_url, method: :get %></li>
     </ul>
+    <!-- アラートやメッセーじを表示する -->
     <% if notice %>
       <p class="alert alert-success"><%= notice %></p>
       <% end %>
@@ -25,5 +26,12 @@
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
     <%= yield %>
+    <!-- テスト用のコードなのでmasterにあげるときは消す. -->
+    <% if @current_user %>
+      <%= @current_user.id %>
+      あいうえお
+    <% else %>
+      テスト
+    <% end %>
   </body>
 </html>
