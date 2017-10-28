@@ -11,7 +11,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(title: params[:title],
                      content: params[:content],
-                   user_id: @current_user.id)
+                     user_id: @current_user.id)
     if @post.save
       redirect_to("/")
     else
