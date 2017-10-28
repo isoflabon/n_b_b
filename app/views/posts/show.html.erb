@@ -9,7 +9,7 @@ title:  <%= @post.title %> <br>
 content:  <%= @post.content %>
 </div>
 
-<% if @post.user_id == @current_user.id %>
+<% if @post.user == @current_user %>
 <%= link_to "削除", @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
 <% end %>
 
