@@ -16,6 +16,7 @@ class User::SessionsController < Devise::SessionsController
   # DELETE /resource/sign_out
   def destroy
     super
+    session[:user_id] = nil
   end
 
   # protected
