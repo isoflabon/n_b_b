@@ -26,11 +26,5 @@
     <% end %>
     <%= yield %>
     <!-- テスト用のコードなのでmasterにあげるときは消す. -->
-    <% if @current_user %>
-      <%= @current_user.id %>
-      あいうえお
-    <% else %>
-      テスト
-    <% end %>
   </body>
 </html>
