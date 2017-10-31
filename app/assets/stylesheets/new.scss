@@ -2,15 +2,18 @@ h1{
   color: red;
 }
 @media screen and (max-width: 750px) {
+  body{
+    background-color: oldlace;
+  }
 .center{
-  width: 100%;
-  color: blue;
+  color: black;
   text-align: center;
-  font-size: 20px;
-  padding-top: 20px;
+  font-size: 25px;
+  padding-top: 30px;
   list-style: none;
 }
 .form{
+  display: block;
   margin-right: 10px;
     width:100px;
     float: left;
@@ -20,6 +23,7 @@ h1{
   text-align: center;
   list-style: none;
   padding-top: 10px;
+  font-size: 1.2em;
 }
 
 #IconList2 a:before {
@@ -40,5 +44,14 @@ h1{
 
 .page{
   list-style: none;
+}
+.round_off{
+	border:2px solid #e8e8e8;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.aaa{
+  font-size: 17px;
 }
 }
