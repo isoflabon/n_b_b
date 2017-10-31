@@ -1,12 +1,17 @@
-<h1>詳細ページ</h1>
+<h1>投稿詳細ページ</h1>
 <%= link_to("投稿一覧ページ", "/") %>
 <div class="posts-index-item">
+投稿者: <%= @post.user_id %>
+<% if @current_user %>
+現在見ている人: <%= @current_user.id%><br>
+<% end %>
 title:  <%= @post.title %> <br>
 content:  <%= @post.content %>
 </div>
-<%= link_to("編集","/posts/#{@post.id}/edit")%>
 
-<%= link_to "削除", @resource, method: :delete, data: {confirm: 'この投稿を削除しますか？'}, title: "削除の確認"%>
+<% if @post.user == @current_user %>
+<%= link_to "削除", @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
+<% end %>
 
 <%= form_tag("/posts/#{@post.id}/replies") do %>
 <div class="form">
