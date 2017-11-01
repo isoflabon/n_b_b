@@ -57,6 +57,7 @@ h1{
 
 img.menu-logo{
   z-index: 30;
+  margin-right: 5%;
 }
 
 img.logo{
@@ -73,9 +74,38 @@ img.logo{
   top: 0;
   right: 0;
   bottom: 0;
-  width: 270px;
+  width: 20%;
   background: #FFA500;
   color:white;
+
+}
+
+ul.menu_sidebar{
+  display: block;
+  margin: 0;
+　padding: 0;
+　text-align: center;
+　list-style-type: none;
+}
+
+ul.menu_sidebar li.menu_list{
+  display: inline;
+}
+
+li.menu_list{
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #646459;
+  background-color: #fb7600;
+  padding: 0.5em;
+  width:100%;
+
+}
+
+ul.menu_sidebar li.menu_list a:hover{
+  color: #fff;
+　background-color: #000000;
 }
 
 //=======
