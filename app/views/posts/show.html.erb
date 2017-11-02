@@ -3,24 +3,26 @@
 <div class="posts-index-item">
 投稿者: <%= @post.user_id %><br>
 <% if @current_user %>
-現在見ている人: <%= @current_user.id%><br>
+  現在見ている人: <%= @current_user.id%><br>
 <% end %>
 title:  <%= @post.title %> <br>
 content:  <%= @post.content %>
 </div>
 
 <% if @post.user == @current_user %>
-<%= link_to "削除", @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
+  <%= link_to "削除", @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
 <% end %>
 
 <%= form_tag("/posts/#{@post.id}/replies") do %>
-<div class="form">
-  <div class="form-comment">
-    comment:<br>
-    <textarea name="content"></textarea>
-    <input type="submit" value="コメントする">
+  <% if @current_user.gender == "female" %>
+  <div class="form">
+    <div class="form-comment">
+      comment:<br>
+      <textarea name="content"></textarea>
+      <input type="submit" value="コメントする">
+    </div>
   </div>
-</div>
+  <% end %>
 <%end %>
 
 
