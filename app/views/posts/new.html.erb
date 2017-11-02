@@ -8,26 +8,24 @@
 
 <body>
 <ul class="page">
-<li class="center"> 悩みを投稿する</li>
-<!--<img src="/tori.jpg" width="50" height="50" class="logo">-->
-<li class="Button Radius5" id="IconList1">
-  <%= link_to("く","/")%>
-  </li>
+<li class="center"><a href="/"><img src="/back5.jpg" width="20" height="30" class="logo"></a>悩みを投稿する</li>
+<!--<img src="/back5.jpg" width="20" height="30" class="logo">-->
+<!--<img src="/back.jpeg" width="50" height="50" class="logo">-->
 </ul>
-<form>
  <div class="main posts-new">
    <div class="container">
      <p class="form-heading"></p>
      <%= form_tag("/posts", method: :post) do %>
-       <div class="form">
+       <div class="form-group">
          <div class="form-title">
            <span class="aaa">タイトル</span>
-           <textarea name="title" class="round_off" rows="2" cols="60"></textarea>
+           <textarea name="title" class="round_off form-control"rows="2" cols="60"></textarea>
          </div>
 
          <div class="form-body">
            <span class="aaa">内容</span>
-           <textarea name="content" class="round_off" rows="5" cols="60"></textarea>
+           <textarea name="content" class="round_off form-control" rows="5" cols="60"></textarea>
+           <li class="contribution"> <input type="submit" value="投稿"></li>
          </div>
         <!-- <div class="form-tag">
          <span class="aaa"> タグ </span>
@@ -37,7 +35,5 @@
      <% end %>
    </div>
  </div>
- </form>
- <li class="contribution"> <input type="submit" value="投稿"></li>
 <!--<%= link_to("投稿内容がうまく書けない方はこちら","/")%>-->
 </body>

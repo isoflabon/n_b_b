@@ -3,7 +3,7 @@ h1{
 }
 @media screen and (max-width: 750px) {
   body{
-    background-color: oldlace;
+    background-color: #fff0dd;
   }
 .center{
   color: black;
@@ -12,6 +12,12 @@ h1{
   padding-top: 30px;
   list-style: none;
 }
+
+img.logo{
+  float: left;
+  padding-top: 9px;
+}
+
 .form{
   display: block;
   margin-right: 10px;
@@ -22,24 +28,8 @@ h1{
 .contribution{
   text-align: center;
   list-style: none;
-  padding-top: 10px;
+  padding-top: 20px;
   font-size: 1.2em;
-}
-
-#IconList2 a:before {
-	display: block;
-	content: "";
-	position: absolute;
-	top: 50%;
-	left: 25px;
-	width: 0;
-	height: 0;
-	margin-top: -5px;
-	border: 5px solid transparent;        /*top right bottom を透明化 */
-	border-left: 5px solid #fff;
-}
-#IconList2 a:hover:before {
-	left: 27px;        /*マウスオーバーで三角をずらす */
 }
 
 .page{
