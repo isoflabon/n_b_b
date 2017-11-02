@@ -9,14 +9,8 @@
   <br>
 
   <div class="field">
-    <%= f.label :性別 %><br />
-    <%= f.text_field :gender, autofocus: true %>
-    <!-- <%= radio_button_tag(:gender,"male") %>
-    <%= label_tag(:gender_male, "男性") %>
-    <%= radio_button_tag(:gender,"female") %>
-    <%= label_tag(:gender_female, "女性") %> -->
-    <!-- <label><%= f.radio_button :gender, "1" %>男</label>
-    <label><%= f.radio_button :gender, "2" %>女</label> -->
+    <label><%= f.radio_button :gender, "male" %>男</label>
+    <label><%= f.radio_button :gender, "female" %>女</label>
   </div>
   <br>
 
