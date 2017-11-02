@@ -50,6 +50,8 @@ class PostsController < ApplicationController
 
   def destroy
     @post = Post.find_by(id: params[:id])
+    @replies = Reply.where(post_id: @post.id)
+    @replies.delete_all
     @post.destroy
     redirect_to("/posts")
   end
