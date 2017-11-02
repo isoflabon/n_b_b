@@ -85,8 +85,9 @@ img.logo{
   width: 20vw;
   background: #ffa265;
   color:white;
-
 }
+
+
 
 ul.menu_sidebar{
   display: block;
@@ -102,12 +103,12 @@ ul.menu_sidebar li.menu_list{
 
 li.menu_list{
   display: block;
-  text-decoration: none;
+  text-decoration-style:  none;
   color: #fff;
   border-top: 1px solid #fff;
   background-color: #ffa265;
   width:20vw;
-
+  height: 10vh;
 }
 
 li.menu_last{
