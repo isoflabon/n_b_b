@@ -17,12 +17,10 @@
 @import "bootstrap";
 //<<<<<<< HEAD
  main{
-  margin-top: 10vh;
+  margin-top: 13vh;
 }
 
-h1{
-  margin-top: 10vh;
-}
+
 
 .header{
   height:20vh;
@@ -121,6 +119,9 @@ ul.menu_sidebar li.menu_list a:hover{
 　background-color: #000000;
 }
 
+.row{
+  text-align: center;
+}
 //=======
 
 // デザインができるまで仮のcss。できたら消してもOK!

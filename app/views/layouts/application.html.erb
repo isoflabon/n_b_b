@@ -17,7 +17,7 @@
       <div class="header_block">
           <div class="header_box">
               <div class="row">
-                <div class="logo col-xs-6 col-sm-4"><a href = "#" class = "btn"><img src="/atoos3.png" class="logo"></div>
+                <div class="logo col-xs-6 col-sm-4"><img src="/atoos3.png" class="logo"></div>
 
                 <div class = "menu">
                   <a href = "#" class = "btn" data-side="right" data-action="toggle"><img src="/menu01.png" class="menu-logo"></a>
@@ -38,6 +38,7 @@
 
                 <div class="clearfix visible-xs-block"></div>
 
+
               </div>
           </div>
       </div>
@@ -46,20 +47,16 @@
 
 <!--=======-->
 
-    <ul>
-      <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
-      <li><%= link_to 'ログイン', '/users/sign_in' %></li>
-      <li><%= link_to '会員登録', new_user_registration_path, method: :get %></li>
-      <li><%= link_to '投稿一覧', root_url, method: :get %></li>
-    </ul>
+    <main>
     <!-- アラートやメッセーじを表示する -->
-    <% if notice %>
-      <p class="alert alert-success"><%= notice %></p>
-      <% end %>
-    <% if alert %>
-      <p class="alert alert-danger"><%= alert %></p>
-    <% end %>
-    <%= yield %>
     <!-- テスト用のコードなのでmasterにあげるときは消す. -->
+  </main>
+  <% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
+    <% end %>
+  <% if alert %>
+    <p class="alert alert-danger"><%= alert %></p>
+  <% end %>
+  <%= yield %>
   </body>
 </html>
