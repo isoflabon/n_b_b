@@ -9,7 +9,9 @@ title:  <%= @post.title %> <br>
 content:  <%= @post.content %>
 </div>
 
+<% if @post.user == @current_user %>
 <%= link_to "削除", @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
+<% end %>
 
 <%= form_tag("/posts/#{@post.id}/replies") do %>
 <div class="form">

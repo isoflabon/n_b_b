@@ -16,13 +16,80 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+h1{
+  margin-top: 13%;
+}
+body{
+  margin-top: 8%;
+}
+
+.header{
+
+}
+
+.header_area {
+  position: fixed; /* 固定 */
+  top: 0; /* 一番上に表示 */
+  width: 100%; /* 中央に表示 */
+}
+
+.header_block {
+  background: white;
+}
+
+.header_box {
+  margin: auto auto;
+}
+
+.header_box h1 {
+  margin: 0;
+  padding: 20px 0;
+  font-size: 34px;
+  text-align: center;
+}
+
+.menu{
+  float: right;
+
+}
+
+.logo{
+  display: table-cell;
+	vertical-align: middle;
+}
+
+img.menu-logo{
+  z-index: 30;
+}
+
+img.logo{
+  z-index:10;
+}
+
+.sidebar{
+  position: fixed;
+  color: #fff; /* 好みに応じて調節してください*/
+  z-index: 5;
+}
+
+.sidebar.right {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 270px;
+  background: #FFA500;
+  color:white;
+}
+
+
+
 // デザインができるまで仮のcss。できたら消してもOK!
 // ヘッダーみたいに横並びにする
 ul{
   display: inline;
   float: none;
   li{
-    float: right;
+    float: left;
     padding-right: 25px;
     padding-top: 15px;
   }
