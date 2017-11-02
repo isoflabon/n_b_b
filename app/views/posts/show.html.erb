@@ -1,3 +1,4 @@
+<main>
 <h1>投稿詳細ページ</h1>
 <%= link_to("投稿一覧ページ", "/") %>
 <div class="posts-index-item">
@@ -22,7 +23,7 @@ content:  <%= @post.content %>
   </div>
 </div>
 <%end %>
-
+</main>
 
 <div class="container">
   <% @replies.each do |reply| %>

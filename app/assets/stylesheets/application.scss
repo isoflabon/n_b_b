@@ -16,8 +16,12 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 //<<<<<<< HEAD
+ main{
+  margin-top: 10vh;
+}
+
 h1{
-  margin-top: 13%;
+  margin-top: 10vh;
 }
 
 .header{
@@ -40,8 +44,7 @@ h1{
 
 .header_box h1 {
   margin: 0;
-  padding: 20px 0;
-  font-size: 34px;
+  padding: 0;
   text-align: center;
 }
 
@@ -63,6 +66,7 @@ img.menu-logo{
 
 img.menubar-logo{
   height:10vh;
+
 }
 
 img.logo{
@@ -81,7 +85,7 @@ img.logo{
   right: 0;
   bottom: 0;
   width: 20vw;
-  background: #FFA500;
+  background: #ffa265;
   color:white;
 
 }
@@ -102,10 +106,14 @@ li.menu_list{
   display: block;
   text-decoration: none;
   color: #fff;
-  border: 1px solid #646459;
-  background-color: #fb7600;
+  border-top: 1px solid #fff;
+  background-color: #ffa265;
   width:20vw;
 
+}
+
+li.menu_last{
+  border-bottom: 1px solid #fff;
 }
 
 ul.menu_sidebar li.menu_list a:hover{
@@ -122,7 +130,7 @@ ul{
   float: none;
   li{
     float: right;
-    padding-right: 25px;
+    padding-right: 0;
     padding-top: 15px;
   }
 }

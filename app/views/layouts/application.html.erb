@@ -12,7 +12,7 @@
   </head>
 
   <body>
-<<<<<<< HEAD
+<!--<<<<<<< HEAD-->
     <div class="header_area">
       <div class="header_block">
           <div class="header_box">
@@ -24,13 +24,13 @@
                   </div>
 
                 <div class = "sidebar right">
-                  <a href = "#" class = "btn" data-side="right" data-action="toggle"><img src="/menu01.png" class="menubar-logo"></a>
+                  <a href = "#" class = "btn" data-side="right" data-action="toggle"><img src="/menu02.png" class="menubar-logo"></a>
                   <div id="menu">
                     <ul class = "menu_sidebar">
-                      <a><li class = "menu_list"><%= link_to '投稿一覧', root_url, method: :get %></al></li>
+                      <li class = "menu_list"><%= link_to '投稿一覧', root_url, method: :get %></li>
                       <li class = "menu_list"><%= link_to 'ログイン', '/users/sign_in' %></li>
                       <li class = "menu_list"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
-                      <li class = "menu_list"><%= link_to '会員登録', new_user_registration_path, method: :get %></li>
+                      <li class = "menu_list menu_last"><%= link_to '会員登録', new_user_registration_path, method: :get %></li>
                     </ul>
                   </div>
                 </div>
@@ -44,7 +44,7 @@
     </div>
   </header>
 
-=======
+<!--=======-->
 
     <ul>
       <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
@@ -59,7 +59,6 @@
     <% if alert %>
       <p class="alert alert-danger"><%= alert %></p>
     <% end %>
->>>>>>> 810bf8ac3febc6ef5d61dbfb1aa140e66d66f1b4
     <%= yield %>
     <!-- テスト用のコードなのでmasterにあげるときは消す. -->
   </body>
