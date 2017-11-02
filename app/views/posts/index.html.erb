@@ -11,6 +11,16 @@
 
 
   <div class="container">
+    <% if @current_user %>
+      ///////////////////////////////////////////////////////////////////////////// <br>
+      ログインしている性別:<%= @current_user.gender%><br>
+      ログインしているメアド:<%= @current_user.email%><br>
+      /////////////////////////////////////////////////////////////////////////////
+      <% if @current_user.gender == "male" %>
+        男だよ
+      <% end %>
+    <% end %>
+
     <% @posts.each do |post| %>
       <div class="posts-index-item">
         title:   <%= post.title%><br>
@@ -20,9 +30,6 @@
       </div>
     <% end %>
 
-    <% @gender.each do |gender| %>
-      男だよ
-    <% end %>
   </div>
 </div>
 <br>
