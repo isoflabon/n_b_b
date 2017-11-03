@@ -10,7 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20171102085617) do
+=======
+ActiveRecord::Schema.define(version: 20171102100551) do
+>>>>>>> c1eaffa34d55d595638ebace6d89a5f7ee7e6fee
 
   create_table "posts", force: :cascade do |t|
     t.text "content"
@@ -41,9 +45,13 @@ ActiveRecord::Schema.define(version: 20171102085617) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "username"
+<<<<<<< HEAD
     t.integer "gender"
     t.string "uid"
     t.string "provider"
+=======
+    t.string "gender"
+>>>>>>> c1eaffa34d55d595638ebace6d89a5f7ee7e6fee
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
