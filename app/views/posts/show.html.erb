@@ -1,8 +1,13 @@
+<head>
+<%= stylesheet_link_tag    'show' %>
+</head>
+
+<body>
 <h1>詳細ページ</h1>
 <%= link_to("投稿一覧ページ", "/") %>
 <div class="posts-index-item">
-title:  <%= @post.title %> <br>
-content:  <%= @post.content %>
+<p class="box2"><%= @post.title %></p>
+<p class="box2"><%= @post.content %> </p>
 </div>
 <%= link_to("編集","/posts/#{@post.id}/edit")%>
 
@@ -25,3 +30,4 @@ content:  <%= @post.content %>
     </div>
   <% end %>
 </div>
+</body>
