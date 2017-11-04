@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <head>
 <%= stylesheet_link_tag    'show' %>
 </head>
@@ -9,17 +8,6 @@
 <div class="posts-index-item">
 <p class="box2"><%= @post.title %></p>
 <p class="box2"><%= @post.content %> </p>
-=======
-<h1>投稿詳細ページ</h1>
-<%= link_to("投稿一覧ページ", "/") %>
-<div class="posts-index-item">
-投稿者: <%= @post.user_id %><br>
-<% if @current_user %>
-現在見ている人: <%= @current_user.id%><br>
-<% end %>
-title:  <%= @post.title %> <br>
-content:  <%= @post.content %>
->>>>>>> origin/develop
 </div>
 
 <% if @post.user == @current_user %>
