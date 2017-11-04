@@ -12,7 +12,6 @@
   </head>
 
   <body>
-<!--<<<<<<< HEAD-->
     <div class="header_area">
       <div class="header_block">
           <div class="header_box">
@@ -25,7 +24,7 @@
 
                 <div class = "sidebar right">
                   <a href = "#" class = "btn" data-side="right" data-action="toggle"><img src="/menu02.png" class="menubar-logo"></a>
-                  <div id="menu">
+                  <div id="menu" class="all_menu_list">
                     <ul class = "menu_sidebar">
                       <li class = "menu_list"><%= link_to '投稿一覧', root_url, method: :get %></li>
                       <li class = "menu_list"><%= link_to 'ログイン', '/users/sign_in' %></li>
@@ -48,9 +47,9 @@
 
 
   <main>
-    <!-- アラートやメッセーじを表示する -->
-    <!-- テスト用のコードなのでmasterにあげるときは消す. -->
+    <!-- ヘッダー分の空白 -->
   </main>
+  <!-- アラートやメッセーじを表示する -->
   <% if notice %>
     <p class="alert alert-success"><%= notice %></p>
     <% end %>
