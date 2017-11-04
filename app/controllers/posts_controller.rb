@@ -10,7 +10,8 @@ class PostsController < ApplicationController
 
   def create
     @post = Post.new(title: params[:title],
-                     content: params[:content])
+                     content: params[:content],
+                     user_id: @current_user.id)
     if @post.save
       redirect_to("/")
     else
@@ -21,6 +22,7 @@ class PostsController < ApplicationController
   def show
 
     @post = Post.find_by(id: params[:id])
+    @user = User.find_by(id: @post.user_id)
     @replies = Reply.where(post_id: @post.id).order(created_at: :desc)
 
   end
@@ -46,4 +48,11 @@ class PostsController < ApplicationController
 
   end
 
+  def destroy
+    @post = Post.find_by(id: params[:id])
+    @replies = Reply.where(post_id: @post.id)
+    @replies.delete_all
+    @post.destroy
+    redirect_to("/posts")
+  end
 end

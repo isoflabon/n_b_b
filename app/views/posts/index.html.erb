@@ -1,7 +1,15 @@
-<h1>投稿一覧</h1>
+
+<main>
+<div class = "pase">
+<h1 class = "pase_name">投稿一覧</h1>
+
 
 <br class="main posts-index">
-<%= link_to("新規投稿する","/posts/new")%><pre></pre>
+<button type="button" class="btn btn-default btn-lg">
+<%= link_to("新規投稿する","/posts/new")%>
+</button>
+
+
   <div class="container">
     <% @posts.each do |post| %>
       <div class="posts-index-item">
@@ -14,4 +22,4 @@
   </div>
 </div>
 <br>
-
+</main>
