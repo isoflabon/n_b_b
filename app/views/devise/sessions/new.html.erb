@@ -1,24 +1,28 @@
-<h2>ログイン</h2>
+<h2 id = "login">ログイン</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
+  <div id = "login" class="field">
     <%= f.label :メールアドレス %><br />
+    <div class="input-group">
+      <input type="text" class="form-control" placeholder="Mail Address" aria-describedby="basic-addon1">
     <%= f.email_field :email, autofocus: true %>
   </div>
+  </div>
 
-  <div class="field">
+  <div id = "login" class="field">
     <%= f.label :パスワード %><br />
+    <input type="text" class="form-control" placeholder="Password" aria-describedby="basic-addon1">
     <%= f.password_field :password, autocomplete: "off" %>
   </div>
 
   <% if devise_mapping.rememberable? -%>
-    <div class="field">
+    <div id = "login" class="field">
       <%= f.check_box :remember_me %>
       <%= f.label :ログイン情報を保持する %>
     </div>
   <% end -%>
 
-  <div class="actions">
+  <div id = "login" class="actions">
     <%= f.submit "ログイン" %>
   </div>
 <% end %>
