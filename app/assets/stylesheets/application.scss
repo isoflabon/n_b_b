@@ -16,15 +16,18 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-h1{
-  margin-top: 13%;
+ main{
+  margin-top: 13vh;
 }
 body{
   margin-top: 8%;
+  background-color: oldlace;
 }
 
-.header{
 
+
+.header{
+  height:20vh;
 }
 
 .header_area {
@@ -43,8 +46,7 @@ body{
 
 .header_box h1 {
   margin: 0;
-  padding: 20px 0;
-  font-size: 34px;
+  padding: 0;
   text-align: center;
 }
 
@@ -60,15 +62,23 @@ body{
 
 img.menu-logo{
   z-index: 30;
+  margin-right: 5%;
+  height:10vh;
+}
+
+img.menubar-logo{
+  height:10vh;
+
 }
 
 img.logo{
   z-index:10;
+  height:10vh;
 }
 
 .sidebar{
   position: fixed;
-  color: #fff; /* 好みに応じて調節してください*/
+  color: #fff;
   z-index: 5;
 }
 
@@ -76,11 +86,49 @@ img.logo{
   top: 0;
   right: 0;
   bottom: 0;
-  width: 270px;
-  background: #FFA500;
+  width: 20vw;
+  background: #ffa265;
   color:white;
 }
 
+.all_menu_list{
+  margin-top: 20vh;
+  background-color: #000;
+}
+
+ul.menu_sidebar{
+  display: block;
+  margin: 0;
+　padding: 0;
+　text-align: center;
+　list-style-type: none;
+}
+
+ul.menu_sidebar li.menu_list{
+  display: inline;
+}
+
+li.menu_list{
+  display: block;
+  text-decoration-style:  none;
+  color: #fff;
+  border-top: 1px solid #fff;
+  width:20vw;
+  height: 10vh;
+}
+
+li.menu_last{
+  border-bottom: 1px solid #fff;
+}
+
+li.menu_list a:hover{
+  color: #fff;
+　background-color: #000000;
+}
+
+.row{
+  text-align: center;
+}
 
 
 // デザインができるまで仮のcss。できたら消してもOK!
@@ -89,8 +137,8 @@ ul{
   display: inline;
   float: none;
   li{
-    float: left;
-    padding-right: 25px;
+    float: right;
+    padding-right: 0;
     padding-top: 15px;
   }
 }
