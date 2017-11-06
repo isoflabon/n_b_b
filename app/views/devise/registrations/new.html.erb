@@ -23,7 +23,7 @@
   <div id = "user_touroku_main" class="field">
     <label class = "form_name"><%= f.label :パスワード %></label>
     <% if @minimum_password_length %>
-    <em>(最低<%= @minimum_password_length %> 文字)</em>
+    <em>(最低 <%= @minimum_password_length %>文字 )</em>
     <% end %><br />
     <input autocomplete="off" type="password" name="user[password]" id="user_password" type="text" class="form-control touroku_information" placeholder="Password" aria-describedby="basic-addon1">
     <!--<%= f.password_field :password, autocomplete: "off" %>-->
