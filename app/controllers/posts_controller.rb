@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  # 女性は悩みの投稿ができないようにした
+  before_action :female_fobit, only: [:new]
 
   def index
     @posts = Post.all.order(created_at: :desc)

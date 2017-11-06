@@ -21,6 +21,21 @@ class ApplicationController < ActionController::Base
       @current_user = User.find_by(id: session[:user_id])
     end
 
+    # 男性は悩みの投稿のみ、女性はコメントのみできるようにする
+    def male_fobit
+      if @current_user.gender == "male"
+        flash[:notice] = "男性は悩みのみ投稿できます"
+        redirect_to("/")
+      end
+    end
+
+    def female_fobit
+      if @current_user.gender == "female"
+        flash[:notice] = "女性はコメントのみできます"
+        redirect_to("/")
+      end
+    end
+
 
     def configure_permitted_params
       devise_parameter_sanitizer.for(:sign_up) {
