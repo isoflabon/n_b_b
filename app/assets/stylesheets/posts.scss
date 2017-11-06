@@ -1,108 +1,17 @@
 // Place all the styles related to the posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
-
-.header{
-
-}
-
-.header_area {
-  position: fixed; /* 固定 */
-  top: 0; /* 一番上に表示 */
-  width: 100%; /* 中央に表示 */
-}
-
-.header_block {
-  background: white;
-}
-
-.header_box {
-  margin: auto auto;
-}
-
-.header_box h1 {
-  margin: 0;
-  padding: 20px 0;
-  font-size: 34px;
-  text-align: center;
-}
-
-
-.row{
-  text-align: center;
-}
-
-
-
-
-
-main{
-  margin-top: 7%;
-}
-
+/*
 .menu{
   text-align: center;
   display: table-cell;
   vertical-align: middle;
 }
-
+*/
 h3.menu_ba-{
   font-weight: bold;
 }
 
 h1.pase_name{
   text-align: center;
-}
-
-
-
-
-
-
-
-
-
-
-.nav{
-  float: right;
-  padding: 14px;
-  padding-left: 10px;
-}
-
-.header_menu{
-  list-style:none;
-  overflow: hidden;
-  background-color: oldlace;
-  width: 100%;
-}
-
-.header_menu li{
-  float:left;
-  border-right: 1px solid #DDD;
-}
-
-.header_menu li a{
-  display: block;
-  padding: 10px 15px;
-  text-align: center;
-  text-decoration: none;
-  color: #333;
-}
-
-.header_menu li a span {
-  display: block;
-  margin: 3px 0 0 0;
-  color:#AAA;
-  font-size: 80%;
-  letter-spacing: 1px;
-}
-
-.header_menu li a:hover{
-  background: #EEE;
-}
-
-.carousel{
-  height: 20%;
-  margin: auto;
 }
