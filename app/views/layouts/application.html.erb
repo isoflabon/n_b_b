@@ -16,40 +16,46 @@
       <div class="header_block">
           <div class="header_box">
               <div class="row">
-                <div class="logo col-xs-6 col-sm-4"><a href = "#" class = "btn"><img src="/atoos3.png" class="logo"></div>
+                <div class="logo col-xs-6 col-sm-4"><img src="/atoos3.png" class="logo"></div>
 
                 <div class = "menu">
-                  <a href = "#" class = "btn" data-side="right" data-action="toggle"><img src="/menu4.png" class="menu-logo"></a>
+                  <a href = "#" class = "btn" data-side="right" data-action="toggle"><img src="/menu01.png" class="menu-logo"></a>
                   </div>
 
                 <div class = "sidebar right">
-                  <a href = "#" class = "btn" data-side="right" data-action="toggle"><img src="/menu4.png" class="menu-logo"></a>
-
+                  <a href = "#" class = "btn" data-side="right" data-action="toggle"><img src="/menu02.png" class="menubar-logo"></a>
+                  <div id="menu" class="all_menu_list">
+                    <ul class = "menu_sidebar">
+                      <li class = "menu_list"><%= link_to '投稿一覧', root_url, method: :get %></li>
+                      <li class = "menu_list"><%= link_to 'ログイン', '/users/sign_in' %></li>
+                      <li class = "menu_list"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
+                      <li class = "menu_list menu_last"><%= link_to '会員登録', new_user_registration_path, method: :get %></li>
+                    </ul>
+                  </div>
                 </div>
 
 
                 <div class="clearfix visible-xs-block"></div>
 
+
               </div>
           </div>
       </div>
     </div>
+  </header>
 
-    <ul>
-      <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
-      <li><%= link_to 'ログイン', '/users/sign_in' %></li>
-      <li><%= link_to '会員登録', new_user_registration_path, method: :get %></li>
-      <li><%= link_to '投稿一覧', root_url, method: :get %></li>
-    </ul>
-    <!-- アラートやメッセーじを表示する -->
-    <% if notice %>
-      <p class="alert alert-success"><%= notice %></p>
-      <% end %>
-    <% if alert %>
-      <p class="alert alert-danger"><%= alert %></p>
+
+
+  <main>
+    <!-- ヘッダー分の空白 -->
+  </main>
+  <!-- アラートやメッセーじを表示する -->
+  <% if notice %>
+    <p class="alert alert-success"><%= notice %></p>
     <% end %>
-
-    <%= yield %>
-    <!-- テスト用のコードなのでmasterにあげるときは消す. -->
+  <% if alert %>
+    <p class="alert alert-danger"><%= alert %></p>
+  <% end %>
+  <%= yield %>
   </body>
 </html>

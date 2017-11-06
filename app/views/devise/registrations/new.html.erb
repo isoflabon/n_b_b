@@ -1,40 +1,52 @@
-<h2>会員登録</h2>
+<h2 id = "user_touroku">会員登録</h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
-  <div class="field">
-    <%= f.label :ユーザ名 %><br />
-    <%= f.text_field :username, autofocus: true %>
+  <div id = "user_touroku_main" class="field">
+    <label class = "form_name"><%= f.label :ユーザ名 %></label><br />
+    <input autofocus="autofocus" type="text" name="user[username]" id="user_username" type="text" class="form-control touroku_information" placeholder="Username" aria-describedby="basic-addon1">
+    <!--<%= f.text_field :username, autofocus: true %>-->
   </div>
   <br>
-  <div class="field">
-    <label><%= f.radio_button :gender, "1" %>男</label>
-    <label><%= f.radio_button :gender, "2" %>女</label>
+  <div id = "user_touroku_main" class="field">
+    <label class = "form_name"><%= f.radio_button :gender, "1" %>男</label>
+    <label class = "form_name"><%= f.radio_button :gender, "2" %>女</label>
   </div>
   <br>
 
-  <div class="field">
-    <%= f.label :メールアドレス %><br />
-    <%= f.email_field :email, autofocus: true %>
+  <div id = "user_touroku_main" class="field">
+    <label class = "form_name"><%= f.label :メールアドレス %></label><br />
+    <input autofocus="autofocus" type="email" value="" name="user[email]" id="user_email" type="text" class="form-control touroku_information" placeholder="Mail Address" aria-describedby="basic-addon1">
+    <!--<%= f.email_field :email, autofocus: true %>-->
   </div>
 
-  <div class="field">
-    <%= f.label :パスワード %>
+  <div id = "user_touroku_main" class="field">
+    <label class = "form_name"><%= f.label :パスワード %></label>
     <% if @minimum_password_length %>
-    <em>(最低<%= @minimum_password_length %> 文字)</em>
+    <em>(最低 <%= @minimum_password_length %>文字 )</em>
     <% end %><br />
-    <%= f.password_field :password, autocomplete: "off" %>
+    <input autocomplete="off" type="password" name="user[password]" id="user_password" type="text" class="form-control touroku_information" placeholder="Password" aria-describedby="basic-addon1">
+    <!--<%= f.password_field :password, autocomplete: "off" %>-->
   </div>
 
-  <div class="field">
-    <%= f.label :パスワード確認 %><br />
-    <%= f.password_field :password_confirmation, autocomplete: "off" %>
+  <div id = "user_touroku_main" class="field">
+    <label class = "form_name"><%= f.label :パスワード確認 %></label><br />
+    <input autocomplete="off" type="password" name="user[password_confirmation]" id="user_password_confirmation" type="text" class="form-control touroku_information" placeholder="Password_confirmation" aria-describedby="basic-addon1">
+    <!--<%= f.password_field :password_confirmation, autocomplete: "off" %>-->
   </div>
 
 
-  <div class="actions">
-    <%= f.submit "会員登録" %>
+  <div id = "user_touroku_main" class="actions">
+    <main id = "user_touroku"></main>
+    <button type="submit" name="commit" value="会員登録" data-disable-with="会員登録" type="button" class="btn btn-default btn-lg user_touroku">会員登録</button>
+    <!--<%= f.submit "会員登録" %>-->
   </div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<div id = "user_touroku">
+  <br>
+  <br>
+<a href="/users/sign_in">ログイン</a>
+</div>
+
+<!--<%= render "devise/shared/links" %>-->
