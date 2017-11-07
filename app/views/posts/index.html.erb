@@ -15,12 +15,12 @@
 
 
   <div class="container">
-    <% if @current_user %>
+    <% if current_user %>
       ///////////////////////////////////////////////////////////////////////////// <br>
-      ログインしている性別:<%= @current_user.gender%><br>
-      ログインしているメアド:<%= @current_user.email%><br>
+      ログインしている性別:<%= current_user.gender%><br>
+      ログインしているメアド:<%= current_user.email%><br>
       /////////////////////////////////////////////////////////////////////////////
-      <% if @current_user.gender == "male" %>
+      <% if current_user.gender == "male" %>
         男だよ
       <% end %>
     <% end %>
