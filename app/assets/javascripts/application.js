@@ -17,7 +17,7 @@
 //= require_tree .
 //= require turbolinks
 //= require data-confirm-modal
-$(document).ready(function () {
+  +document.addEventListener("turbolinks:load", function () {
     // 向き
     var sides = ["left", "top", "right", "bottom"];
 

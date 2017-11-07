@@ -1,22 +1,39 @@
-<h1> 新規投稿 </h1>
+<head>
+  <%= stylesheet_link_tag    'new' %>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+
+<!--最小限のビューポート設定-->
+<meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+<ul class="page">
+<li class="center"><a href="/"><img src="/back5.jpg" width="20" height="30" class="logo"></a>悩みを投稿する</li>
+<!--<img src="/back5.jpg" width="20" height="30" class="logo">-->
+<!--<img src="/back.jpeg" width="50" height="50" class="logo">-->
+</ul>
  <div class="main posts-new">
    <div class="container">
      <p class="form-heading"></p>
-
      <%= form_tag("/posts", method: :post) do %>
-       <div class="form">
+       <div class="form-group">
          <div class="form-title">
-           title:<br>
-           <textarea name="title"></textarea>
+           <span class="aaa">タイトル</span>
+           <textarea name="title" class="round_off form-control"rows="2" cols="60"></textarea>
          </div>
 
          <div class="form-body">
-           content:<br>
-           <textarea name="content"></textarea>
-           <input type="submit" value="投稿">
+           <span class="aaa">内容</span>
+           <textarea name="content" class="round_off form-control" rows="5" cols="60"></textarea>
+           <li class="contribution"> <input type="submit" value="投稿"></li>
          </div>
+        <!-- <div class="form-tag">
+         <span class="aaa"> タグ </span>
+         <textarea name="content" class="round_off" rows="2" cols="60"></textarea>
+       </div> -->
        </div>
      <% end %>
    </div>
  </div>
-<%= link_to("投稿一覧ページ","/")%>
+<!--<%= link_to("投稿内容がうまく書けない方はこちら","/")%>-->
+</body>
