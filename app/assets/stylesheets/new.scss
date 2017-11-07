@@ -1,20 +1,27 @@
-h1{
-  color: red;
-}
 //@media screen and (max-width: 750px) {
   body{
     background-color: #fff0dd;
+    
   }
-.center{
+ul.page{
+  width:100%;
+}
+
+li.center{
   color: black;
-  text-align: center;
-  font-size: 25px;
-  padding-top: 30px;
+  padding-top: 10px;
   list-style: none;
+  width:20%;
+}
+
+li.section{
+  text-align: center;
+  width:70%;
+  font-size: 25px;
 }
 
 img.logo{
-  float: left;
+  margin: 0 auto;
   padding-top: 9px;
 }
 
@@ -36,12 +43,14 @@ img.logo{
   list-style: none;
 }
 .round_off{
-	border:2px solid #e8e8e8;
-	-moz-border-radius: 5px;
+	border:solid 1px;
+	-moz-border-radius: 10px;
 	-webkit-border-radius: 5px;
 }
 
-.aaa{
+label.title{
   font-size: 17px;
+  margin-top: 7%;
+  margin-left: 5%;
 }
 //}
