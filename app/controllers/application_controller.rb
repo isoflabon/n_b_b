@@ -3,7 +3,6 @@ class ApplicationController < ActionController::Base
   # before_action :configure_permitted_parameters, if: :devise_controller?
   before_action :authenticate_user! , except: [:show,:index]
   protect_from_forgery with: :exception
-  before_action :set_current_user
   before_action :configure_permitted_parameters, if: :devise_controller?
 
 
@@ -16,9 +15,19 @@ class ApplicationController < ActionController::Base
       devise_parameter_sanitizer.permit :sign_in, keys: added_attrs
     end
 
-    def set_current_user
-      # セッションから得られたユーザーを現在のユーザ(@current_user)とする
-      @current_user = User.find_by(id: session[:user_id])
+    # 男性は悩みの投稿のみ、女性はコメントのみできるようにする
+    def male_forbid
+      if current_user.gender == "male"
+        flash[:notice] = "男性は悩みのみ投稿できます"
+        redirect_to("/")
+      end
+    end
+
+    def female_forbid
+      if current_user.gender == "female"
+        flash[:notice] = "女性はコメントのみできます"
+        redirect_to("/")
+      end
     end
 
 
