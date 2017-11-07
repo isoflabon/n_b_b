@@ -6,17 +6,12 @@
 <h1>詳細ページ</h1>
 <%= link_to("投稿一覧ページ", "/") %>
 <div class="posts-index-item">
-<<<<<<< HEAD
 投稿者: <%= @post.user_id %><br>
 <% if current_user %>
   現在見ている人: <%= current_user.id%><br>
 <% end %>
-title:  <%= @post.title %> <br>
-content:  <%= @post.content %>
-=======
 <p class="box2"><%= @post.title %></p>
 <p class="box2"><%= @post.content %> </p>
->>>>>>> 270045901006c42759469f048a42db31797264a6
 </div>
 
 <% if @post.user == current_user %>
@@ -40,12 +35,22 @@ content:  <%= @post.content %>
   <% @replies.each do |reply| %>
     <div class="posts-index-item">
       <% reply_user = User.find_by(id: reply.user_id) %>
-      <% if current_user %>
+      <!-- <% if current_user %>
       　<% if current_user.gender == "male" %>
         　<% if reply_user.provider == "facebook"  %>
            Facebook認証済み<br>
+          <% else %>
         　<% end %>
       　<% end %>
+      <% end %> -->
+      <% if current_user %>
+        <% if current_user.gender == "male" %>
+        <% if reply_user.provider == "facebook"  %>
+           Facebook認証済み<br>
+        <% else %>
+        <% end %>
+        <% end %>
+      <% else %>
       <% end %>
           コメント: <%= reply.content %><br>
       ---------------------------------------------------------------------------------------
