@@ -35,22 +35,13 @@
   <% @replies.each do |reply| %>
     <div class="posts-index-item">
       <% reply_user = User.find_by(id: reply.user_id) %>
-      <!-- <% if current_user %>
+      <% if current_user %>
       　<% if current_user.gender == "male" %>
         　<% if reply_user.provider == "facebook"  %>
            Facebook認証済み<br>
           <% else %>
         　<% end %>
       　<% end %>
-      <% end %> -->
-      <% if current_user %>
-        <% if current_user.gender == "male" %>
-        <% if reply_user.provider == "facebook"  %>
-           Facebook認証済み<br>
-        <% else %>
-        <% end %>
-        <% end %>
-      <% else %>
       <% end %>
           コメント: <%= reply.content %><br>
       ---------------------------------------------------------------------------------------
