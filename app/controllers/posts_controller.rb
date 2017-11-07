@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   # 女性は悩みの投稿ができないようにした
-  before_action :female_fobit, only: [:new]
+  before_action :female_forbid, only: [:new]
 
   def index
     @posts = Post.all.order(created_at: :desc)
@@ -13,7 +13,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(title: params[:title],
                      content: params[:content],
-                     user_id: @current_user.id)
+                     user_id: current_user.id)
     if @post.save
       redirect_to("/")
     else
