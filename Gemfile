@@ -16,6 +16,9 @@ gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'data-confirm-modal'
 gem 'devise'
+gem 'omniauth'
+gem 'omniauth-facebook'
+gem 'dotenv-rails', require: 'dotenv/rails-now'
 
 group :development, :test do
   gem 'sqlite3'

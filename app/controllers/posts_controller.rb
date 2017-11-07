@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  # 女性は悩みの投稿ができないようにした
+  before_action :female_forbid, only: [:new]
 
   def index
     @posts = Post.all.order(created_at: :desc)
@@ -11,7 +13,7 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(title: params[:title],
                      content: params[:content],
-                     user_id: @current_user.id)
+                     user_id: current_user.id)
     if @post.save
       redirect_to("/")
     else
@@ -24,6 +26,7 @@ class PostsController < ApplicationController
     @post = Post.find_by(id: params[:id])
     @user = User.find_by(id: @post.user_id)
     @replies = Reply.where(post_id: @post.id).order(created_at: :desc)
+    @gender = User.find_by(gender: params[:gender])
 
   end
 

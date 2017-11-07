@@ -6,12 +6,12 @@ class User::RegistrationsController < Devise::RegistrationsController
   # def new
   #   super
   # end
-  #
+
   # POST /resource
-  def create
-     super
-     session[:user_id] = @user.id
-  end
+  # def create
+  #    super
+  #    session[:user_id] = @user.id
+  # end
   #
   #  GET /resource/edit
   #  def edit
