@@ -9,3 +9,12 @@ one: {}
 #
 two: {}
 # column: value
+1:
+  name: maleuser
+  gender: male
+  email : male@example.com
+
+2:
+  name: femaleuser
+  gender: female
+  email : female@example.com
