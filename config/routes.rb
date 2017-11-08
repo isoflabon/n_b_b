@@ -2,9 +2,9 @@ Rails.application.routes.draw do
   # devise_for :users
   # このようなルーティングにすることでSessionsControllerを任意に設定できる
   # controllers側ではアクションのコメントを外すこと忘れずに!
-  devise_for :users, :controllers => {
-    :sessions => 'user/sessions',
-    :registrations => 'user/registrations',
+  devise_for :users, skip: [:sessions], :controllers => {
+    # :sessions => 'user/sessions',
+    # :registrations => 'user/registrations',
     :omniauth_callbacks => 'user/omniauth_callbacks'
   }
 
