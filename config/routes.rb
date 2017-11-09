@@ -17,7 +17,7 @@ Rails.application.routes.draw do
     resources :replies, only: [:create]
   end
 
-  resources :naruhodos, only: [:create, :destroy]
+  post "naruhodos/:reply_id/create" => "naruhodos#create"
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
