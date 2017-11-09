@@ -26,7 +26,6 @@ class PostsController < ApplicationController
     @user = User.find_by(id: @post.user_id)
     @replies = Reply.where(post_id: @post.id).order(created_at: :desc)
     @gender = User.find_by(gender: params[:gender])
-    @naruhodo_count = Naruhodo.where(reply_id: @reply.id).count
   end
 
   def edit
