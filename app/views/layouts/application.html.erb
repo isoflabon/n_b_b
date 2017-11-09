@@ -30,9 +30,8 @@
                   <div id="menu" class="all_menu_list">
                     <ul class = "menu_sidebar">
                       <li class = "menu_list"><%= link_to '投稿一覧', root_url, method: :get %></li>
-                      <li class = "menu_list"><%= link_to 'ログイン', '/users/sign_in' %></li>
+                      <li class = "menu_list"><%= link_to "Facebookはこちらから", user_facebook_omniauth_authorize_path %></li>
                       <li class = "menu_list"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
-                      <li class = "menu_list menu_last"><%= link_to '会員登録', new_user_registration_path, method: :get %></li>
                     </ul>
                   </div>
                 </div>

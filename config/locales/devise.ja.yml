@@ -63,3 +63,8 @@ ja:
       unlock_instructions:
         subject: 'アカウントの凍結解除'
 #        subject: 'Unlock Instructions'
+#  Facebook認証のコールバック時のメッセージ
+    omniauth_callbacks:
+      success: 'Facebookによる認証が完了しました'
+      user:
+        failure: 'Facebookによる認証が失敗しました'
