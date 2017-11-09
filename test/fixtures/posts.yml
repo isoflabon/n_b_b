@@ -1,7 +1,6 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+test_post:
   content: MyText
-
-two:
-  content: MyText
+  title: title
+  user_id: 1

@@ -1,9 +1,23 @@
 require 'test_helper'
 
 class PostsControllerTest < ActionDispatch::IntegrationTest
-  # test "should get index" do
-  #   get posts_path
-  #   assert_response :success
-  # end
+  fixtures :posts, :users
+
+  test "rootへとぶことができる" do
+    get root_path
+    assert_response :success
+  end
+
+  test "詳細ページを見る" do
+    @post = posts(:test_post)
+    get "/posts/#{@post.id}"
+    assert_response :success
+  end
+
+  test "新規投稿にとばずリダイレクトされる" do
+    get new_post_path
+    assert_redirected_to("/users/sign_in")
+  end
+
 
 end
