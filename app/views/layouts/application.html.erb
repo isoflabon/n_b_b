@@ -8,11 +8,7 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-sidebar/3.1.0/jquery.sidebar.min.js"></script>
-    <% if current_user %>
-      ログインしています
-    <% else %>
-      ログアウトしています
-    <% end %>
+
   </head>
 
   <body>
@@ -32,8 +28,8 @@
                   <div id="menu" class="all_menu_list">
                     <ul class = "menu_sidebar">
                       <li class = "menu_list"><%= link_to '投稿一覧', root_url, method: :get %></li>
-                      <li class = "menu_list"><%= link_to "Facebookはこちらから", user_facebook_omniauth_authorize_path %></li>
-                      <li class = "menu_list"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>                      
+                      <li class = "menu_list"><%= link_to "Facebookでログインする", user_facebook_omniauth_authorize_path %></li>
+                      <li class = "menu_list"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
                     </ul>
                   </div>
                 </div>
@@ -60,6 +56,19 @@
   <% if alert %>
     <p class="alert alert-danger"><%= alert %></p>
   <% end %>
+
+    <% if current_user %>
+      <% if current_user.gender == "male" %>
+        <pre>男性でログインしています </pre>
+      <% end %>
+      <% if current_user.gender == "female" %>
+        <pre>女性でログインしています </pre>
+      <% end %>
+    <% else %>
+      <pre>ログアウトしています </pre>
+    <% end %>
+
+
   <%= yield %>
   </body>
 </html>

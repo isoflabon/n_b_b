@@ -13,12 +13,6 @@
 
 
   <div class="container">
-    <% if current_user %>
-      ///////////////////////////////////////////////////////////////////////////// <br>
-      ログインしている性別:<%= current_user.gender%><br>
-      /////////////////////////////////////////////////////////////////////////////
-    <% end %>
-
     <% @posts.each do |post| %>
       <div class="posts-index-item">
         title:   <%= post.title%><br>
