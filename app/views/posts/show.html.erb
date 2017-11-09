@@ -37,11 +37,13 @@
       <% if reply.user_id != nil %>
         <% reply_user = User.find_by(id: reply.user_id) %>
       <% end %>
-       <% if current_user && current_user.gender == "male" %>
+
+<!--       <% if current_user && current_user.gender == "male" %>
         <% if reply_user && reply_user.provider == "facebook"  %>
            Facebook認証済み<br>
         <% else %>
-        <% end %>
+        <% end %> -->
+        
        <% end %>
           コメント: <%= reply.content %><br>
       ---------------------------------------------------------------------------------------
