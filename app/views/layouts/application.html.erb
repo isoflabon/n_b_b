@@ -8,12 +8,14 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-sidebar/3.1.0/jquery.sidebar.min.js"></script>
-
+    <% if current_user %>
+      ログインしています
+    <% else %>
+      ログアウトしています
+    <% end %>
   </head>
 
   <body>
-
-
     <div class="header_area">
 
       <div class="header_block">
@@ -30,9 +32,9 @@
                   <div id="menu" class="all_menu_list">
                     <ul class = "menu_sidebar">
                       <li class = "menu_list"><%= link_to '投稿一覧', root_url, method: :get %></li>
-                      <li class = "menu_list"><%= link_to 'ログイン', '/users/sign_in' %></li>
+                      <li class = "menu_list"><%= link_to 'ログイン(facebook)', '/users/sign_in' %></li>
                       <li class = "menu_list"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
-                      <li class = "menu_list menu_last"><%= link_to '会員登録', new_user_registration_path, method: :get %></li>
+<!--                      <li class = "menu_list menu_last"><%= link_to '会員登録', new_user_registration_path, method: :get %></li> -->
                     </ul>
                   </div>
                 </div>
