@@ -1,0 +1,2 @@
+class Wakaru < ApplicationRecord
+end
