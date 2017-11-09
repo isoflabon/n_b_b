@@ -8,7 +8,11 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-sidebar/3.1.0/jquery.sidebar.min.js"></script>
-
+    <% if current_user %>
+      ログインしています
+    <% else %>
+      ログアウトしています
+    <% end %>
   </head>
 
   <body>
