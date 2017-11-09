@@ -1,9 +1,9 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
+test_post:
+  id: 1
   content: MyText
   title: title
   user_id: 1
-
-two:
-  content: MyText
+  created_at: Sat, 28 Oct 2017 07:01:54 UTC +00:00
+  updated_at: Sat, 28 Oct 2017 07:01:54 UTC +00:00
