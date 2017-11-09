@@ -10,11 +10,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171109075111) do
+ActiveRecord::Schema.define(version: 20171109091205) do
 
   create_table "naruhodos", force: :cascade do |t|
     t.integer "user_id"
-    t.integer "post_id"
+    t.integer "reply_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
