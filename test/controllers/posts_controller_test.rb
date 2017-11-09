@@ -9,7 +9,7 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "詳細ページを見る" do
-    @post = Post.find_by(id: 1)
+    @post = posts(:test_post)
     get "/posts/#{@post.id}"
     assert_response :success
   end
