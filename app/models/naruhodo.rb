@@ -1,0 +1,2 @@
+class Naruhodo < ApplicationRecord
+end
