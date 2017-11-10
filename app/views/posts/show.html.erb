@@ -48,6 +48,7 @@
             <button> わかる: </button>          なるほど<br>
           <% end %>
           <% @naruhodo_count = Naruhodo.where(reply_id: reply.id).count%>
+          <% @wakaru_count = Wakaru.where(reply_id: reply.id).count%>
           <% if current_user.gender == "male" %>
                     わかる
             <%= link_to("なるほど！", "/posts/#{@post.id}/replies/#{reply.id}/naruhodos" , {method:"post"}) %><%= @naruhodo_count %> <br>

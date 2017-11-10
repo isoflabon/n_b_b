@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   resources :posts do
     resources :replies, only: [:create] do
       resources :naruhodos, only: [:create, :destroy]
+      resources :wakaru, only: [:create, :destroy]
     end
   end
 
