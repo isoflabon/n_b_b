@@ -14,6 +14,10 @@
  */
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "home";
+@import "new";
+@import "show";
+@import "posts";
 
  main{
   margin-top: 13vh;
