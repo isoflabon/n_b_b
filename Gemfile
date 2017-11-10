@@ -23,11 +23,17 @@ gem 'dotenv-rails', require: 'dotenv/rails-now'
 group :development, :test do
   gem 'sqlite3'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'capybara', '~> 2.13'
+  gem 'capybara'
   gem 'selenium-webdriver'
   gem 'pry-rails'
   gem 'pry-doc'
   gem 'pry-byebug'
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'selenium-webdriver'
+  gem 'database_cleaner'
+  gem 'turnip'
+  gem 'poltergeist'
 end
 
 group :development do
