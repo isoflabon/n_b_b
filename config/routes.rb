@@ -17,4 +17,5 @@ Rails.application.routes.draw do
     resources :replies, only: [:create]
   end
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get 'templete' ,to: 'templete#index'
 end

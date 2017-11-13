@@ -19,7 +19,7 @@
 !/tmp/.keep
 .idea/workspace.xml
 
-/node_modules
+
 /yarn-error.log
 /vendor
 
