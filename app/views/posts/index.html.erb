@@ -4,25 +4,14 @@
 
 <br class="main posts-index">
 <% if current_user %>
-<% if current_user.gender == "male" %>
-  <button type="button" class="btn btn-default btn-lg">
-  <%= link_to("新規投稿する","/posts/new")%>
+  <% if current_user.gender == "male" %>
+    <%= link_to("悩みを相談する","/posts/new", class: "btn btn-default btn-lg")%>
   <% end %>
 <% end %>
-</button>
+
 
 
   <div class="container">
-    <% if current_user %>
-      ///////////////////////////////////////////////////////////////////////////// <br>
-      ログインしている性別:<%= current_user.gender%><br>
-      ログインしているメアド:<%= current_user.email%><br>
-      /////////////////////////////////////////////////////////////////////////////
-      <% if current_user.gender == "male" %>
-        男だよ
-      <% end %>
-    <% end %>
-
     <% @posts.each do |post| %>
       <div class="posts-index-item">
         title:   <%= post.title%><br>

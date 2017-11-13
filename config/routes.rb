@@ -14,7 +14,13 @@ Rails.application.routes.draw do
   get 'home/top'
   root "posts#index"
   resources :posts do
-    resources :replies, only: [:create]
+    resources :replies, only: [:create] do
+      resources :naruhodos, only: [:create, :destroy]
+      resources :wakarus, only: [:create, :destroy]
+    end
   end
+
+  # post "naruhodos/:reply_id/create" => "naruhodos#create"
+
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
