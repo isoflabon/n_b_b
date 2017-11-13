@@ -22,12 +22,10 @@ class PostsController < ApplicationController
   end
 
   def show
-
     @post = Post.find_by(id: params[:id])
     @user = User.find_by(id: @post.user_id)
     @replies = Reply.where(post_id: @post.id).order(created_at: :desc)
     @gender = User.find_by(gender: params[:gender])
-
   end
 
   def edit

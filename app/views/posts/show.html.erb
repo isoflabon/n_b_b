@@ -22,7 +22,7 @@
   <% if current_user && current_user.gender == "female" %>
   <div class="form">
     <div class="form-comment">
-      comment:<br>
+      コメント:<br>
       <textarea name="content"></textarea>
       <input type="submit" value="コメントする">
     </div>
@@ -38,14 +38,55 @@
         <% reply_user = User.find_by(id: reply.user_id) %>
       <% end %>
 
-<!--       <% if current_user && current_user.gender == "male" %>
-        <% if reply_user && reply_user.provider == "facebook"  %>
-           Facebook認証済み<br>
-        <% else %>
-        <% end %> -->
-       <% end %>
           コメント: <%= reply.content %><br>
-      ---------------------------------------------------------------------------------------
+          <% @naruhodo_count = Naruhodo.where(reply_id: reply.id).count%>
+          <% @wakaru_count = Wakaru.where(reply_id: reply.id).count%>
+          <!-- 現在ログインしている人が女性ならば「わかる」ボタンを押したり取り消せたりできる -->
+          <% if current_user %>
+            <% if current_user.gender == "female" %>
+              <% if Wakaru.where(user_id: current_user, reply_id: reply.id).count == 1 %>
+                <button><%= link_to("わかる", "/posts/#{@post.id}/replies/#{reply.id}/wakarus/:id" , {method:"delete"}) %><%= @wakaru_count %></button>
+              <% else %>
+                <button><%= link_to("わかる", "/posts/#{@post.id}/replies/#{reply.id}/wakarus" , {method:"post"}) %></button>
+              <% end %>
+
+              <!-- カウント数が0の場合は表示しない-->
+              <% if @naruhodo_count != 0 %>
+                 なるほど: <%= @naruhodo_count %>
+              <% else %>
+                 なるほど
+              <% end %>
+            <!-- 現在ログインしている人が男性ならば「なるほど」ボタンを押したり取り消せたりできる -->
+            <% elsif current_user.gender == "male" %>
+              <% if Naruhodo.where(user_id: current_user, reply_id: reply.id).count == 1 %>
+                <button><%= link_to("なるほど", "/posts/#{@post.id}/replies/#{reply.id}/naruhodos/:id" , {method:"delete"}) %><%= @naruhodo_count %> </button>
+              <% else %>
+                <button><%= link_to("なるほど", "/posts/#{@post.id}/replies/#{reply.id}/naruhodos" , {method:"post"}) %></button>
+              <% end %>
+
+              <!-- カウント数が0の場合は表示しない-->
+              <% if @wakaru_count != 0 %>
+                わかる: <%= @wakaru_count %>
+              <% else %>
+                わかる
+              <% end %>
+            <!-- 現在ログインしていないならばボタンを見ることのみできる -->
+            <% end %>
+          <% else %>
+            <% if @naruhodo_count != 0 %>
+               なるほど: <%= @naruhodo_count %>
+              <% else %>
+               なるほど
+            <% end %>
+            <% if @wakaru_count != 0 %>
+              わかる: <%= @wakaru_count %>
+            <% else %>
+              わかる
+            <% end %>
+          <% end %>
+
+
+      <br>---------------------------------------------------------------------------------------
     </div>
   <% end %>
 </div>
