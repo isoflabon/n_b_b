@@ -37,7 +37,7 @@
         <% reply_user = User.find_by(id: reply.user_id) %>
       <% end %>
 
-          コメント: <%= reply.content %><br>
+          コメント: <%= reply.content %>
           <% @naruhodo_count = Naruhodo.where(reply_id: reply.id).count%>
           <% @wakaru_count = Wakaru.where(reply_id: reply.id).count%>
           <!-- 現在ログインしている人が女性ならば「わかる」ボタンを押したり取り消せたりできる -->
