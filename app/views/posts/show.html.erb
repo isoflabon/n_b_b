@@ -29,7 +29,7 @@
    <% else %>
   <% end %>
 <%end %>
-
+<br><br><br><br>
 <div class="container">
   <% @replies.each do |reply| %>
     <div class="posts-index-item">
@@ -37,7 +37,7 @@
         <% reply_user = User.find_by(id: reply.user_id) %>
       <% end %>
 
-          コメント: <%= reply.content %>
+          コメント: <%= reply.content %> <br>
           <% @naruhodo_count = Naruhodo.where(reply_id: reply.id).count%>
           <% @wakaru_count = Wakaru.where(reply_id: reply.id).count%>
           <!-- 現在ログインしている人が女性ならば「わかる」ボタンを押したり取り消せたりできる -->
@@ -83,8 +83,12 @@
               わかる
             <% end %>
           <% end %>
-
-
+<br>
+        <% if @post.user == current_user || reply_user == current_user %>
+          &emsp;&emsp;&emsp;コメントに返信する:<br>
+          &emsp;&emsp;&emsp;<textarea name="content"></textarea>
+          <input type="submit" value="返信する">
+        <% end %>
       <br>---------------------------------------------------------------------------------------
     </div>
   <% end %>

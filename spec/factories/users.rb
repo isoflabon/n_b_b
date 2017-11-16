@@ -14,5 +14,14 @@ FactoryGirl.define do
       gender "female"
     end
 
+    trait :ypost do
+      gender "male"
+      id "100"
+    end
+
+    trait :npost do
+      gender "male"
+      id "101"
+    end
   end
 end
