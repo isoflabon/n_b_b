@@ -10,14 +10,12 @@
 <% end %>
 
 
-
   <div class="container">
     <% @posts.each do |post| %>
       <div class="posts-index-item">
-        title:   <%= post.title%><br>
+        <p class="box7">title:   <%= post.title%><br><br>
         content: <%= post.content.truncate(40) %>
-        <%= link_to("もっと見る", "/posts/#{post.id}") %> <br>
-        ---------------------------------------------------------------------------------------
+        <%= link_to("もっと見る", "/posts/#{post.id}") %></p>
       </div>
     <% end %>
 
