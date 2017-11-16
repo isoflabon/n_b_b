@@ -32,6 +32,7 @@
 
 <div class="container">
   <% @replies.each do |reply| %>
+  <% @messages = Reply.where(p_id: reply.id) %>
     <div class="posts-index-item">
       <% if reply.user_id != nil %>
         <% reply_user = User.find_by(id: reply.user_id) %>
