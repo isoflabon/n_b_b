@@ -1,28 +1,29 @@
-h1{
-  color: red;
-}
-//@media screen and (max-width: 750px) {
-  body{
-    background-color: #fff0dd;
-  }
-.center{
-  color: black;
-  text-align: center;
-  font-size: 25px;
-  padding-top: 30px;
-  list-style: none;
+.main{
+  width:100%;
+  //margin-top: 100px;
 }
 
-img.logo{
-  float: left;
-  padding-top: 9px;
+h2{
+  text-align: center;
 }
+
+/*li.center{
+  color: black;
+  padding-top: 10px;
+  list-style: none;
+  width:20%;
+}*/
+
+/*img.logo{
+  margin: 0 auto;
+  padding-top: 9px;
+}*/
 
 .form{
   display: block;
   margin-right: 10px;
-    width:90%;
-    float: left;
+  width:90%;
+  float: left;
 }
 
 .contribution{
@@ -32,16 +33,16 @@ img.logo{
   font-size: 1.2em;
 }
 
-.page{
-  list-style: none;
-}
 .round_off{
-	border:2px solid #e8e8e8;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
+	border:solid 1px;           //枠の太さ
+	//-moz-border-radius: 10px; //これもテキストエリア丸くするやつ？
+	-webkit-border-radius: 5px; //テキストエリアの角の丸み具合
+  outline: none;
+
 }
 
-.aaa{
+label.title{
   font-size: 17px;
+  margin-top: 7%;
+  margin-left: 5%;
 }
-//}
