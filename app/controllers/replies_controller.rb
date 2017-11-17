@@ -1,6 +1,5 @@
 class RepliesController < ApplicationController
-  # 男性はコメントできないようにした
-  before_action :male_forbid, only: [:create]
+  # 男性はコメントできないようにするbefore_actionは悩みを投稿した男性がコメントに返信するために削除した
 
   def edit
   end
