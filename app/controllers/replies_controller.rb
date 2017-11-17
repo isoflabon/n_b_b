@@ -10,8 +10,7 @@ class RepliesController < ApplicationController
     @reply = Reply.new(post_id: params[:post_id],
                        content: params[:content],
                        user_id: current_user.id,
-                       p_id: params[:p_id]
-                     )
+                       p_id: params[:p_id])
     if @reply.save
       redirect_to("/posts/#{@post.id}")
     else

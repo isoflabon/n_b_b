@@ -29,10 +29,11 @@
   </div>
    <% else %>
   <% end %>
-<%end %>
+<% end %>
 <br><br><br><br>
 <div class="container">
   <% @replies.each do |reply| %>
+  <!-- messagesの中はreplyに対するコメントが入っている -->
   <% @messages = Reply.where(p_id: reply.id) %>
     <div class="posts-index-item">
       <% if reply.user_id != nil %>
@@ -86,11 +87,16 @@
             <% end %>
           <% end %>
 <br>
+  <!-- コメントにメッセージを送ることができる -->
+  <%= form_tag("/posts/#{@post.id}/replies") do %>
         <% if @post.user == current_user || reply_user == current_user %>
           &emsp;&emsp;&emsp;コメントに返信する:<br>
           &emsp;&emsp;&emsp;<textarea name="content"></textarea>
+          <!-- 現在のreplyのidを隠しパラメータとして渡す -->
+          <input type="hidden" value="<%=reply.id%>" name="p_id">
           <input type="submit" value="返信する">
         <% end %>
+  <% end %>
       <br>---------------------------------------------------------------------------------------
     </div>
   <% end %>
