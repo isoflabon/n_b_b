@@ -11,6 +11,7 @@
 <% end %>
 <p class="box2"><%= @post.title %></p>
 <p class="box2"><%= @post.content %> </p>
+<p><%= @post.created_at.strftime("%Y/%m/%d %H:%M") %></p>
 </div>
 
 <% if @post.user == current_user %>
@@ -41,6 +42,7 @@
     <% end %>
 
     コメント: <%= reply.content %> <br>
+    <%= reply.created_at.strftime("%Y/%m/%d %H:%M") %><br>
     <% @naruhodo_count = Naruhodo.where(reply_id: reply.id).count%>
     <% @wakaru_count = Wakaru.where(reply_id: reply.id).count%>
     <!-- 現在ログインしている人が女性ならば「わかる」ボタンを押したり取り消せたりできる -->
@@ -94,6 +96,12 @@
         <!-- 現在のreplyのidを隠しパラメータとして渡す -->
         <input type="hidden" value="<%=reply.id%>" name="p_id">
         <input type="submit" value="返信する">
+
+        <% if reply.p_id == 0 %>
+          <%= Reply.find_by(p_id: reply.id).content %>
+        <% end %>
+
+
       <% end %>
     <% end %>
       <br>---------------------------------------------------------------------------------------

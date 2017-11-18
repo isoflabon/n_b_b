@@ -14,8 +14,8 @@
   <div class="container">
     <% @posts.each do |post| %>
       <div class="posts-index-item">
-        title:   <%= post.title%><br>
-        content: <%= post.content.truncate(40) %>
+        タイトル:   <%= post.title%><br>
+        内容: <%= post.content.truncate(40) %>
         <%= link_to("もっと見る", "/posts/#{post.id}") %> <br>
         ---------------------------------------------------------------------------------------
       </div>
