@@ -18,3 +18,8 @@
 @import 'admin-lte/dist/css/AdminLTE.min';
 @import 'admin-lte/dist/css/skins/skin-blue.min';
 @import 'admin-lte/plugins/iCheck/all';
+
+
+.content-wrapper h1{
+  margin: 0 !important;
+}
