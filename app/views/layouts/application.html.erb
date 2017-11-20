@@ -85,7 +85,7 @@
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
           <!-- Messages: style can be found in dropdown.less-->
-          <li class="dropdown messages-menu">
+          <!--<li class="dropdown messages-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-envelope-o"></i>
               <span class="label label-success">4</span>
@@ -93,9 +93,9 @@
             <ul class="dropdown-menu">
               <li class="header">You have 4 messages</li>
               <li>
-                <!-- inner menu: contains the actual data -->
+                <!-- inner menu: contains the actual data
                 <ul class="menu">
-                  <li><!-- start message -->
+                  <li><!-- start message
                     <a href="#">
                       <div class="pull-left">
                         <img src="man_user.jpeg" class="img-circle" alt="User Image">
@@ -107,7 +107,7 @@
                       <p>Why not buy a new awesome theme?</p>
                     </a>
                   </li>
-                  <!-- end message -->
+                  <!-- end message
                   <li>
                     <a href="#">
                       <div class="pull-left">
@@ -160,9 +160,9 @@
               </li>
               <li class="footer"><a href="#">See All Messages</a></li>
             </ul>
-          </li>
+          </li>-->
           <!-- Notifications: style can be found in dropdown.less -->
-          <li class="dropdown notifications-menu">
+          <!--<li class="dropdown notifications-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <i class="fa fa-bell-o"></i>
               <span class="label label-warning">10</span>
@@ -170,7 +170,7 @@
             <ul class="dropdown-menu">
               <li class="header">You have 10 notifications</li>
               <li>
-                <!-- inner menu: contains the actual data -->
+                <!-- inner menu: contains the actual data
                 <ul class="menu">
                   <li>
                     <a href="#">
@@ -202,12 +202,12 @@
               </li>
               <li class="footer"><a href="#">View all</a></li>
             </ul>
-          </li>
+          </li>-->
           <!-- Tasks: style can be found in dropdown.less -->
           <!--Facebooklogin-->
-          <li class="dropdown user user-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="logo-facebook.png" class="user-image" alt="User Image">
+          <li class="user user-menu">
+            <a href="/users/auth/facebook">
+              <img src="/logo-facebook.png" class="user-image" alt="User Image">
               <span class="hidden-xs">Facebookでログイン</span>
             </a>
 
@@ -215,17 +215,17 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="man_user.png" class="user-image" alt="User Image">
+              <img src="/man_user.jpeg" class="user-image" alt="User Image">
               <span class="hidden-xs">User_name</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="man_user.png" class="img-circle" alt="User Image">
+                <img src="/man_user.jpeg" class="img-circle" alt="User Image">
 
                 <p>
-                  User_name - Web Developer
-                  <small>Member since Nov. 2012</small>
+                  User_name
+                  <!--<small>Member since Nov. 2012</small>-->
                 </p>
               </li>
               <!-- Menu Body -->
@@ -235,7 +235,7 @@
                     <a href="#">Followers</a>
                   </div>
                   <div class="col-xs-4 text-center">
-                    <a href="#">Sales</a>
+                    <a href="#">コメント</a>
                   </div>
                   <div class="col-xs-4 text-center">
                     <a href="#">Friends</a>
@@ -246,10 +246,10 @@
               <!-- Menu Footer-->
               <li class="user-footer">
                 <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
+                  <a href="#" class="btn btn-default btn-flat">プロフィール</a>
                 </div>
                 <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
+                  <a class="btn btn-default btn-flat" rel="nofollow" data-method="delete" href="/users/sign_out">ログアウト</a>
                 </div>
               </li>
             </ul>
@@ -270,11 +270,11 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="man_user.jpeg" class="img-circle" alt="User Image">
+          <img src="/man_user.jpeg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>User_name</p>
-          
+
         </div>
       </div>
       <!-- search form -->
@@ -306,7 +306,7 @@
         </li>-->
         <li>
           <a href="/#">
-            <i class="fa fa-dashboard"></i> <span>TOP</span>
+            <!--<i class="fa fa-dashboard"></i>--> <span>TOP</span>
             <span class="pull-right-container">
               <!--<small class="label pull-right bg-green">new</small>-->
             </span>
@@ -314,44 +314,37 @@
         </li>
         <li>
           <a href="/#">
-            <i class="fa fa-book"></i> <span>投稿一覧</span>
+            <!--<i class="fa fa-book"></i>--> <span>投稿一覧</span>
             <span class="pull-right-container">
               <!--<small class="label pull-right bg-green">new</small>-->
             </span>
           </a>
         </li>
-        <li>
-          <a href="#">
-            <i class="fa fa-book"></i> <span>Facebookでログイン</span>
-            <span class="pull-right-container">
-              <small class="label pull-right bg-green">new</small>
-            </span>
-          </a>
-        </li>
+
         <li>
           <a href="pages/mailbox/mailbox.html">
-            <i class="fa fa-envelope"></i> <span>Mailbox</span>
+            <!--<i class="fa fa-envelope"></i>--> <span>設定</span>
             <span class="pull-right-container">
-              <small class="label pull-right bg-yellow">12</small>
+              <!--<small class="label pull-right bg-yellow">12</small>
               <small class="label pull-right bg-green">16</small>
-              <small class="label pull-right bg-red">5</small>
+              <small class="label pull-right bg-red">5</small>-->
             </span>
           </a>
         </li>
 
         <li>
           <a href="pages/mailbox/mailbox.html">
-            <i class="fa fa-envelope"></i> <span>お問い合わせ</span>
-            <span class="pull-right-container">
-              <small class="label pull-right bg-yellow">12</small>
-              <small class="label pull-right bg-green">16</small>
-              <small class="label pull-right bg-red">5</small>
-            </span>
+             <span>お問い合わせ</span>
+
           </a>
         </li>
 
 
-        <li><a href="https://adminlte.io/docs"><i class="fa fa-book"></i> <span>Documentation</span></a></li>
+        <!--<li>
+          <a href="">
+            <i class="fa fa-book"></i> <span>Documentation</span>
+          </a>
+        </li>-->
 
         </ul>
     </section>
@@ -366,7 +359,7 @@
     <p class="alert alert-danger"><%= alert %></p>
   <% end %>
   <%= yield %>
-</div>
   </div>
+</div>
   </body>
 </html>
