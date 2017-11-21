@@ -1,10 +1,11 @@
-.main{
+#toukou_syousai .main{
   width:100%;
   //margin-top: 100px;
 }
 
-h2{
-  text-align: center;
+#toukou_syousai h2{
+  text-align: center !important;
+
 }
 
 /*li.center{
@@ -19,21 +20,21 @@ h2{
   padding-top: 9px;
 }*/
 
-.form{
+#toukou_syousai .form{
   display: block;
   margin-right: 10px;
   width:90%;
   float: left;
 }
 
-.contribution{
+#toukou_syousai .contribution{
   text-align: center;
   list-style: none;
   padding-top: 20px;
   font-size: 1.2em;
 }
 
-.button {
+#toukou_syousai .button {
   border: 1px solid #15aeec;
   background-color: #49c0f0;
   background-image: -webkit-linear-gradient(top, #49c0f0, #2cafe3);
@@ -45,13 +46,13 @@ h2{
   transition: none;
   text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
 }
-.button:hover {
+#toukou_syousai .button:hover {
   border:1px solid #1090c3;
   background-color: #1ab0ec;
   background-image: -webkit-linear-gradient(top, #1ab0ec, #1a92c2);
   background-image: linear-gradient(to bottom, #1ab0ec, #1a92c2);
 }
-.button:active {
+#toukou_syousai .button:active {
   background: #1a92c2;
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, .2);
   color: #1679a1;
@@ -59,7 +60,7 @@ h2{
 }
 
 
-.round_off{
+#toukou_syousai .round_off{
 	border:solid 1px;           //枠の太さ
 	//-moz-border-radius: 10px; //これもテキストエリア丸くするやつ？
 	-webkit-border-radius: 5px; //テキストエリアの角の丸み具合
@@ -67,7 +68,7 @@ h2{
 
 }
 
-label.title{
+#toukou_syousai label.title{
   font-size: 17px;
   margin-top: 7%;
   margin-left: 5%;
