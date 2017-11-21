@@ -13,6 +13,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+<<<<<<< HEAD
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
@@ -21,6 +22,13 @@
 
 
 <!--
+=======
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-sidebar/3.1.0/jquery.sidebar.min.js"></script>
+  </head>
+
+  <body>
+>>>>>>> b950d507170b39247d107fb82151e70d0fbf4f53
     <div class="header_area">
 
       <div class="header_block">
@@ -37,9 +45,8 @@
                   <div id="menu" class="all_menu_list">
                     <ul class = "menu_sidebar">
                       <li class = "menu_list"><%= link_to '投稿一覧', root_url, method: :get %></li>
-                      <li class = "menu_list"><%= link_to 'ログイン', '/users/sign_in' %></li>
+                      <li class = "menu_list"><%= link_to "Facebookでログインする", user_facebook_omniauth_authorize_path %></li>
                       <li class = "menu_list"><%= link_to 'ログアウト', destroy_user_session_path, method: :delete %></li>
-                      <li class = "menu_list menu_last"><%= link_to '会員登録', new_user_registration_path, method: :get %></li>
                     </ul>
                   </div>
                 </div>
@@ -365,6 +372,19 @@
   <% if alert %>
     <p class="alert alert-danger"><%= alert %></p>
   <% end %>
+
+    <% if current_user %>
+      <% if current_user.gender == "male" %>
+        <pre>男性でログインしています </pre>
+      <% end %>
+      <% if current_user.gender == "female" %>
+        <pre>女性でログインしています </pre>
+      <% end %>
+    <% else %>
+      <pre>ログアウトしています </pre>
+    <% end %>
+
+
   <%= yield %>
   </div>
 </div>
