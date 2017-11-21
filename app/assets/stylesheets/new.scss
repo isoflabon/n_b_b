@@ -1,25 +1,29 @@
-//@media screen and (max-width: 750px) {
-  body{
-    background-color: #fff0dd;
-  }
-.center{
-  color: black;
-  text-align: center;
-  font-size: 25px;
-  padding-top: 30px;
-  list-style: none;
+.main{
+  width:100%;
+  //margin-top: 100px;
 }
 
-img.logo{
-  float: left;
-  padding-top: 9px;
+h2{
+  text-align: center;
 }
+
+/*li.center{
+  color: black;
+  padding-top: 10px;
+  list-style: none;
+  width:20%;
+}*/
+
+/*img.logo{
+  margin: 0 auto;
+  padding-top: 9px;
+}*/
 
 .form{
   display: block;
   margin-right: 10px;
-    width:90%;
-    float: left;
+  width:90%;
+  float: left;
 }
 
 .contribution{
@@ -29,16 +33,42 @@ img.logo{
   font-size: 1.2em;
 }
 
-.page{
-  list-style: none;
+.button {
+  border: 1px solid #15aeec;
+  background-color: #49c0f0;
+  background-image: -webkit-linear-gradient(top, #49c0f0, #2cafe3);
+  background-image: linear-gradient(to bottom, #49c0f0, #2cafe3);
+  border-radius: 4px;
+  color: #fff;
+  line-height: 22px;
+  -webkit-transition: none;
+  transition: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
 }
-.round_off{
-	border:2px solid #e8e8e8;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
+.button:hover {
+  border:1px solid #1090c3;
+  background-color: #1ab0ec;
+  background-image: -webkit-linear-gradient(top, #1ab0ec, #1a92c2);
+  background-image: linear-gradient(to bottom, #1ab0ec, #1a92c2);
+}
+.button:active {
+  background: #1a92c2;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, .2);
+  color: #1679a1;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, .5);
 }
 
-.aaa{
-  font-size: 17px;
+
+.round_off{
+	border:solid 1px;           //枠の太さ
+	//-moz-border-radius: 10px; //これもテキストエリア丸くするやつ？
+	-webkit-border-radius: 5px; //テキストエリアの角の丸み具合
+  outline: none;
+
 }
-//}
+
+label.title{
+  font-size: 17px;
+  margin-top: 7%;
+  margin-left: 5%;
+}
