@@ -20,7 +20,7 @@
   <div class="container">
     <% @replies.each do |reply| %>
       <!-- messagesの中はreplyに対するコメントが入っている -->
-      <% @messages = Reply.where(p_id: reply.id) %>
+      <% @messages = messages(reply.id) %>
       <div class="posts-index-item">
         <% if reply.user_id != nil %>
           <% reply_user = User.find_by(id: reply.user_id) %>
