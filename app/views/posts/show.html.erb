@@ -10,10 +10,20 @@
     <p><%= @post.created_at.strftime("%Y/%m/%d %H:%M") %></p>
   </div>
 
-  <% if @post.user == current_user %>
+  <!-- 投稿した男性のみ追記と削除ができる-->
+  <% if current_user && @post.user == current_user %>
+    <div class="form">
+      <div class="form-postscript">
+        追記:<br>
+        <textarea name=""></textarea>
+        <input type="hidden" name="" value=0>
+        <input type="submit" value="追記する">
+      </div>
+    </div>
+
     <%= link_to "削除", @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
   <% end %>
-  
+
   <%= form_tag("/posts/#{@post.id}/replies") do %>
     <% if current_user && current_user.gender == "female" %>
       <div class="form">
