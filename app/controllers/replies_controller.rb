@@ -6,8 +6,9 @@ class RepliesController < ApplicationController
 
   def create
     @post = Post.find_by(id: params[:post_id])
+    content = params[:comment] ? params[:comment] : params['reply-content']
     @reply = Reply.new(post_id: params[:post_id],
-                       content: params[:content],
+                       content: content,
                        user_id: current_user.id,
                        p_id: params[:p_id])
     if @reply.save
