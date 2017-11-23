@@ -14,7 +14,7 @@
     <%= link_to "削除", @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
   <% end %>
 
-  <%= render partial: "comment", :locals => { post_id: @post.id } %>
+  <%= render partial: "comment_form", :locals => { post_id: @post.id } %>
 
   <br><br><br><br>
   <div class="container">
