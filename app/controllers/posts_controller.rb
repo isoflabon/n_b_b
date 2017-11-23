@@ -22,7 +22,7 @@ class PostsController < ApplicationController
   end
 
   def show
-    @post = Post.find_by(id: params[:id])
+    @post = current_post
     @user = User.find_by(id: @post.user_id)
     # 悩みに対するコメントを格納
     @replies = Reply.where(post_id: @post.id).order(created_at: :desc)
@@ -31,13 +31,13 @@ class PostsController < ApplicationController
 
   def edit
 
-    @post = Post.find_by(id: params[:id])
+    @post = current_post
     @replies = Reply.where(post_id: @post.id).order(created_at: :desc)
 
   end
 
   def update
-    @post = Post.find_by(id: params[:id])
+    @post = current_post
     @replies = Reply.where(post_id: @post.id).order(created_at: :desc)
 
     @post.content = params[:content]
@@ -52,10 +52,16 @@ class PostsController < ApplicationController
 
   def destroy
     # 悩みを削除したときそれに関連するコメントも削除
-    @post = Post.find_by(id: params[:id])
+    @post = current_post
     @replies = Reply.where(post_id: @post.id)
     @replies.delete_all
     @post.destroy
     redirect_to("/posts")
+  end
+
+  private
+
+  def current_post
+    Post.find_by(id: params[:id])
   end
 end
