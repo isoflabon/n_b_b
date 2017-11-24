@@ -3,9 +3,7 @@ class PostsController < ApplicationController
   before_action :female_forbid, only: [:new]
 
   def index
-    @posts = Post.all.order(created_at: :desc)
-    # 一覧にジャンル選択ボタンができたら上を消して下を利用
-    # @posts = Post.where(category: params[:category]).order(created_at: :desc)
+      @posts = Post.where(category: params[:category]).order(created_at: :desc)
   end
 
   def new
