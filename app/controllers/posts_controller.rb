@@ -43,7 +43,7 @@ class PostsController < ApplicationController
     @post = current_post
     @replies = current_reply
 
-    @post.content = params[:content]
+    @post.postscript = params[:content]
 
     if @post.save
       redirect_to("/posts/#{@post.id}")
