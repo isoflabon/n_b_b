@@ -16,7 +16,7 @@ class PostsController < ApplicationController
     @post = Post.new(title: params[:title],
                      content: params[:content],
                      user_id: current_user.id,
-                     category: params[:category])
+                     category: params[:post][:category])
     if @post.save
       redirect_to("/")
     else
