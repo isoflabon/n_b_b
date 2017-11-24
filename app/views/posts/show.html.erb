@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <head>
 </head>
 
@@ -13,6 +14,39 @@
   <% if @post.user == current_user %>
     <%= link_to "削除", @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
   <% end %>
+=======
+<div class="main">
+  <div class="posts-index-item">
+
+
+<div id="wrapper">
+
+<div class="question_Box">
+<div class="answer_image"><img src="/gakki.png" alt="質問者の写真"/></div>
+<div class="arrow_answer">
+  <p><%= @post.title %></p>
+</div><!-- /.arrow_question -->
+
+</div><!-- /.question_Box -->
+
+
+<div id="wrapper">
+  <div class="question_Box">
+  <div class="answer_image"><img src="/gakki.png" alt="質問者の写真"/></div>
+  <div class="arrow_answer">
+<%= @post.content %> </p>
+
+
+
+  </div>
+</div>
+</div>
+
+  <% if @post.user == @current_user %>
+  <%= link_to "削除", @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
+  <% end %>
+
+>>>>>>> 19d0c7c3967b4752cab6f42d2ff90ce9d67841bf
 
   <%= render partial: "comment_form", :locals => { post_id: @post.id } %>
 
@@ -61,6 +95,7 @@
               なるほど<%= ": #{@naruhodo_count}" unless @naruhodo_count.zero? %>
               わかる<%= ": #{@wakaru_count}" unless @wakaru_count.zero? %><br>
 
+<<<<<<< HEAD
           <% end %><br>
               <!-- コメントにメッセージを送ることができる -->
             <%= form_tag("/posts/#{@post.id}/replies") do %>
@@ -83,3 +118,61 @@
     <% end %>
   </div>
 </body>
+=======
+      <br>---------------------------------------------------------------------------------------
+    </div>
+  </div>
+  </div>
+  </div>
+
+  <%end %>
+  -->
+
+  <%= form_tag("/posts/#{@post.id}/replies") do %>
+  <div id = "show_comment" class="form">
+  <!-- <div class="form-comment">
+  <ul>
+    <li class = "comment-text"><textarea name="content" type="text"></textarea>
+      <input type="submit" value="コメントする" type="button"></li>
+    <!-- <li class = "comment_btn"><input type="submit" value="コメントする" type="button"></li> -->
+  <!-- </ul>
+  </div> -->
+
+  <div>
+  <form action="#" method="post">
+  <input type="text" name="content" size="10" class="box2"><input type="submit" value="投稿" type="button" class="button">
+
+
+
+  </form>
+  </div>
+
+
+  </div>
+
+  <%end %>
+
+
+
+
+  <br>
+  <h2 class="center">コメント欄</h2>
+  <!--<p class="center">コメント欄⬇︎</p>-->
+  <div class="container">
+    <% @replies.each do |reply| %>
+      <div class="posts-index-item">
+
+  <div id="wrapper">
+  <div class="question_Box">
+
+  <div class="question_image"><img src="/gakki.png" alt="質問者の写真"/></div>
+  <div class="arrow_question">
+  <p><%= reply.content %> </p>
+  </div>
+</div>
+</div>
+    <% end %>
+  </div>
+  </div>
+</div>
+>>>>>>> 19d0c7c3967b4752cab6f42d2ff90ce9d67841bf
