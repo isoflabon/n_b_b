@@ -11,8 +11,7 @@ Rails.application.routes.draw do
   devise_scope :user do
   get '/users/auth/:provider' => 'user/omniauth_callbacks#passthru'
   end
-  get 'home/top'
-  root "posts#index"
+  root "home#top"
   resources :posts do
     resources :replies, only: [:create] do
       resources :naruhodos, only: [:create, :destroy]
