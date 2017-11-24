@@ -28,55 +28,9 @@
 
          </div>
 
-         <!-- enumを使っているのでparamの値はpost.rbに書かれている数字ではない方でも渡せる -->
-         <%= form_for(@post) do |f| %>
-         <div class="field">
-           <span class="category_type">カテゴリー</span><br>
-           <div class="radio-inline">
-             <%= f.radio_button :category, :onewaylove %>
-             <%= f.label "片想い", class: "category_type_label" %>
-           </div>
-           <div class="radio-inline">
-             <%= f.radio_button :category, :together %>
-             <%= f.label :交際中, class: "category_type_label" %>
-           </div>
-           <div class="radio-inline">
-             <%= f.radio_button :category, :date %>
-             <%= f.label :デート, class: "category_type_label" %>
-           </div>
-           <div class="radio-inline">
-             <%= f.radio_button :category, :present %>
-             <%= f.label :プレゼント, class: "category_type_label" %>
-           </div>
-           <div class="radio-inline">
-             <%= f.radio_button :category, :lovevision %>
-             <%= f.label :恋愛観, class: "category_type_label" %>
-           </div>
-           <div class="radio-inline">
-             <%= f.radio_button :category, :battle %>
-             <%= f.label :ケンカ, class: "category_type_label" %>
-           </div>
-           <div class="radio-inline">
-             <%= f.radio_button :category, :affair %>
-             <%= f.label :浮気, class: "category_type_label" %>
-           </div>
-           <div class="radio-inline">
-             <%= f.radio_button :category, :sexual %>
-             <%= f.label :性事情, class: "category_type_label" %>
-           </div>
-           <div class="radio-inline">
-             <%= f.radio_button :category, :other %>
-             <%= f.label :その他, class: "category_type_label" %>
-           </div>
-         </div>
-         <% end %>
+         <%= render partial: "category_form", :locals => { post: @post } %>
 
-           <li class="contribution"> <input type="submit" value="投稿"></li>
-
-        <!-- <div class="form-tag">
-         <span class="aaa"> タグ </span>
-         <textarea name="content" class="round_off" rows="2" cols="60"></textarea>
-       </div> -->
+         <li class="contribution"> <input type="submit" value="投稿"></li>
        </div>
      <% end %>
    </div>
