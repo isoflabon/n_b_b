@@ -43,12 +43,12 @@ class PostsController < ApplicationController
     @post = current_post
     @replies = current_reply
 
-    @post.postscript = params[:content]
+    @post.postscript = params[:postscript]
 
     if @post.save
       redirect_to("/posts/#{@post.id}")
     else
-      render("posts/edit")
+      render("posts/show")
     end
 
   end
