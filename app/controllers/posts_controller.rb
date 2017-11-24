@@ -3,7 +3,13 @@ class PostsController < ApplicationController
   before_action :female_forbid, only: [:new]
 
   def index
-      @posts = Post.where(category: params[:category]).order(created_at: :desc)
+      # viewで「全て」が選択されたときにTrue
+      if params[:category] == '0'
+        @posts = Post.all.order(created_at: :desc)
+      else
+        # ジャンルのカテゴリに合わせた一覧表示
+        @posts = Post.where(category: params[:category]).order(created_at: :desc)
+      end
   end
 
   def new
