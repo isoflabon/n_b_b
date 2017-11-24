@@ -18,8 +18,10 @@ class PostsController < ApplicationController
                      user_id: current_user.id,
                      category: params[:category])
     if @post.save
-      redirect_to("/")
+      flash[:notice] = "悩みを投稿しました"
+      redirect_to("/posts/#{@post.id}")
     else
+      flash[:notice] = "タイトルと内容は必須入力です"
       render("posts/new")
     end
   end
