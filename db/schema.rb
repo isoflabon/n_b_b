@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171123054342) do
+ActiveRecord::Schema.define(version: 20171124055923) do
 
   create_table "naruhodos", force: :cascade do |t|
     t.integer "user_id"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20171123054342) do
     t.text "title"
     t.integer "user_id"
     t.integer "category"
+    t.text "postscript"
   end
 
   create_table "replies", force: :cascade do |t|
