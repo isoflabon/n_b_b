@@ -17,10 +17,12 @@ class PostsController < ApplicationController
   end
 
   def create
+    # カテゴリーが選択されない場合の投稿の場合はその他に分類
+    category = params[:post] ? params[:post][:category] : 'other'
     @post = Post.new(title: params[:title],
                      content: params[:content],
                      user_id: current_user.id,
-                     category: params[:post][:category])
+                     category: category)
     if @post.save
       redirect_to("/")
     else
