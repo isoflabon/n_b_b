@@ -25,9 +25,38 @@
 }
 
 #top_page .title_issue h2{
-
-  margin:30% 0;
+  margin:25% 0 10% 0;//up right bottom left
   font-family: "Yu Mincho";
   font-weight: bold;
 
+}
+
+#top_page .man-introduction{
+  background-color: rgba(116, 145, 195, 0.5);
+  margin: 5%;
+}
+
+#top_page .woman-introduction{
+  background-color: rgba(200, 124, 131, 0.5);
+  margin: 5%;
+}
+
+#top_page .top_introduction p.facebook-introduction{
+  margin:25% 0 5% 0;
+}
+
+#top_page .top_introduction button.btn-top-facebook{
+  margin:10% 0;
+}
+
+@media screen and (max-device-width: 540px) {
+  #top_page .title_issue h2{
+    margin:50% 0 10% 0;
+    font-weight: bold;
+  }
+  #top_page .title_issue p{
+  padding: 5px;
+  font-weight: 300;
+  margin: 0 10%;
+  }
 }
