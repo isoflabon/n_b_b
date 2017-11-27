@@ -69,7 +69,12 @@
                 <% elsif current_user && current_user.gender == "female"%>
                   <img src="/woman_user_default.png" class="user-image" alt="User Image">
                 <% end %>
-                <span class="hidden-xs">User_name</span>
+                <span class="hidden-xs">
+                  <% if current_user %>
+                    <%= current_user.gender %>
+                    <!-- <p>User_name</p> -->
+                  <% end %>
+                </span>
               </a>
               <ul class="dropdown-menu">
                 <!-- User image -->
@@ -79,10 +84,10 @@
                   <% elsif current_user && current_user.gender == "female"%>
                     <img src="/woman_user_default.png" class="user-image" alt="User Image">
                   <% end %>
-                  <p>
-                    User_name
-                    <!--<small>Member since Nov. 2012</small>-->
-                  </p>
+                    <% if current_user %>
+                      <p><%= current_user.gender %></p>
+                      <!-- <p>User_name</p> -->
+                    <% end %><!--<small>Member since Nov. 2012</small>-->
                 </li>
                 <!-- Menu Body -->
                 <li class="user-body">
@@ -135,7 +140,10 @@
             <% end %>
           </div>
           <div class="pull-left info">
-            <p>User_name</p>
+            <% if current_user %>
+              <p><%= current_user.gender %></p>
+              <!-- <p>User_name</p> -->
+            <% end %>
           </div>
         </div>
       <% end %>
@@ -171,7 +179,14 @@
             </span> -->
           </a>
         </li>
-
+        <li>
+          <a href="/posts/new">
+            <!--<i class="fa fa-dashboard"></i>--> <span>悩みを相談する</span>
+            <span class="pull-right-container">
+              <!--<small class="label pull-right bg-green">new</small>-->
+            </span>
+          </a>
+        </li>
         <!-- <li>
           <a href="pages/mailbox/mailbox.html">
             <span>設定</span>
@@ -203,16 +218,7 @@
     <p class="alert alert-danger"><%= alert %></p>
   <% end %>
 
-    <% if current_user %>
-      <% if current_user.gender == "male" %>
-        <pre>男性でログインしています </pre>
-      <% end %>
-      <% if current_user.gender == "female" %>
-        <pre>女性でログインしています </pre>
-      <% end %>
-    <% else %>
-      <pre>ログアウトしています </pre>
-    <% end %>
+    
 
 
   <%= yield %>
