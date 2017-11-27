@@ -1,36 +1,3 @@
-<<<<<<< HEAD
-<div class="main">
-  <div class="posts-index-item">
-
-
-<div id="wrapper">
-
-<div class="question_Box">
-<div class="answer_image"><img src="/gakki.png" alt="質問者の写真"/></div>
-<div class="arrow_answer">
-  <p><%= @post.title %></p>
-</div><!-- /.arrow_question -->
-
-</div><!-- /.question_Box -->
-
-
-<div id="wrapper">
-  <div class="question_Box">
-  <div class="answer_image"><img src="/gakki.png" alt="質問者の写真"/></div>
-  <div class="arrow_answer">
-<%= @post.content %> </p>
-
-
-
-  </div>
-</div>
-</div>
-
-  <% if @post.user == @current_user %>
-  <%= link_to "削除", @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
-  <% end %>
-
-=======
 <head>
 </head>
 
@@ -38,15 +5,31 @@
   <h1>詳細ページ</h1>
   <%= link_to("投稿一覧ページ", "/") %>
   <div class="posts-index-item">
-    <p class="box2"><%= @post.title %></p>
-    <p class="box2"><%= @post.content %> </p>
+    <div id="wrapper">
+
+    <div class="question_Box">
+    <div class="answer_image"><img src="/gakki.png" alt="質問者の写真"/></div>
+    <div class="arrow_answer">
+
+<p><%= @post.title %></p>
+<p><%= @post.created_at.strftime("%Y/%m/%d %H:%M") %></p>
+  </div>
+</div>
+
+
+    <div class="question_Box">
+    <div class="answer_image"><img src="/gakki.png" alt="質問者の写真"/></div>
+    <div class="arrow_answer">
+
+    <p><%= @post.content %> </p>
     <p><%= @post.created_at.strftime("%Y/%m/%d %H:%M") %></p>
   </div>
+</div>
+</div>
 
   <% if @post.user == current_user %>
     <%= link_to "削除", @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
   <% end %>
->>>>>>> merge_develop
 
   <%= render partial: "comment_form", :locals => { post_id: @post.id } %>
 
@@ -60,11 +43,19 @@
           <% reply_user = User.find_by(id: reply.user_id) %>
         <% end %>
 
+        <div id="wrapper">
+        <div class="question_Box">
+        <div class="question_image"><img src="img/question_image01.jpg" alt="質問者の写真"/></div>
+        <div class="arrow_question">
+
         <% if reply.p_id == 0 %>
 
           コメント: <%= reply.content %> <br>
           [<%= reply.created_at.strftime("%Y/%m/%d %H:%M") %>]<br>
 
+</div>
+</div>
+</div>
           <% @naruhodo_count = Naruhodo.where(reply_id: reply.id).count%>
           <% @wakaru_count = Wakaru.where(reply_id: reply.id).count%>
           <!-- 現在ログインしている人が女性ならば「わかる」ボタンを押したり取り消せたりできる -->
@@ -95,64 +86,6 @@
               なるほど<%= ": #{@naruhodo_count}" unless @naruhodo_count.zero? %>
               わかる<%= ": #{@wakaru_count}" unless @wakaru_count.zero? %><br>
 
-<<<<<<< HEAD
-      <br>---------------------------------------------------------------------------------------
-    </div>
-  </div>
-  </div>
-  </div>
-
-  <%end %>
-  -->
-
-  <%= form_tag("/posts/#{@post.id}/replies") do %>
-  <div id = "show_comment" class="form">
-  <!-- <div class="form-comment">
-  <ul>
-    <li class = "comment-text"><textarea name="content" type="text"></textarea>
-      <input type="submit" value="コメントする" type="button"></li>
-    <!-- <li class = "comment_btn"><input type="submit" value="コメントする" type="button"></li> -->
-  <!-- </ul>
-  </div> -->
-
-  <div>
-  <form action="#" method="post">
-  <input type="text" name="content" size="10" class="box2"><input type="submit" value="投稿" type="button" class="button">
-
-
-
-  </form>
-  </div>
-
-
-  </div>
-
-  <%end %>
-
-
-
-
-  <br>
-  <h2 class="center">コメント欄</h2>
-  <!--<p class="center">コメント欄⬇︎</p>-->
-  <div class="container">
-    <% @replies.each do |reply| %>
-      <div class="posts-index-item">
-
-  <div id="wrapper">
-  <div class="question_Box">
-
-  <div class="question_image"><img src="/gakki.png" alt="質問者の写真"/></div>
-  <div class="arrow_question">
-  <p><%= reply.content %> </p>
-  </div>
-</div>
-</div>
-    <% end %>
-  </div>
-  </div>
-</div>
-=======
           <% end %><br>
               <!-- コメントにメッセージを送ることができる -->
             <%= form_tag("/posts/#{@post.id}/replies") do %>
@@ -175,4 +108,3 @@
     <% end %>
   </div>
 </body>
->>>>>>> merge_develop
