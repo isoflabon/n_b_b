@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   # 女性は悩みの投稿ができないようにした
   before_action :female_forbid, only: [:new]
+  before_action :cofirm_current_user, only: [:edit, :update, :destroy]
 
   def index
     @posts = Post.all.order(created_at: :desc)
@@ -72,5 +73,13 @@ class PostsController < ApplicationController
 
   def current_reply
     Reply.where(post_id: current_post.id).order(created_at: :desc)
+  end
+
+  # ログインしているユーザがその悩みを投稿した人物か判断
+  def cofirm_current_user
+    if current_user.id != current_post.user_id
+      flash[:notice] = "権限がありません"
+      redirect_to("/posts")
+    end
   end
 end
