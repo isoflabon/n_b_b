@@ -13,10 +13,12 @@
 //= require jquery
 //= require bootstrap-sprockets
 //= require rails-ujs
-
 //= require_tree .
-//= require turbolinks
+
 //= require data-confirm-modal
+
+//= require admin-lte/dist/js/adminlte.min
+//= require admin-lte/plugins/iCheck/icheck
   +document.addEventListener("turbolinks:load", function () {
     // 向き
     var sides = ["left", "top", "right", "bottom"];

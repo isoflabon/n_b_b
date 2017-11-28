@@ -14,6 +14,7 @@ class RepliesController < ApplicationController
     if @reply.save
       redirect_to("/posts/#{@post.id}")
     else
+      flash[:notice] = "コメントを保存できませんでした"
       redirect_to("/posts/#{@post.id}")
     end
   end

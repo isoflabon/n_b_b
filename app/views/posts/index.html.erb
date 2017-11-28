@@ -1,3 +1,4 @@
+<div class="content-wrapper">
 <div class = "pase">
 <h1 class = "pase_name">投稿一覧</h1>
 
@@ -18,19 +19,18 @@
 <br class="main posts-index">
 <% if current_user %>
   <% if current_user.gender == "male" %>
-    <%= link_to("悩みを相談する","/posts/new", class: "btn btn-default btn-lg")%>
   <% end %>
 <% end %>
 
   <div class="container">
     <% @posts.each do |post| %>
       <div class="posts-index-item">
-        タイトル:   <%= post.title%><br>
-        内容: <%= post.content.truncate(40) %>
-        <%= link_to("もっと見る", "/posts/#{post.id}") %> <br>
-        ---------------------------------------------------------------------------------------
+        <p class="box7">title:   <%= post.title%><br><br>
+        content: <%= post.content.truncate(40) %>
+        <%= link_to("もっと見る", "/posts/#{post.id}") %></p>
       </div>
     <% end %>
   </div>
 </div>
 <br>
+</div>

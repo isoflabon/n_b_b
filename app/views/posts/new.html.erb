@@ -1,16 +1,19 @@
-<head>
+<!--<head>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
 
-<!--最小限のビューポート設定-->
+<!--最小限のビューポート設定
 <meta name="viewport" content="width=device-width">
-</head>
+</head>-->
 
-<body>
-<ul class="page">
-<li class="center"><a href="/"><img src="/back5.jpg" width="20" height="30" class="logo"></a>悩みを投稿する</li>
-<!--<img src="/back5.jpg" width="20" height="30" class="logo">-->
-<!--<img src="/back.jpeg" width="50" height="50" class="logo">-->
-</ul>
+
+
+<div id = "toukou_syousai">
+<div class="main">
+  <h2>悩みを投稿する</h2>
+  <!--<ul>
+<li class="center"><a href="/"><img src="/back5.jpg" width="20" height="30" class="logo"></a></li>
+<li class = " section">悩みを投稿する</li>
+</ul>-->
  <div class="main posts-new">
    <div class="container">
      <p class="form-heading"></p>
@@ -18,12 +21,12 @@
        <div class="form-group">
 
          <div class="form-title">
-           <span class="aaa">タイトル</span>
-           <textarea name="title" class="round_off form-control"rows="2" cols="60"></textarea>
+           <label class="title">タイトル</label>
+           <textarea name="title" class="round_off form-control" rows="2" cols="60"></textarea>
          </div>
 
          <div class="form-body">
-           <span class="aaa">内容</span>
+           <label class="title">内容</label>
            <textarea name="content" class="round_off form-control" rows="5" cols="60"></textarea>
          </div>
 
@@ -34,5 +37,7 @@
      <% end %>
    </div>
  </div>
+ </div>
+ </div>
+
 <!--<%= link_to("投稿内容がうまく書けない方はこちら","/")%>-->
-</body>
