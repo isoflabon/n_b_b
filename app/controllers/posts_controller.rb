@@ -4,9 +4,13 @@ class PostsController < ApplicationController
   before_action :cofirm_current_user, only: [:edit, :update, :destroy]
 
   def index
-    @posts = Post.all.order(created_at: :desc)
-    # 一覧にジャンル選択ボタンができたら上を消して下を利用
-    # @posts = Post.where(category: params[:category]).order(created_at: :desc)
+      # viewで「全て」が選択されたときにTrue
+      if params[:category] == '0'
+        @posts = Post.all.order(created_at: :desc)
+      else
+        # ジャンルのカテゴリに合わせた一覧表示
+        @posts = Post.where(category: params[:category]).order(created_at: :desc)
+      end
   end
 
   def new
@@ -14,10 +18,12 @@ class PostsController < ApplicationController
   end
 
   def create
+    # カテゴリーが選択されない場合の投稿の場合はその他に分類
+    category = params[:post] ? params[:post][:category] : 'other'
     @post = Post.new(title: params[:title],
                      content: params[:content],
                      user_id: current_user.id,
-                     category: params[:category])
+                     category: category)
     if @post.save
       flash[:notice] = "悩みを投稿しました"
       redirect_to("/posts/#{@post.id}")
