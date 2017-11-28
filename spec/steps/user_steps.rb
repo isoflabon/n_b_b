@@ -17,3 +17,7 @@ end
 step ':nameでログインする' do |name|
   sign_in User.find_by(username: name)
 end
+
+step ':nameでログアウトする' do |name|
+  sign_out User.find_by(username: name)
+end

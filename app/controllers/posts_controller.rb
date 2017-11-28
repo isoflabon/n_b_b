@@ -1,9 +1,12 @@
 class PostsController < ApplicationController
   # 女性は悩みの投稿ができないようにした
   before_action :female_forbid, only: [:new]
+  before_action :cofirm_current_user, only: [:edit, :update, :destroy]
 
   def index
     @posts = Post.all.order(created_at: :desc)
+    # 一覧にジャンル選択ボタンができたら上を消して下を利用
+    # @posts = Post.where(category: params[:category]).order(created_at: :desc)
   end
 
   def new
@@ -13,49 +16,70 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(title: params[:title],
                      content: params[:content],
-                     user_id: current_user.id)
+                     user_id: current_user.id,
+                     category: params[:category])
     if @post.save
-      redirect_to("/")
+      flash[:notice] = "悩みを投稿しました"
+      redirect_to("/posts/#{@post.id}")
     else
+      flash[:notice] = "タイトルと内容は必須入力です"
       render("posts/new")
     end
   end
 
   def show
-    @post = Post.find_by(id: params[:id])
+    @post = current_post
     @user = User.find_by(id: @post.user_id)
     # 悩みに対するコメントを格納
-    @replies = Reply.where(post_id: @post.id).order(created_at: :desc)
+    @replies = current_reply
     @gender = User.find_by(gender: params[:gender])
   end
 
   def edit
 
-    @post = Post.find_by(id: params[:id])
-    @replies = Reply.where(post_id: @post.id).order(created_at: :desc)
+    @post = current_post
+    @replies = current_reply
 
   end
 
   def update
-    @post = Post.find_by(id: params[:id])
-    @replies = Reply.where(post_id: @post.id).order(created_at: :desc)
+    @post = current_post
+    @replies = current_reply
 
-    @post.content = params[:content]
+    @post.postscript = params[:postscript]
 
     if @post.save
       redirect_to("/posts/#{@post.id}")
     else
-      render("posts/edit")
+      render("posts/show")
     end
 
   end
 
   def destroy
     # 悩みを削除したときそれに関連するコメントも削除
-    @post = Post.find_by(id: params[:id])
+    @post = current_post
     @replies = Reply.where(post_id: @post.id)
     @replies.delete_all
     @post.destroy
     redirect_to("/posts")
+  end
+
+  private
+
+  def current_post
+    Post.find_by(id: params[:id])
+  end
+
+  def current_reply
+    Reply.where(post_id: current_post.id).order(created_at: :desc)
+  end
+
+  # ログインしているユーザがその悩みを投稿した人物か判断
+  def cofirm_current_user
+    if current_user.id != current_post.user_id
+      flash[:notice] = "権限がありません"
+      redirect_to("/posts")
+    end
   end
 end

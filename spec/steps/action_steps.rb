@@ -2,7 +2,6 @@ step ':textをクリックする' do |text|
   click_on text
 end
 
-step '新規投稿を入力する' do
-  fill_in "title", with: "title"
-  fill_in "content", with: "content"
+step ':formに:textを入力する' do |form, text|
+  fill_in form, with: text
 end

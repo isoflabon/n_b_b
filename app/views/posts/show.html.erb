@@ -8,29 +8,37 @@
     <p class="box2"><%= @post.title %></p>
     <p class="box2"><%= @post.content %> </p>
     <p><%= @post.created_at.strftime("%Y/%m/%d %H:%M") %></p>
+      <% if Post.find(@post.id).postscript.present? %>
+        <p>&emsp;&emsp;&emsp;追記：<%= @post.postscript %></p>
+      <% end %>
   </div>
 
-  <% if @post.user == current_user %>
-    <%= link_to "削除", @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
-  <% end %>
-  
-  <%= form_tag("/posts/#{@post.id}/replies") do %>
-    <% if current_user && current_user.gender == "female" %>
-      <div class="form">
-        <div class="form-comment">
-          コメント:<br>
-          <textarea name="content"></textarea>
-          <input type="hidden" name="p_id" value=0>
-          <input type="submit" value="コメントする">
-        </div>
-      </div>
+  <!-- 投稿した男性のみ追記と削除ができる-->
+
+    <%= form_tag("/posts/#{@post.id}", method: 'put')  do %>
+      <% if current_user && @post.user == current_user %>
+        <!-- 追記は1回しかできない -->
+        <% if Post.find(@post.id).postscript.blank? %>
+          <div class="form">
+            <div class="form-postscript">
+              追記:<br>
+              <textarea name="postscript"></textarea>
+              <input type="hidden" name="" value=0>
+              <input type="submit" value="追記する">
+            </div>
+          </div>
+        <% end %>
+        <%= link_to "投稿削除", @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
+      <% end %>
     <% end %>
-  <% end %>
+
+  <%= render partial: "comment_form", :locals => { post_id: @post.id } %>
+
   <br><br><br><br>
   <div class="container">
     <% @replies.each do |reply| %>
       <!-- messagesの中はreplyに対するコメントが入っている -->
-      <% @messages = Reply.where(p_id: reply.id) %>
+      <% @messages = messages(reply.id) %>
       <div class="posts-index-item">
         <% if reply.user_id != nil %>
           <% reply_user = User.find_by(id: reply.user_id) %>
@@ -76,7 +84,7 @@
             <%= form_tag("/posts/#{@post.id}/replies") do %>
               <% if @post.user == current_user || reply_user == current_user %>
                 &emsp;&emsp;&emsp;コメントに返信する:<br>
-                &emsp;&emsp;&emsp;<textarea name="content"></textarea>
+                &emsp;&emsp;&emsp;<textarea name="reply-content"></textarea>
 
                 <!-- 現在のreplyのidを隠しパラメータとして渡す -->
                 <input type="hidden" value="<%=reply.id%>" name="p_id">
