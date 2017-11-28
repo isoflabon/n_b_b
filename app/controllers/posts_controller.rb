@@ -5,7 +5,7 @@ class PostsController < ApplicationController
 
   def index
       # viewで「全て」が選択されたときにTrue
-      if params[:category] == '0'
+      if params[:category] == '0' || params[:category] == nil
         @posts = Post.all.order(created_at: :desc)
       else
         # ジャンルのカテゴリに合わせた一覧表示
