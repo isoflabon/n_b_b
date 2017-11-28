@@ -4,6 +4,8 @@ class PostsController < ApplicationController
 
   def index
     @posts = Post.all.order(created_at: :desc)
+    # 一覧にジャンル選択ボタンができたら上を消して下を利用
+    # @posts = Post.where(category: params[:category]).order(created_at: :desc)
   end
 
   def new
@@ -13,10 +15,13 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(title: params[:title],
                      content: params[:content],
-                     user_id: current_user.id)
+                     user_id: current_user.id,
+                     category: params[:category])
     if @post.save
-      redirect_to("/posts")
+      flash[:notice] = "悩みを投稿しました"
+      redirect_to("/posts/#{@post.id}")
     else
+      flash[:notice] = "タイトルと内容は必須入力です"
       render("posts/new")
     end
   end
@@ -40,12 +45,12 @@ class PostsController < ApplicationController
     @post = current_post
     @replies = current_reply
 
-    @post.content = params[:content]
+    @post.postscript = params[:postscript]
 
     if @post.save
       redirect_to("/posts/#{@post.id}")
     else
-      render("posts/edit")
+      render("posts/show")
     end
 
   end

@@ -19,6 +19,7 @@
      <p class="form-heading"></p>
      <%= form_tag("/posts", method: :post) do %>
        <div class="form-group">
+
          <div class="form-title">
            <label class="title">タイトル</label>
            <textarea name="title" class="round_off form-control" rows="2" cols="60"></textarea>
@@ -27,8 +28,23 @@
          <div class="form-body">
            <label class="title">内容</label>
            <textarea name="content" class="round_off form-control" rows="5" cols="60"></textarea>
+
+         </div>
+
+         <div class="form-body">
+           <span class="aaa">カテゴリー</span><br>
+           <button>片想い</button>
+           <button>交際中</button>
+           <button>デート</button>
+           <button>プレゼント</button>
+           <button>恋愛観</button>
+           <button>ケンカ</button>
+           <button>浮気</button>
+           <button>性事情</button>
+           <button>その他</button>
            <li class="contribution"> <input type="submit" value="投稿" class="button"></li>
          </div>
+
         <!-- <div class="form-tag">
          <span class="aaa"> タグ </span>
          <textarea name="content" class="round_off" rows="2" cols="60"></textarea>
@@ -39,5 +55,5 @@
  </div>
  </div>
  </div>
- 
+
 <!--<%= link_to("投稿内容がうまく書けない方はこちら","/")%>-->
