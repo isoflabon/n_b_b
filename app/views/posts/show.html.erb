@@ -5,10 +5,27 @@
   <h1>詳細ページ</h1>
   <%= link_to("投稿一覧ページ", "/posts") %>
   <div class="posts-index-item">
-    <p class="box2"><%= @post.title %></p>
-    <p class="box2"><%= @post.content %> </p>
+
+    <div id="wrapper">
+
+    <div class="question_Box">
+    <div class="answer_image"><img src="/taki.png" alt="質問者の写真"/></div>
+    <div class="arrow_answer">
+
+    <p><%= @post.title %></p>
+  </div>
+</div>
+
+    <div class="question_Box">
+    <div class="answer_image"><img src="/taki.png" alt="質問者の写真"/></div>
+    <div class="arrow_answer">
+
+    <p><%= @post.content %> </p>
     <p><%= @post.created_at.strftime("%Y/%m/%d %H:%M") %></p>
       <% if Post.find(@post.id).postscript.present? %>
+    </div>
+  </div>
+</div>
         <p>&emsp;&emsp;&emsp;追記：<%= @post.postscript %></p>
       <% end %>
   </div>
@@ -44,8 +61,13 @@
           <% reply_user = User.find_by(id: reply.user_id) %>
         <% end %>
 
+
         <% if reply.p_id == 0 %>
 
+        <div id="wrapper">
+                <div class="question_Box">
+                <div class="question_image"><img src="/mituha.png" alt="質問者の写真"/></div>
+                <div class="arrow_question">
           コメント: <%= reply.content %> <br>
           [<%= reply.created_at.strftime("%Y/%m/%d %H:%M") %>]<br>
 
@@ -80,6 +102,12 @@
               わかる<%= ": #{@wakaru_count}" unless @wakaru_count.zero? %><br>
 
           <% end %><br>
+
+</div>
+</div>
+</div>
+<!--ここにもともとわかるなるほどのソース書かれてた-->
+
               <!-- コメントにメッセージを送ることができる -->
             <%= form_tag("/posts/#{@post.id}/replies") do %>
               <% if @post.user == current_user || reply_user == current_user %>
