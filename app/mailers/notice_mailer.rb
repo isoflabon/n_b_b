@@ -5,8 +5,9 @@ class NoticeMailer < ApplicationMailer
   #
   #   en.notice_mailer.send_when_reply.subject
   #
-  def send_when_reply(user)
+  def send_when_reply(user,post)
     @user = user
+    @post = post
     mail to: user.email,
           subject: "返信が来ました。"
   end
