@@ -12,6 +12,7 @@ class RepliesController < ApplicationController
                        user_id: current_user.id,
                        p_id: params[:p_id])
     if @reply.save
+      NoticeMailer.send_when_reply(@post.user).deliver
       redirect_to("/posts/#{@post.id}")
     else
       flash[:notice] = "コメントを保存できませんでした"
