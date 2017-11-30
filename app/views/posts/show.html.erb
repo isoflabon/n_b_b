@@ -2,8 +2,10 @@
 </head>
 
 <body>
+  <span><%= link_to image_tag('/gomi.jpg'), @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
   <h1>詳細ページ</h1>
   <%= link_to("投稿一覧ページ", "/posts") %>
+
   <div class="posts-index-item">
 
     <div id="wrapper">
@@ -12,7 +14,7 @@
     <div class="answer_image"><img src="/taki.png" alt="質問者の写真"/></div>
     <div class="arrow_answer">
 
-    <p><%= @post.title %></p>
+    <p id="font_size"><%= @post.title %></p>
   </div>
 </div>
 
@@ -20,15 +22,19 @@
     <div class="answer_image"><img src="/taki.png" alt="質問者の写真"/></div>
     <div class="arrow_answer">
 
-    <p><%= @post.content %> </p>
+    <p id="font_size"><%= @post.content %> </p>
     <p><%= @post.created_at.strftime("%Y/%m/%d %H:%M") %></p>
       <% if Post.find(@post.id).postscript.present? %>
+      <p id="font_size">ps.<%= @post.postscript %></p>
     </div>
   </div>
 </div>
-        <p>&emsp;&emsp;&emsp;追記：<%= @post.postscript %></p>
+
       <% end %>
   </div>
+<br>
+
+
 
   <!-- 投稿した男性のみ追記と削除ができる-->
 
@@ -38,20 +44,18 @@
         <% if Post.find(@post.id).postscript.blank? %>
           <div class="form">
             <div class="form-postscript">
-              追記:<br>
               <textarea name="postscript"></textarea>
               <input type="hidden" name="" value=0>
-              <input type="submit" value="追記する">
+              <input type="submit" value="追記する" class="button">
             </div>
           </div>
         <% end %>
-        <%= link_to "投稿削除", @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
+        <span><%= link_to image_tag('/gomi.jpg'), @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
       <% end %>
     <% end %>
 
   <%= render partial: "comment_form", :locals => { post_id: @post.id } %>
 
-  <br><br><br><br>
   <div class="container">
     <% @replies.each do |reply| %>
       <!-- messagesの中はreplyに対するコメントが入っている -->
@@ -61,14 +65,13 @@
           <% reply_user = User.find_by(id: reply.user_id) %>
         <% end %>
 
-
         <% if reply.p_id == 0 %>
 
         <div id="wrapper">
                 <div class="question_Box">
                 <div class="question_image"><img src="/mituha.png" alt="質問者の写真"/></div>
                 <div class="arrow_question">
-          コメント: <%= reply.content %> <br>
+                  <p id="font_size"><%= reply.content %></p> <br>
           [<%= reply.created_at.strftime("%Y/%m/%d %H:%M") %>]<br>
 
           <% @naruhodo_count = Naruhodo.where(reply_id: reply.id).count%>
@@ -77,22 +80,22 @@
           <% if current_user %>
             <% if current_user.gender == "female" %>
               <% if Wakaru.where(user_id: current_user, reply_id: reply.id).present? %>
-                <button><%= link_to("わかる ", "/posts/#{@post.id}/replies/#{reply.id}/wakarus/:id" , {method:"delete"}) %><%= @wakaru_count %></button>
+                <button class="wakaru_after migi"> <%= @wakaru_count %>:<%= link_to("わかる ", "/posts/#{@post.id}/replies/#{reply.id}/wakarus/:id" , {method:"delete"}) %></button> <!-- 押された後 -->
               <% else %>
-                <button><%= link_to("わかる ", "/posts/#{@post.id}/replies/#{reply.id}/wakarus" , {method:"post"}) %></button>
+                <button class="wakaru_before migi"> <%= link_to("わかる ", "/posts/#{@post.id}/replies/#{reply.id}/wakarus" , {method:"post"}) %></button> <!-- 押される前 -->
               <% end %>
                 <!-- カウント数が0の場合は表示しない-->
-                なるほど<%= ": #{@naruhodo_count}" unless @naruhodo_count.zero? %><br>
+                <span class="naruho_men_before naruho_men_after migi"><%= "#{@naruhodo_count}" unless @naruhodo_count.zero? %> なるほど</span><br>
 
               <!-- 現在ログインしている人が男性ならば「なるほど」ボタンを押したり取り消せたりできる -->
             <% elsif current_user.gender == "male" %>
               <% if Naruhodo.where(user_id: current_user, reply_id: reply.id).present? %>
-                <button><%= link_to("なるほど ", "/posts/#{@post.id}/replies/#{reply.id}/naruhodos/:id" , {method:"delete"}) %><%= @naruhodo_count %> </button>
+                <button class="naruho_after migi"> <%= @naruhodo_count %> <%= link_to("なるほど ", "/posts/#{@post.id}/replies/#{reply.id}/naruhodos/:id" , {method:"delete"}) %></button>　<!-- 押された後 -->
               <% else %>
-                <button><%= link_to("なるほど ", "/posts/#{@post.id}/replies/#{reply.id}/naruhodos" , {method:"post"}) %></button>
+              <button class="naruho_before migi">  <%= link_to "なるほど ", "/posts/#{@post.id}/replies/#{reply.id}/naruhodos",{method:"post"} %></button>　<!-- 押される前 -->
               <% end %>
                 <!-- カウント数が0の場合は表示しない-->
-              わかる<%= ": #{@wakaru_count}" unless @wakaru_count.zero? %><br>
+              <span class="wakaru_girl_before wakaru_girl_after migi"><%= "#{@wakaru_count}" unless @wakaru_count.zero? %> わかる</span><br>
 
             <% end %>
             <!-- 現在ログインしていないならばボタンを見ることのみできる -->
@@ -110,20 +113,22 @@
 
               <!-- コメントにメッセージを送ることができる -->
             <%= form_tag("/posts/#{@post.id}/replies") do %>
+              <!-- 親コメントへの子コメント表示-->
+              <% @messages.each do |message| %>
+                <p>[<%= message.created_at.strftime("%Y/%m/%d %H:%M") %>]&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<%= message.content %></p>
+              <% end %>
+
+              <!-- コメントにメッセージを送ることができる -->
               <% if @post.user == current_user || reply_user == current_user %>
                 &emsp;&emsp;&emsp;コメントに返信する:<br>
                 &emsp;&emsp;&emsp;<textarea name="reply-content"></textarea>
 
                 <!-- 現在のreplyのidを隠しパラメータとして渡す -->
                 <input type="hidden" value="<%=reply.id%>" name="p_id">
-                <input type="submit" value="返信する"><br>
+                <input type="submit" value="返信する" class="button"><br>
               <% end %>
-                <!-- 親コメントへの子コメント表示-->
-                <% @messages.each do |message| %>
-                  <p>[<%= message.created_at.strftime("%Y/%m/%d %H:%M") %>]&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<%= message.content %></p>
-                <% end %>
             <% end %>
-        <br>---------------------------------------------------------------------------------------
+
         <% end %>
       </div>
     <% end %>

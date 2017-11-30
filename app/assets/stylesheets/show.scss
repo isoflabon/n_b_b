@@ -2,6 +2,10 @@ body{
   width: 100%;
 }
 
+#font_size{
+  font-size: 14px;
+}
+
 #wrapper{
      margin: 20px auto;
      width:96%;
@@ -117,12 +121,146 @@ body{
      margin-bottom: 8%;
 }
 
+.wakaru_before{
+  display: block;
+  text-decoration: none;
+  height:25px;
+  width: 70px;
+  line-height: 9px;
+  text-align: center;
+  color: #fff;
+  background: #EEFFFF;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.wakaru_after{
+  display: block;
+  text-decoration: none;
+  height:25px;
+  width: 70px;
+  line-height: 9px;
+  text-align: center;
+  color: #fff;
+  background: #FFBEDA;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.wakaru_girl_before{
+  display: block;
+  text-decoration: none;
+  height:25px;
+  width: 70px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  background: #EEFFFF;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.wakaru_girl_after{
+  display: block;
+  text-decoration: none;
+  height:25px;
+  width: 70px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  background: #FFBEDA;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.naruho_before{
+  display: block;
+  text-decoration: none;
+  height:25px;
+  width: 70px;
+  line-height: 9px;
+  text-align: center;
+  color: #fff;
+  background: #EEFFFF;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.naruho_after{
+  display: block;
+  text-decoration: none;
+  height:25px;
+  width: 70px;
+  line-height: 9px;
+  text-align: center;
+  color: #fff;
+  background: #119de9;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.naruho_men_before{
+  display: block;
+  text-decoration: none;
+  height:25px;
+  width: 70px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  background: #EEFFFF;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 20px;
+}
+
+.naruho_men_after{
+  display: block;
+  text-decoration: none;
+  height:25px;
+  width: 70px;
+  line-height: 25px;
+  text-align: center;
+  color: #fff;
+  background: #119de9;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
+  border-radius: 20px;
+}
 
 
-
-
-
-
+.migi{
+  float: right;
+}
 
 .balloon2{
   position: relative;
@@ -184,7 +322,6 @@ img.logo{
 #show_comment ul{
   float: left;
 }
-
 
 
 /*
