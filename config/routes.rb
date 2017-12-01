@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get '/users/auth/:provider' => 'user/omniauth_callbacks#passthru'
   end
   root "home#top"
+  post '/notice' => "home#notice"
   resources :posts do
     resources :replies, only: [:create] do
       resources :naruhodos, only: [:create, :destroy]
