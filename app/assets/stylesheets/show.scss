@@ -1,14 +1,21 @@
 body{
   width: 100%;
+  background-color: #ecf0f5;
+  min-height: 490px;
 }
 
 #font_size{
   font-size: 14px;
 }
 
+.title-info{
+  text-decoration: underline;
+}
+
 #wrapper{
      margin: 20px auto;
      width:96%;
+     background-color: #ecf0f5;
 }
 
 
@@ -119,9 +126,16 @@ body{
      width: 100%;
      overflow: hidden;
      margin-bottom: 8%;
+     background-color: #ecf0f5;
 }
 
+.reply-main{
+  background-color: #ecf0f5;
+}
+
+
 .wakaru_before{
+  margin-top: 8px;
   display: block;
   text-decoration: none;
   height:25px;
@@ -139,6 +153,7 @@ body{
 }
 
 .wakaru_after{
+  margin-top: 8px;
   display: block;
   text-decoration: none;
   height:25px;
@@ -156,6 +171,7 @@ body{
 }
 
 .wakaru_girl_before{
+  margin-top: 8px;
   display: block;
   text-decoration: none;
   height:25px;
@@ -173,6 +189,7 @@ body{
 }
 
 .wakaru_girl_after{
+  margin-top: 8px;
   display: block;
   text-decoration: none;
   height:25px;
@@ -190,6 +207,7 @@ body{
 }
 
 .naruho_before{
+  margin-top: 8px;
   display: block;
   text-decoration: none;
   height:25px;
@@ -207,6 +225,7 @@ body{
 }
 
 .naruho_after{
+  margin-top: 8px;
   display: block;
   text-decoration: none;
   height:25px;
@@ -224,6 +243,7 @@ body{
 }
 
 .naruho_men_before{
+  margin-top: 8px;
   display: block;
   text-decoration: none;
   height:25px;
@@ -241,6 +261,7 @@ body{
 }
 
 .naruho_men_after{
+  margin-top: 8px;
   display: block;
   text-decoration: none;
   height:25px;
@@ -261,6 +282,19 @@ body{
 .migi{
   float: right;
 }
+
+.migi_gomi_1{
+  float: right;
+  line-height: 30px;
+  margin-right: 5px;
+}
+
+
+.migi_gomi{
+  float: right;
+  line-height: -10;
+}
+
 
 .balloon2{
   position: relative;
@@ -291,6 +325,19 @@ op: 0;
   border-bottom: 15px solid transparent;
 }
 
+.reply-area {
+  width: 82%;
+  font-size: 11px;
+  padding: 3%;
+  float: right;
+
+}
+
+.reply-content{
+  border: solid 1px #aaa;
+  background-color: white;
+  border-radius: 10px;
+}
 
 
 img.logo{
