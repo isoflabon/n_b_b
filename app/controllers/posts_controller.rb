@@ -4,7 +4,7 @@ class PostsController < ApplicationController
 
   def index
       # viewで「全て」が選択されたときにTrue
-      if params[:category] == '0'
+      if params[:category] == '0' || params[:category] == nil
         @posts = Post.all.order(created_at: :desc)
       else
         # ジャンルのカテゴリに合わせた一覧表示
@@ -17,10 +17,12 @@ class PostsController < ApplicationController
   end
 
   def create
+    # カテゴリーが選択されない場合の投稿の場合はその他に分類
+    category = params[:post] ? params[:post][:category] : 'other'
     @post = Post.new(title: params[:title],
                      content: params[:content],
                      user_id: current_user.id,
-                     category: params[:post][:category])
+                     category: category)
     if @post.save
       redirect_to("/")
     else
