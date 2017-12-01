@@ -24,10 +24,4 @@
 @import 'index';
 @import 'show';
 @import 'new';
-
-.content-wrapper h1{
-  margin: 0 !important;
-}
-img.user-image{
-  background-color: white;
-}
+@import 'custom';

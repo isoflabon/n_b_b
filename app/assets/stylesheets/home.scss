@@ -20,15 +20,29 @@
 
 }
 */
+#top_page .top_img{
+  background-image: url(/background_img.jpg);
+  background-position: center center;
+  background-size: cover;
+}
+
+#top_page .top_color{
+  background-color: rgba(249, 230, 151, 0.3);
+  width: 100%;
+}
+
 .title_issue{
   text-align: center;
 }
 
-#top_page .title_issue h2{
-  margin:25% 0 10% 0;//up right bottom left
-  font-family: "Yu Mincho";
-  font-weight: bold;
+#top_page .margin{
+  margin-top: 25%;
+}
 
+#top_page .title_issue h2 {
+  margin:5% 0 0 0 ;//up right bottom left
+  font-family: "Yu Mincho" ;
+  font-weight: bold ;
 }
 
 #top_page .man-introduction{
@@ -49,11 +63,22 @@
   margin:10% 0;
 }
 
+
+@media screen and (min-device-width: 990px) {
+  #top_page .top_color{
+    background-color: rgba(249, 230, 151, 0.3);
+    width: 100%;
+    height:100%;
+  }
+}
+
+
 @media screen and (max-device-width: 540px) {
   #top_page .title_issue h2{
-    margin:50% 0 10% 0;
+    margin:7% 0 0 0;
     font-weight: bold;
   }
+
   #top_page .title_issue p{
   padding: 5px;
   font-weight: 300;

@@ -19,22 +19,15 @@
 
 //= require admin-lte/dist/js/adminlte.min
 //= require admin-lte/plugins/iCheck/icheck
-  +document.addEventListener("turbolinks:load", function () {
-    // 向き
-    var sides = ["left", "top", "right", "bottom"];
 
-    // サイドバーの初期化
-    for (var i = 0; i < sides.length; ++i) {
-        var cSide = sides[i];
-        $(".sidebar." + cSide).sidebar({side: cSide});
-    }
 
-    // ボタンのクリックにより...
-    $(".btn[data-action]").on("click", function () {
-        var $this = $(this);
-        var action = $this.attr("data-action");
-        var side = $this.attr("data-side");
-        $(".sidebar." + side).trigger("sidebar:" + action);
-        return false;
+
+$(function(){
+    $(window).load(function(){
+        var delaySpeed = 1150;
+        var fadeSpeed = 1300;
+        $('h2').each(function(i){
+            $(this).delay(i*(delaySpeed)).css({display:'block',opacity:'0'}).animate({opacity:'1'},fadeSpeed);
+        });
     });
 });
