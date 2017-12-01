@@ -13,9 +13,21 @@ class User::RegistrationsController < Devise::RegistrationsController
   end
   #
   #  GET /resource/edit
-  #  def edit
-  #    super
-  #  end
+   def edit
+     super
+     @user = current_user
+   end
+
+   def update
+     super
+     @user.notice = params[:user][:notice]
+
+     if @user.save
+       flash[:notice] = "設定を変更しました"
+     else
+       flash[:notice] = "設定は変更できませんでした"
+     end
+   end
   #
   #  PUT /resource
    # def update
