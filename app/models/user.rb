@@ -13,7 +13,8 @@ class User < ApplicationRecord
           provider: auth.provider,
           email:    email_register,
           password: Devise.friendly_token[0, 20],
-          gender:   auth.extra.raw_info.gender
+          gender:   auth.extra.raw_info.gender,
+          notice:   true
           )
       end
     user
