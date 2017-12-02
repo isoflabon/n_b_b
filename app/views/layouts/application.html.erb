@@ -118,7 +118,10 @@
           <% end %>
           <!-- Control Sidebar Toggle Button -->
           <li>
-            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+            <input type="button" value="提出" id="button1" onClick="_submit()" >
+            <button> 通知ON </button>
+            <button> 通知OFF </button>
+            <!-- <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a> -->
           </li>
         </ul>
       </div>
@@ -218,7 +221,7 @@
     <p class="alert alert-danger"><%= alert %></p>
   <% end %>
 
-    
+
 
 
   <%= yield %>
