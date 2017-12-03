@@ -18,6 +18,16 @@ body{
      background-color: #ecf0f5;
 }
 
+textarea.comment-form {
+    width: 70%;
+    margin-left: 9px;
+}
+
+textarea.additional-anformation{
+  width: 70%;
+  margin-left: 9px;
+}
+
 
 .arrow_answer,
 .arrow_question {
@@ -133,6 +143,12 @@ body{
   background-color: #ecf0f5;
 }
 
+textarea.reply-form{
+  width:70%;
+  float: left;
+  margin-left: 10px;
+  border: solid 1px #aaa;
+}
 
 .wakaru_before{
   margin-top: 8px;
@@ -295,36 +311,6 @@ body{
   line-height: -10;
 }
 
-
-.balloon2{
-  position: relative;
-  padding: 20px;
-  border-radius: 10px;
-  color: #ffffff;
-  background-color: #0888ff;
-  margin-right: 110px;          /* 右に余白を設ける */
-}
-/* 画像 - 絶対配置で右上に配置 */
-.balloon2 .icon{
-  position: absolute;
-  right: -95px;
-  top: 0;
-op: 0;
-}
-/* 三角アイコン */
-.balloon2::before{
-  content: '';
-  position: absolute;
-  display: block;
-  width: 0;
-  height: 0;
-  right: -15px;
-  top: 20px;
-  border-left: 15px solid #0888ff;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-}
-
 .reply-area {
   width: 82%;
   font-size: 11px;
@@ -433,7 +419,7 @@ img.logo{
   background-image: linear-gradient(to bottom, #49c0f0, #2cafe3);
   border-radius: 4px;
   color: #fff;
-  line-height: 22px;
+  line-height: 25px;
   -webkit-transition: none;
   transition: none;
   text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
