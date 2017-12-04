@@ -80,19 +80,21 @@
               わかる<%= ": #{@wakaru_count}" unless @wakaru_count.zero? %><br>
 
           <% end %><br>
-              <!-- コメントにメッセージを送ることができる -->
-            <%= form_tag("/posts/#{@post.id}/replies") do %>
-              <% if @post.user == current_user || reply_user == current_user %>
-                &emsp;&emsp;&emsp;コメントに返信する:<br>
-                &emsp;&emsp;&emsp;<textarea name="reply-content"></textarea>
 
-                <!-- 現在のreplyのidを隠しパラメータとして渡す -->
-                <input type="hidden" value="<%=reply.id%>" name="p_id">
-                <input type="submit" value="返信する"><br>
-              <% end %>
+            <%= form_tag("/posts/#{@post.id}/replies") do %>
                 <!-- 親コメントへの子コメント表示-->
                 <% @messages.each do |message| %>
                   <p>[<%= message.created_at.strftime("%Y/%m/%d %H:%M") %>]&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<%= message.content %></p>
+                <% end %>
+
+                <!-- コメントにメッセージを送ることができる -->
+                <% if @post.user == current_user || reply_user == current_user %>
+                  &emsp;&emsp;&emsp;コメントに返信する:<br>
+                  &emsp;&emsp;&emsp;<textarea name="reply-content"></textarea>
+
+                  <!-- 現在のreplyのidを隠しパラメータとして渡す -->
+                  <input type="hidden" value="<%=reply.id%>" name="p_id">
+                  <input type="submit" value="返信する"><br>
                 <% end %>
             <% end %>
         <br>---------------------------------------------------------------------------------------

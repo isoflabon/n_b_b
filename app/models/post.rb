@@ -1,7 +1,7 @@
 class Post < ApplicationRecord
   has_many :replies
-  validates :title, {presence: true,length: {maximum: 40 }}
-  validates :content, {presence: true}
+  validates :title, {presence: true, length: {maximum: 40 }}
+  validates :content, {presence: true, length: {minimum: 40 }}
   validates :user_id, {presence: true}
 
   # onewaylove=片想い, together=交際中, date=デート, present=プレゼント, lovevision=恋愛観,
