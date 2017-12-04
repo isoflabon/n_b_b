@@ -1,4 +1,4 @@
-<h2>メールアドレスの編集 <%= resource_name.to_s.humanize %></h2>
+<h2>ユーザー設定 <%= resource_name.to_s.humanize %></h2>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
@@ -7,6 +7,20 @@
     <%= f.label :メールアドレス %><br />
     <%= f.email_field :email %>
   </div>
+
+  <% @content = @user.notice ? "する" : "しない" %>
+  <p>
+  現在の通知設定: <%= @content %>
+  </p>
+  <div class="radio-inline">
+    <%= f.radio_button :notice, true %>
+    <%= f.label :通知する %>
+  </div>
+  <div class="radio-inline">
+    <%= f.radio_button :notice, false %>
+    <%= f.label :通知しない %>
+  </div>
+
 
   <div class="actions">
     <%= f.submit "Update" %>
