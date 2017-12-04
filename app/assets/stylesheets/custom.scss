@@ -1,8 +1,19 @@
+.logo-lg img{
+  height: -webkit-fill-available;
+}
+.logo-mini img{
+  height: 100%;
+  float: left;
+}
 .content-wrapper h1{
   margin: 0 !important;
 }
 img.user-image{
   background-color: white;
+}
+
+.message-alert {
+  margin: 0 !important;
 }
 
 @media (min-width: 768px) {
