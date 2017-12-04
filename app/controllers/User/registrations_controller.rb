@@ -13,14 +13,26 @@ class User::RegistrationsController < Devise::RegistrationsController
   end
   #
   #  GET /resource/edit
-  #  def edit
-  #    super
-  #  end
+   def edit
+     super
+     @user = current_user
+   end
+
+   def update
+     super
+     @user.notice = params[:user][:notice]
+
+     if @user.save
+       flash[:notice] = "設定を変更しました"
+     else
+       flash[:notice] = "設定は変更できませんでした"
+     end
+   end
   #
   #  PUT /resource
-  #  def update
-  #    super
-  #  end
+   # def update
+   #   super
+   # end
   #
   #  DELETE /resource
   #  def destroy
@@ -57,4 +69,7 @@ class User::RegistrationsController < Devise::RegistrationsController
   # def after_inactive_sign_up_path_for(resource)
   #   super(resource)
   # end
+  def update_resource(resource, params)
+    resource.update_without_password(params)
+  end
 end
