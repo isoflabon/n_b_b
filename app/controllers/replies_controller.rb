@@ -20,6 +20,7 @@ class RepliesController < ApplicationController
     elsif  @reply.user.gender == "female"
       @notice_user = @post.user
     end
+
     if @reply.save
       # 通知設定をしていたら通知
       if @notice_user.notice
@@ -30,5 +31,6 @@ class RepliesController < ApplicationController
       flash[:notice] = "コメントを保存できませんでした"
       redirect_to("/posts/#{@post.id}")
     end
+
   end
 end
