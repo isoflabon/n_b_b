@@ -3,26 +3,34 @@
 
 <body>
   <h1>詳細ページ</h1>
-  <%= link_to("投稿一覧ページ", "/") %>
+  <%= link_to("投稿一覧ページ", "/posts") %>
   <div class="posts-index-item">
     <p class="box2"><%= @post.title %></p>
     <p class="box2"><%= @post.content %> </p>
     <p><%= @post.created_at.strftime("%Y/%m/%d %H:%M") %></p>
+      <% if Post.find(@post.id).postscript.present? %>
+        <p>&emsp;&emsp;&emsp;追記：<%= @post.postscript %></p>
+      <% end %>
   </div>
 
   <!-- 投稿した男性のみ追記と削除ができる-->
-  <% if current_user && @post.user == current_user %>
-    <div class="form">
-      <div class="form-postscript">
-        追記:<br>
-        <textarea name=""></textarea>
-        <input type="hidden" name="" value=0>
-        <input type="submit" value="追記する">
-      </div>
-    </div>
 
-    <%= link_to "削除", @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
-  <% end %>
+    <%= form_tag("/posts/#{@post.id}", method: 'put')  do %>
+      <% if current_user && @post.user == current_user %>
+        <!-- 追記は1回しかできない -->
+        <% if Post.find(@post.id).postscript.blank? %>
+          <div class="form">
+            <div class="form-postscript">
+              追記:<br>
+              <textarea name="postscript"></textarea>
+              <input type="hidden" name="" value=0>
+              <input type="submit" value="追記する">
+            </div>
+          </div>
+        <% end %>
+        <%= link_to "投稿削除", @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
+      <% end %>
+    <% end %>
 
   <%= render partial: "comment_form", :locals => { post_id: @post.id } %>
 

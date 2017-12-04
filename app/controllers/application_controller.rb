@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   # protect_from_forgery with: :exception
   # before_action :configure_permitted_parameters, if: :devise_controller?
-  before_action :authenticate_user! , except: [:show,:index]
+  before_action :authenticate_user! , except: [:show,:index,:top]
   protect_from_forgery with: :exception
   before_action :configure_permitted_parameters, if: :devise_controller?
 
@@ -19,14 +19,14 @@ class ApplicationController < ActionController::Base
     def male_forbid
       if current_user.gender == "male"
         flash[:notice] = "男性は悩みのみ投稿できます"
-        redirect_to("/")
+        redirect_to("/posts")
       end
     end
 
     def female_forbid
       if current_user.gender == "female"
         flash[:notice] = "女性はコメントのみできます"
-        redirect_to("/")
+        redirect_to("/posts")
       end
     end
 

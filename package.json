@@ -1,5 +1,7 @@
 {
   "name": "n_b_b",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "admin-lte": "^2.4.2"
+  }
 }

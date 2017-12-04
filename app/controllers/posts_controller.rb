@@ -1,6 +1,7 @@
 class PostsController < ApplicationController
   # 女性は悩みの投稿ができないようにした
   before_action :female_forbid, only: [:new]
+  before_action :cofirm_current_user, only: [:edit, :update, :destroy]
 
   def index
       # viewで「全て」が選択されたときにTrue
@@ -24,8 +25,10 @@ class PostsController < ApplicationController
                      user_id: current_user.id,
                      category: category)
     if @post.save
-      redirect_to("/")
+      flash[:notice] = "悩みを投稿しました"
+      redirect_to("/posts/#{@post.id}")
     else
+      flash[:notice] = "タイトルと内容は必須入力です"
       render("posts/new")
     end
   end
@@ -49,12 +52,12 @@ class PostsController < ApplicationController
     @post = current_post
     @replies = current_reply
 
-    @post.content = params[:content]
+    @post.postscript = params[:postscript]
 
     if @post.save
       redirect_to("/posts/#{@post.id}")
     else
-      render("posts/edit")
+      render("posts/show")
     end
 
   end
@@ -76,5 +79,13 @@ class PostsController < ApplicationController
 
   def current_reply
     Reply.where(post_id: current_post.id).order(created_at: :desc)
+  end
+
+  # ログインしているユーザがその悩みを投稿した人物か判断
+  def cofirm_current_user
+    if current_user.id != current_post.user_id
+      flash[:notice] = "権限がありません"
+      redirect_to("/posts")
+    end
   end
 end

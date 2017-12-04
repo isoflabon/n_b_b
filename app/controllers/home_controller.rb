@@ -1,3 +1,4 @@
 class HomeController < ApplicationController
-#test
+  def top
+  end
 end
