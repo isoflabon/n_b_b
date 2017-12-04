@@ -180,12 +180,14 @@
           </a>
         </li>
         <li>
+          <% if current_user && current_user.gender == "male"%>
           <a href="/posts/new">
             <!--<i class="fa fa-dashboard"></i>--> <span>悩みを相談する</span>
             <span class="pull-right-container">
               <!--<small class="label pull-right bg-green">new</small>-->
             </span>
           </a>
+          <% end %>
         </li>
         <!-- <li>
           <a href="pages/mailbox/mailbox.html">
@@ -218,7 +220,7 @@
     <p class="alert alert-danger"><%= alert %></p>
   <% end %>
 
-    
+
 
 
   <%= yield %>
