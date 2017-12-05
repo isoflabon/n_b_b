@@ -11,16 +11,19 @@
             <div class="fuwat">
               <h2 id = "animation" class ="h2_title">一歩踏み出す</h2>
             <div class="fuwat">
-              <h2 id = "animation" class ="h2_title" style = "color: #d5848b;">アトオス</h2>
+              <h2 id = "animation" class ="h2_title">アトオス</h2>
             </div>
             </div>
             </div>
             <% if current_user == nil%>
-            <a href = "/users/auth/facebook">
-              <button type="button" class="btn btn-default btn-lg btn-top-facebook">
-                Facebookでログイン
-              </button>
-            </a>
+              <a href = "/users/auth/facebook">
+                <button type="button" class="btn btn-default btn-lg btn-top-facebook">
+                  Facebookでログイン
+                </button>
+              </a>
+            <% else %>
+              <div class="margin-last">
+              </div>
             <% end %>
             <br>
 

@@ -17,6 +17,10 @@
   margin-top: 25%;
 }
 
+#top_page .margin-last{
+  margin-bottom: 25%;
+}
+
 #top_page h2.catch_weight{
   font-size: 45px;
 }
@@ -25,18 +29,23 @@
   margin:5% 0 0 0 ;//up right bottom left
   font-family: "Yu Mincho" ;
   font-weight: bold ;
+  font-size: 35px;
+  letter-spacing: 10px;
 }
 
 #top_page .top_introduction p.facebook-introduction{
-  margin:25% 0 5% 0;
+  margin:10% 0 5% 0;
 }
 
 #top_page .top_introduction button.btn-top-facebook{
-  margin:15% 0;
+  margin:15% 0 25% 0;
+  background-color: #305097 ;
+  color :white;
 }
 
 #top_page .top_color{
   margin:auto;
+  background-color: white;
 }
 
 #top_page .man-introduction{
@@ -60,12 +69,23 @@
   font-weight: 300;
   margin: 0 10%;
   }
+
+  #top_page .margin{
+    margin-top: 32%;
+  }
+
+  #top_page .margin-last{
+    margin-bottom: 32%;
+  }
 }
+
 @media screen and (max-device-width: 540px) {
 
   #top_page .title_issue h2{
     margin:7% 0 0 0;
     font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 25px;
   }
 
   #top_page .title_issue p{
