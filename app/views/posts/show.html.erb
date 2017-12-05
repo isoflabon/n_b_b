@@ -2,9 +2,7 @@
 </head>
 
 <body>
-  <% if current_user && @post.user_id == current_user %>
-    <span class="migi_gomi_1"><%= link_to image_tag('/gomi.jpg'), @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%></span>
-  <% end %>
+  <span class="migi_gomi_1"><%= link_to image_tag('/gomi.jpg'), @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%></span>
   <h1>詳細ページ</h1>
   <%= link_to("投稿一覧ページ", "/posts") %>
 
