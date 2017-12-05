@@ -4,13 +4,19 @@ class HomeController < ApplicationController
 
   def mypage
     if current_user.gender == "male"
-      @posts = Post.where(user_id: current_user.id)
+      @posts = Post.where(user_id: params[:user_id])
     else
-      @replies = Reply.where(user_id: current_user.id)
+      # 配列の初期化
+      @posts = []
+      # 返信した内容を取って来る
+      @replies = Reply.where(user_id: params[:user_id])
       @replies.each do |reply|
-        temp = Post.find_by(id: reply.post_id)
-        puts temp
+        # replyを元に投稿を探し出す
+        temp = reply.post
+        # 配列に追加
         @posts << temp
+        # 1つの投稿にコメントをいくつかすると探し出した投稿に重複が起きるので重複を削除
+        @posts = @posts.uniq
       end
     end
   end
