@@ -1,18 +1,33 @@
-<h2>メールアドレス/通知設定の変更</h2>
+<h1 style="padding-top:2%; font-weight:bold;">メールアドレス/通知設定の変更</h1>
+<div class="mailaddress-description" style="margin:5% 10%;">
+  <% if current_user %>
+    <p>Facebookに登録されているメールアドレス(<%= current_user.email %>)に以下の場合に通知が届くようになっています。</p>
+    <ui>
+      <li>男性の投稿に女性からコメントがあった時</li>
+      <li>女性のコメントに男性から返信があった時</li>
+    </ui>
+  <% else %>
+    <p>Facebookに登録されているメールアドレスに以下の場合に通知が届くようになっています。</p>
+    <ui>
+      <li>男性の投稿に女性からコメントがあった時</li>
+      <li>女性のコメントに男性から返信があった時</li>
+    </ui>
+  <% end %>
 
-<!-- <h2>ユーザー設定 <%= resource_name.to_s.humanize %></h2> -->
+  <!-- <h2>ユーザー設定 <%= resource_name.to_s.humanize %></h2> -->
+</div>
 
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
   <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :メールアドレス %> <br />
-    <%= f.email_field :email %>
-  </div>
+<div class="field" style="width:80%; margin:0 10%;">
+  <label class = "form_name"><%= f.label :メールアドレス %>
+  <%= f.email_field :email %></label>
+
 
   <% @content = @user.notice ? "する" : "しない" %>
   <p>
-  現在の通知設定: <%= @content %>
+  現在の通知設定: <span style="font-weight:bold;"><%= @content %></span>
   </p>
   <div class="radio-inline">
     <%= f.radio_button :notice, true %>
@@ -24,7 +39,8 @@
   </div>
 
 
-  <div class="actions">
+  <div class="actions" style="text-align:center;">
     <%= f.submit "変更" %>
   </div>
 <% end %>
+</div>

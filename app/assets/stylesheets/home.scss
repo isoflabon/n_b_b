@@ -1,34 +1,51 @@
 #top_page .content-wapper{
   margin: 0 !important;
   height:100%;
-  //background-image: url(/background_img.jpg);
-  //background-position: center center;
-  //background-repeat: no-repeat;
-  //background-attachment: fixed;
-  //background-size: cover;
 }
 
-
-
-/*
-.page-header[filter-color="lightgreen"]{
-  background: rgba(44, 44, 44, 0.2);
-  background: -webkit-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6));
-  background: -o-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6));
-  background: -moz-linear-gradient(90deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6));
-  background: linear-gradient(0deg, rgba(44, 44, 44, 0.2), rgba(224, 23, 3, 0.6));
-
+#top_page .top_img{
+  background-image: url(/background.png);
+  background-position: 81%;
+  background-size: cover;
 }
-*/
+
 .title_issue{
   text-align: center;
 }
 
-#top_page .title_issue h2{
-  margin:25% 0 10% 0;//up right bottom left
-  font-family: "Yu Mincho";
-  font-weight: bold;
+#top_page .margin{
+  margin-top: 25%;
+}
 
+#top_page .margin-last{
+  margin-bottom: 25%;
+}
+
+#top_page h2.catch_weight{
+  font-size: 45px;
+}
+
+#top_page .title_issue h2 {
+  margin:5% 0 0 0 ;//up right bottom left
+  font-family: "Yu Mincho" ;
+  font-weight: bold ;
+  font-size: 35px;
+  letter-spacing: 10px;
+}
+
+#top_page .top_introduction p.facebook-introduction{
+  margin:10% 0 5% 0;
+}
+
+#top_page .top_introduction button.btn-top-facebook{
+  margin:15% 0 25% 0;
+  background-color: #305097 ;
+  color :white;
+}
+
+#top_page .top_color{
+  margin:auto;
+  background-color: white;
 }
 
 #top_page .man-introduction{
@@ -41,19 +58,36 @@
   margin: 5%;
 }
 
-#top_page .top_introduction p.facebook-introduction{
-  margin:25% 0 5% 0;
-}
+@media screen and (max-device-width: 990px) {
+  #top_page .title_issue h2{
+    margin:7% 0 0 0;
+    font-weight: bold;
+  }
 
-#top_page .top_introduction button.btn-top-facebook{
-  margin:10% 0;
+  #top_page .title_issue p{
+  padding: 5px;
+  font-weight: 300;
+  margin: 0 10%;
+  }
+
+  #top_page .margin{
+    margin-top: 32%;
+  }
+
+  #top_page .margin-last{
+    margin-bottom: 32%;
+  }
 }
 
 @media screen and (max-device-width: 540px) {
+
   #top_page .title_issue h2{
-    margin:50% 0 10% 0;
+    margin:7% 0 0 0;
     font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 25px;
   }
+
   #top_page .title_issue p{
   padding: 5px;
   font-weight: 300;
