@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+  before_action :confirm_current_user, only: [:mypage]
+
   def top
   end
 
@@ -18,6 +20,20 @@ class HomeController < ApplicationController
         # 1つの投稿にコメントをいくつかすると探し出した投稿に重複が起きるので重複を削除
         @posts = @posts.uniq
       end
+    end
+  end
+
+
+  private
+
+  def confirm_current_user
+    # 見ようとしているユーザの設定
+    @see_user = User.find_by(id: params[:user_id])
+    # 他ユーザが別のユーザのマイページを参照しようとする場合
+    binding.pry
+    if current_user != @see_user
+      flash[:notice] = "他人のマイページは参照できません。"
+      redirect_to("/posts")
     end
   end
 end
