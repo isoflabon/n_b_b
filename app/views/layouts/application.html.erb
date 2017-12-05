@@ -107,7 +107,9 @@
                 <!-- Menu Footer-->
                 <li class="user-footer">
                   <div class="pull-left">
-                    <a href="#" class="btn btn-default btn-flat">プロフィール</a>
+                    <div class="btn btn-default btn-flat">
+                      <%= link_to("マイページ","/") %>
+                    </div>
                   </div>
                   <div class="pull-right">
                     <a class="btn btn-default btn-flat" rel="nofollow" data-method="delete" href="/users/sign_out">ログアウト</a>
@@ -190,6 +192,15 @@
             </span>
           </a>
           <% end %>
+        </li>
+
+        <!-- ログインユーザごとのマイページ -->
+        <li>
+          <%= link_to("マイページ","/") %>
+            <!--<i class="fa fa-dashboard"></i>--> 
+            <span class="pull-right-container">
+            </span>
+          </a>
         </li>
         <!-- <li>
           <a href="pages/mailbox/mailbox.html">
