@@ -118,7 +118,9 @@
           <% end %>
           <!-- Control Sidebar Toggle Button -->
           <li>
-            <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
+            <!-- <input type="button" value="提出" id="button1" onClick="_submit()" > -->
+            <!-- <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a> -->
+            <%= link_to("通知設定","/users/edit") %>
           </li>
         </ul>
       </div>
@@ -180,12 +182,14 @@
           </a>
         </li>
         <li>
+          <% if current_user && current_user.gender == "male"%>
           <a href="/posts/new">
             <!--<i class="fa fa-dashboard"></i>--> <span>悩みを相談する</span>
             <span class="pull-right-container">
               <!--<small class="label pull-right bg-green">new</small>-->
             </span>
           </a>
+          <% end %>
         </li>
         <!-- <li>
           <a href="pages/mailbox/mailbox.html">
@@ -218,7 +222,7 @@
     <p class="alert alert-danger"><%= alert %></p>
   <% end %>
 
-    
+
 
 
   <%= yield %>
