@@ -108,7 +108,7 @@
                 <li class="user-footer">
                   <div class="pull-left">
                     <div class="btn btn-default btn-flat">
-                      <%= link_to("マイページ","/mypage/#{user.id}") %>
+                      <%= link_to("マイページ","/mypage/#{current_user.id}") %>
                     </div>
                   </div>
                   <div class="pull-right">
@@ -196,7 +196,7 @@
 
         <!-- ログインユーザごとのマイページ -->
         <li>
-          <%= link_to("マイページ","/mypage/#{user.id}") %>
+          <%= link_to("マイページ","/mypage/#{current_user.id}") %>
             <!--<i class="fa fa-dashboard"></i>-->
             <span class="pull-right-container">
             </span>
