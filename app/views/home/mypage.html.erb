@@ -2,6 +2,12 @@
 <div class = "pase">
 <h1 class = "pase_name">マイページ</h1>
 
+<% if current_user.gender == "male" %>
+あなたの投稿一覧
+<% else %>
+あなたがコメントした投稿一覧
+<% end %>
+
 <br class="main posts-index">
   <div class="container">
     <% @posts.each do |post| %>
