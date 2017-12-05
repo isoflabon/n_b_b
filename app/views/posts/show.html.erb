@@ -2,7 +2,9 @@
 </head>
 
 <body>
-  <span class="migi_gomi_1"><%= link_to image_tag('/gomi.jpg'), @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%></span>
+  <% if current_user && @post.user_id == current_user %>
+    <span class="migi_gomi_1"><%= link_to image_tag('/gomi.jpg'), @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%></span>
+  <% end %>
   <h1>詳細ページ</h1>
   <%= link_to("投稿一覧ページ", "/posts") %>
 
@@ -16,7 +18,7 @@
           <p id="font_size"><%= @post.content %> </p>
           <p><%= @post.created_at.strftime("%Y/%m/%d %H:%M") %></p>
           <% if Post.find(@post.id).postscript.present? %>
-            <p id="font_size">ps.<%= @post.postscript %></p>
+            <p id="font_size">追記: <%= @post.postscript %></p>
           <% end %>
         </div>
       </div>
