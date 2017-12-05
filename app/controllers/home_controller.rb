@@ -6,7 +6,7 @@ class HomeController < ApplicationController
 
   def mypage
     if current_user.gender == "male"
-      @posts = Post.where(user_id: params[:user_id])
+      @posts = Post.where(user_id: params[:user_id]).order(created_at: :desc)
     else
       # 配列の初期化
       @posts = []
