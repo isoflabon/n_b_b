@@ -30,7 +30,6 @@ class HomeController < ApplicationController
     # 見ようとしているユーザの設定
     @see_user = User.find_by(id: params[:user_id])
     # 他ユーザが別のユーザのマイページを参照しようとする場合
-    binding.pry
     if current_user != @see_user
       flash[:notice] = "他人のマイページは参照できません。"
       redirect_to("/posts")
