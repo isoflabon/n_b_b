@@ -1,0 +1,29 @@
+.logo-lg img{
+  height: -webkit-fill-available;
+}
+.logo-mini img{
+  height: 100%;
+  float: left;
+}
+.content-wrapper h1{
+  margin: 0 !important;
+}
+img.user-image{
+  background-color: white;
+}
+
+.message-alert {
+  margin: 0 !important;
+}
+
+@media (min-width: 768px) {
+  .sidebar-mini.sidebar-collapse .main-header .navbar {
+      margin-left: 0px;
+  }
+  .sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .right-side, .sidebar-mini.sidebar-collapse .main-footer {
+      margin-left: 0px !important;
+  }
+  .sidebar-collapse.sidebar-menu, .main-sidebar .user-panel, .sidebar-menu > li.header {
+    display: none;
+  }
+}
