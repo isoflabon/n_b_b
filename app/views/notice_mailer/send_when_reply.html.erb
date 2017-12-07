@@ -20,7 +20,14 @@
   <!-- <p>
     ユーザー名: <%= @user.email %><br />
   </p> -->
-  あなたの投稿へコメントがきました。 <br />
+  <% if @user.gender == "male" %>
+    あなたの投稿に女性からコメントがきました。 <br />
+    <div style="border:1px dotted #093;padding:10px;border-radius:10px;"><%= @reply.content %></div>
+  <% else %> 
+    あなたのコメントに男性から返信がきました。 <br />
+    <div style="border:1px dotted #093;padding:10px;border-radius:10px;"><%= @reply.content %></div>
+  <% end %>
+
   <p>
   <%= link_to "アトオス", "https://ato-su.herokuapp.com/posts/#{@post.id}" %>で確認する。
   </p>

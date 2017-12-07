@@ -24,7 +24,7 @@ class RepliesController < ApplicationController
     if @reply.save
       # 通知設定をしていたら通知
       if @notice_user.notice
-        NoticeMailer.send_when_reply(@notice_user,@post).deliver
+        NoticeMailer.send_when_reply(@notice_user,@post,@reply).deliver
       end
       redirect_to("/posts/#{@post.id}")
     else
