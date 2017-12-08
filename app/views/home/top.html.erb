@@ -1,32 +1,29 @@
-<!--<div id = "top_page" class="content-wrapper" style="background-image:url(/background_img.jpg); margin:0;">
-  <div class="page-header clear-filter" filter-color="LightGreen">-->
-    <div id="top_page" class="top_config">
-      <div class="row top_img">
-        <div class="col-md-1"></div>
-        <div class="col-md-1"></div>
-        <div class="col-md-8 title_issue">
-          <div class="top_introduction">
-            <div class="margin fuwat">
-              <h2 id = "animation" class ="h2_title">そっと支える</h2>
-            <div class="fuwat">
-              <h2 id = "animation" class ="h2_title">一歩踏み出す</h2>
-            <div class="fuwat">
-              <h2 id = "animation" class ="h2_title">アトオス</h2>
-            </div>
-            </div>
-            </div>
-            <% if current_user == nil%>
-              <a href = "/users/auth/facebook">
-                <button type="button" class="btn btn-default btn-lg btn-top-facebook">
-                  Facebookでログイン
-                </button>
-              </a>
-            <% else %>
-              <div class="margin-last">
-              </div>
-            <% end %>
-            <br>
-
+<div id="top_page" class="top_config">
+  <div class="row top_img">
+    <div class="col-md-1"></div>
+    <div class="col-md-1"></div>
+    <div class="col-md-8 title_issue">
+      <div class="top_introduction">
+        <div class="margin fuwat">
+          <h2 id = "animation" class ="h2_title">そっと支える</h2>
+        <div class="fuwat">
+          <h2 id = "animation" class ="h2_title">一歩踏み出す</h2>
+        <div class="fuwat">
+          <h2 id = "animation" class ="h2_title">アトオス</h2>
+        </div>
+        </div>
+        </div>
+        <% if current_user == nil%>
+          <a href = "/users/auth/facebook">
+            <button type="button" class="btn btn-default btn-lg btn-top-facebook">
+              Facebookでログイン
+            </button>
+          </a>
+        <% else %>
+          <div class="margin-last">
+          </div>
+        <% end %>
+        <br>
       </div>
     </div>
   </div>
@@ -35,6 +32,7 @@
     <div class="col-md-1"></div>
     <div class="col-md-8 title_issue">
       <div class="top_introduction">
+        <h3 class = "second_section_title">アトオスとは</h3>
         <p class = "facebook-introduction">このサービスは、恋愛において悩み、疑問を抱えている男性に対して、
         女性からリアルな意見をフィードバックとしてもらい、男性の恋愛に関する悩み解決を
         後押しするサービスです。Facebook認証でのログインしてもらった方々のみ使用することができます。</p>
@@ -48,27 +46,30 @@
             <p>サービス向上のため、ご協力よろしくお願いいたします。</p>
           </div>
         </div>
+        <div style = "margin:5%;"></div>
       </div>
     </div>
   </div><!--row-->
-  <div class="row">
-    <div class="col-md-1"></div>
-      <div class="col-md-4 man-introduction">
-      <h3>男性の皆様へ</h3>
-        <p>恋愛に対していろんな悩み抱えてませんか？もしくは溜め込んでいませんか？</p>
-        <p>このサービスを通して、女性のことを理解し紳士的で素敵な男性になることをスタッフ一同願っております！</p>
-        <p>男性の皆さん、悩みを抱えこまず、一歩踏み出して投稿しましょう！</p>
-      </div>
-    <div class="col-md-1"></div>
-    <div class="col-md-1"></div>
-    <div class="col-md-4 woman-introduction">
-      <div class="top_introduction">
-        <h3>女性の皆様へ</h3>
-        <p>世の中の男性の悩みを知りたくないですか？</p>
-        <p>世の中の男性を紳士にする手助けをお願いします！</p>
-        <p>女性の皆さん、ぜひ男性の悩みの支えとなってあげてください！</p>
+  <div class="row jendar-color">
+    <div class="col-md-12">
+      <div class = "jendar_introduction">
+          <div class="col-md-6 woman-background">
+                <div class = "woman-introduction">
+                  <h3 class = "jendar-respect">Lady</h3>
+                  <p>世の中の男性の悩みを知りたくないですか？</p>
+                  <p>世の中の男性を紳士にする手助けをお願いします！</p>
+                  <p>女性の皆さん、ぜひ男性の悩みの支えとなってあげてください！</p>
+                </div>
+          </div>
+          <div class="col-md-6 man-background">
+                <div class = "man-introduction">
+                  <h3 class = "jendar-respect">Gentleman</h3>
+                  <p>恋愛に対していろんな悩み抱えてませんか？もしくは溜め込んでいませんか？</p>
+                  <p>このサービスを通して、女性のことを理解し紳士的で素敵な男性になることをスタッフ一同願っております！</p>
+                  <p>男性の皆さん、悩みを抱えこまず、一歩踏み出して投稿しましょう！</p>
+                </div>
+          </div>
       </div>
     </div>
-    <div class="col-md-1"></div>
-  </div><!--row-->
+  </div>
 </div>
