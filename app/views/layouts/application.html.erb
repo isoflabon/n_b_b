@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>NBB</title>
+    <title>アトオス</title>
     <%= csrf_meta_tags %>
 
     <!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-sidebar/3.1.0/jquery.sidebar.min.js"></script>-->
@@ -107,7 +107,11 @@
                 <!-- Menu Footer-->
                 <li class="user-footer">
                   <div class="pull-left">
-                    <a href="#" class="btn btn-default btn-flat">プロフィール</a>
+                    <div class="btn btn-default btn-flat">
+                      <% if current_user %>
+                      <%= link_to("マイページ","/mypage/#{current_user.id}") %>
+                      <% end %>
+                    </div>
                   </div>
                   <div class="pull-right">
                     <a class="btn btn-default btn-flat" rel="nofollow" data-method="delete" href="/users/sign_out">ログアウト</a>
@@ -188,11 +192,15 @@
         </li>
         <li>
           <%= link_to("通知設定","/users/edit") %>
-            <!--<i class="fa fa-book"></i>-->
-            <!-- <span class="pull-right-container">
-              <small class="label pull-right bg-green">new</small>
-            </span> -->
-          </a>
+        </li>
+        <!-- ログインユーザごとのマイページ -->
+        <li>
+          <% if current_user %>
+          <%= link_to("マイページ","/mypage/#{current_user.id}") %>
+          <% end %>
+            <!--<i class="fa fa-dashboard"></i>-->
+            <span class="pull-right-container">
+            </span>
         </li>
         <!-- <li>
           <a href="pages/mailbox/mailbox.html">
