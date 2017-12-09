@@ -121,11 +121,6 @@
             </li>
           <% end %>
           <!-- Control Sidebar Toggle Button -->
-          <li>
-            <!-- <input type="button" value="提出" id="button1" onClick="_submit()" > -->
-            <!-- <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a> -->
-            <%= link_to("通知設定","/users/edit") %>
-          </li>
         </ul>
       </div>
 
@@ -167,9 +162,6 @@
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">MAIN NAVIGATION</li>
-
-        <li>
           <a href="/">
             <!--<i class="fa fa-dashboard"></i>--> <span>TOP</span>
             <span class="pull-right-container">
@@ -195,7 +187,9 @@
           </a>
           <% end %>
         </li>
-
+        <li>
+          <%= link_to("通知設定","/users/edit") %>
+        </li>
         <!-- ログインユーザごとのマイページ -->
         <li>
           <% if current_user %>
@@ -204,7 +198,6 @@
             <!--<i class="fa fa-dashboard"></i>-->
             <span class="pull-right-container">
             </span>
-          </a>
         </li>
         <!-- <li>
           <a href="pages/mailbox/mailbox.html">
