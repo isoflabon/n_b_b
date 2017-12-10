@@ -28,7 +28,7 @@ class PostsController < ApplicationController
       flash[:notice] = "悩みを投稿しました"
       redirect_to("/posts/#{@post.id}")
     else
-      flash[:notice] = "タイトルと内容は必須入力です"
+      flash[:notice] = "タイトルと内容は必須入力です。タイトルは日本語で20文字以下、内容は日本語で20文字以上の制限があります。"
       render("posts/new")
     end
   end
