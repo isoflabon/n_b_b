@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>アトオス</title>
+    <title>NBB</title>
     <%= csrf_meta_tags %>
 
     <!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-sidebar/3.1.0/jquery.sidebar.min.js"></script>-->
@@ -28,9 +28,9 @@
     <!-- Logo -->
     <a href="/posts" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-lg"><img src="/ato-su.png" alt="アトオス"></span>
+      <span class="logo-lg"><b>アトオス</b></span>
       <!-- logo for regular state and mobile devices -->
-      <img src="/atoos_min.png" alt="アトオス">
+      <span class="logo-lg"></span>
     </a>
 
     <!-- Header Navbar: style can be found in header.less -->
@@ -90,20 +90,7 @@
                     <% end %><!--<small>Member since Nov. 2012</small>-->
                 </li>
                 <!-- Menu Body -->
-                <!-- <li class="user-body">
-                  <div class="row">
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Followers</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">コメント</a>
-                    </div>
-                    <div class="col-xs-4 text-center">
-                      <a href="#">Friends</a>
-                    </div>
-                  </div>
-                  <! /.row
-                </li> -->
+
                 <!-- Menu Footer-->
                 <li class="user-footer">
                   <div class="pull-left">
@@ -121,11 +108,6 @@
             </li>
           <% end %>
           <!-- Control Sidebar Toggle Button -->
-          <li>
-            <!-- <input type="button" value="提出" id="button1" onClick="_submit()" > -->
-            <!-- <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a> -->
-            <%= link_to("通知設定","/users/edit") %>
-          </li>
         </ul>
       </div>
 
@@ -167,8 +149,6 @@
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu" data-widget="tree">
-        <li class="header">MAIN NAVIGATION</li>
-
         <li>
           <a href="/">
             <!--<i class="fa fa-dashboard"></i>--> <span>TOP</span>
@@ -195,7 +175,9 @@
           </a>
           <% end %>
         </li>
-
+        <li>
+          <%= link_to("通知設定","/users/edit") %>
+        </li>
         <!-- ログインユーザごとのマイページ -->
         <li>
           <% if current_user %>
