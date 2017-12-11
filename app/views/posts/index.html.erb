@@ -2,19 +2,30 @@
 <div class = "pase">
 <h1 class = "pase_name">投稿一覧</h1>
 
+
+  <div class="btn-group category-position">
+    <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      カテゴリー <span class="caret"></span>
+    </button>
+    <ul class="dropdown-menu">
+      <div class="category">
+        <%= link_to("すべて", category: 0) %><br>
+        <%= link_to("片想い", category: 1) %><br>
+        <%= link_to("交際中", category: 2) %><br>
+        <%= link_to("デート", category: 3) %><br>
+        <%= link_to("プレゼント", category: 4) %><br>
+        <%= link_to("恋愛観", category: 5) %><br>
+        <%= link_to("ケンカ", category: 6) %><br>
+        <%= link_to("浮気", category: 7) %><br>
+        <%= link_to("性事情", category: 8) %><br>
+      </div>
+    </ul>
+  </div>
+
+
+
 <!-- カテゴリーごとの一覧表示 -->
-<div class="category">
-  カテゴリー：
-  <%= link_to("すべて", category: 0) %>
-  <%= link_to("片想い", category: 1) %>
-  <%= link_to("交際中", category: 2) %>
-  <%= link_to("デート", category: 3) %>
-  <%= link_to("プレゼント", category: 4) %>
-  <%= link_to("恋愛観", category: 5) %>
-  <%= link_to("ケンカ", category: 6) %>
-  <%= link_to("浮気", category: 7) %>
-  <%= link_to("性事情", category: 8) %>
-</div>
+
 
 <br class="main posts-index">
 <% if current_user %>
