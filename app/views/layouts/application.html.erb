@@ -21,10 +21,7 @@
 
 
 <div class="wrapper">
-
-
   <header class="main-header">
-
     <!-- Logo -->
     <a href="/posts" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
@@ -94,14 +91,16 @@
                 <!-- Menu Footer-->
                 <li class="user-footer">
                   <div class="pull-left">
-                    <div class="btn btn-default btn-flat">
+
                       <% if current_user %>
-                      <%= link_to("マイページ","/mypage/#{current_user.id}") %>
+                        <%= link_to "マイページ","/mypage/#{current_user.id}",class: "btn btn-default btn-flat" %>
                       <% end %>
-                    </div>
+                    
                   </div>
                   <div class="pull-right">
-                    <a class="btn btn-default btn-flat" rel="nofollow" data-method="delete" href="/users/sign_out">ログアウト</a>
+                    <a class="btn btn-default btn-flat" rel="nofollow" data-method="delete" href="/users/sign_out">
+                      ログアウト
+                    </a>
                   </div>
                 </li>
               </ul>
@@ -211,21 +210,21 @@
     <!-- /.sidebar -->
   </aside>
   <div class="content-wrapper">
-   <!--アラートやメッセーじを表示する -->
-   <div class = "message-alert">
-    <% if notice %>
-      <p class="alert alert-success"><%= notice %></p>
+    <!--アラートやメッセーじを表示する -->
+    <div class = "message-alert">
+      <% if notice %>
+        <p class="alert alert-success"><%= notice %></p>
+        <% end %>
+      <% if alert %>
+        <p class="alert alert-danger"><%= alert %></p>
       <% end %>
-    <% if alert %>
-      <p class="alert alert-danger"><%= alert %></p>
-    <% end %>
-  </div>
+    </div>
 
+    <%= yield %>
 
-
-
-
-  <%= yield %>
+    <div class = "templete_copyright">
+      <p>Copyright © 2014-2016 Almsaeed Studio. All rights reserved.</p>
+    </div>
   </div>
 </div>
   </body>
