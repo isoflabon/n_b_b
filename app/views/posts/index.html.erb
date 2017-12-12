@@ -1,6 +1,6 @@
 <div class="content-wrapper">
 <div class = "pase">
-<h1 class = "pase_name">投稿一覧</h1>
+<h1 class = "pase_name">お悩み一覧</h1>
 
 
   <div class="btn-group category-position">
@@ -36,8 +36,8 @@
   <div class="container">
     <% @posts.each do |post| %>
       <div class="posts-index-item">
-        <p class="box7">title:   <%= post.title%><br><br>
-        content: <%= post.content.truncate(40) %>
+        <p class="box7">タイトル:   <%= post.title%><br><br>
+        <%= post.content.truncate(40) %>
         <%= link_to("もっと見る", "/posts/#{post.id}") %></p>
       </div>
     <% end %>
