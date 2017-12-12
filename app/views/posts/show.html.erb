@@ -94,34 +94,66 @@
               わかる<%= ": #{@wakaru_count}" unless @wakaru_count.zero? %>
             <% end %>
           </div>
-        </div>
-        <div class="reply-area">
-            <!-- コメントにメッセージを送ることができる -->
-          <%= form_tag("/posts/#{@post.id}/replies") do %>
-            <!-- 親コメントへの子コメント表示-->
-            <div class="reply-content">
-              <% @messages.each do |message| %>
-                <p><%= message.content %></p>
-                <p>[<%= message.created_at.strftime("%Y/%m/%d %H:%M") %>]</p>
-              <% end %>
-              <br>
-              <% if @post.user == current_user || reply_user == current_user %>
-                &emsp;&emsp;&emsp;コメントに返信する:<br>
-                &emsp;&emsp;&emsp;<textarea name="reply-content" class="reply-form"></textarea>
+          <div class="reply-area">
+            <!-- <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"> -->
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= reply.id %>" aria-expanded="true" aria-controls="collapse<%= reply.id %>">
+                      コメントに対する返信
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse<%= reply.id %>" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading<%= reply.id %>">
+                  <div class="panel-body">
+                        <!-- コメントにメッセージを送ることができる -->
+                      <%= form_tag("/posts/#{@post.id}/replies") do %>
+                        <!-- 親コメントへの子コメント表示-->
+                        <div class="reply-content">
+                          <% @messages.each do |message| %>
+                            <p><%= message.content %></p>
+                            <p>[<%= message.created_at.strftime("%Y/%m/%d %H:%M") %>]</p>
+                          <% end %>
+                          <br>
+                          <% if @post.user == current_user || reply_user == current_user %>
+                            &emsp;&emsp;&emsp;コメントに返信する:<br>
+                            &emsp;&emsp;&emsp;<textarea name="reply-content" class="reply-form"></textarea>
 
-                <!-- 現在のreplyのidを隠しパラメータとして渡す -->
-                <input type="hidden" value="<%=reply.id%>" name="p_id">
-                <input type="submit" value="返信する" class="button"><br>
-              <% end %>
+                            <!-- 現在のreplyのidを隠しパラメータとして渡す -->
+                            <input type="hidden" value="<%=reply.id%>" name="p_id">
+                            <input type="submit" value="返信する" class="button"><br>
+                          <% end %>
+                          </div>
+                      <% end %>
+                    </div>
+                  </div>
+                </div>
+              <!-- </div> -->
             </div>
-          <% end %>
+          </div>
         </div>
-      </div>
               <!-- コメントにメッセージを送ることができる -->
     <% end %>
   </div>
 <% end %>
 
+<!-- アコーディオンソース -->
+<!-- <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Collapsible Group Item #1
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+      </div>
+    </div>
+  </div>
+</div> -->
 <!--ここにもともとわかるなるほどのソース書かれてた-->
 
 </body>
