@@ -18,11 +18,22 @@ body{
      background-color: #ecf0f5;
 }
 
-textarea.comment-form {
-    width: 70%;
-    margin-left: 9px;
+.form {
+  margin:20px;
 }
 
+textarea.comment-form {
+  width: 100%;
+  height:30%;
+}
+.commentsuru_btn {
+  padding:0 !important;
+}
+@media screen and (max-device-width: 540px) {
+  .commentsuru_btn {
+    padding:15px !important; 
+  }
+}
 textarea.additional-anformation{
   width: 70%;
   margin-left: 9px;
