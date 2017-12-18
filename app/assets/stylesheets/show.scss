@@ -18,11 +18,22 @@ body{
      background-color: #ecf0f5;
 }
 
-textarea.comment-form {
-    width: 70%;
-    margin-left: 9px;
+.form {
+  margin:20px;
 }
 
+textarea.comment-form {
+  width: 100%;
+  height:30%;
+}
+.commentsuru_btn {
+  padding:0 !important;
+}
+@media screen and (max-device-width: 540px) {
+  .commentsuru_btn {
+    padding:15px !important;
+  }
+}
 textarea.additional-anformation{
   width: 70%;
   margin-left: 9px;
@@ -135,7 +146,6 @@ textarea.additional-anformation{
 .question_Box{
      width: 100%;
      overflow: hidden;
-     margin-bottom: 8%;
      background-color: #ecf0f5;
 }
 
@@ -312,9 +322,9 @@ textarea.reply-form{
 }
 
 .reply-area {
-  width: 82%;
+  width: 80%;
   font-size: 11px;
-  padding: 3%;
+  padding-bottom: 3%;
   float: right;
 
 }
@@ -435,4 +445,19 @@ img.logo{
   box-shadow: inset 0 3px 5px rgba(0, 0, 0, .2);
   color: #1679a1;
   text-shadow: 0 1px 1px rgba(255, 255, 255, .5);
+}
+
+
+.button2 {
+  border: 1px solid #15aeec;
+  background-color: #49c0f0;
+  background-image: -webkit-linear-gradient(top, #49c0f0, #2cafe3);
+  background-image: linear-gradient(to bottom, #49c0f0, #2cafe3);
+  border-radius: 4px;
+  color: #fff;
+  line-height: 25px;
+  -webkit-transition: none;
+  transition: none;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .3);
+  float: right;
 }

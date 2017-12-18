@@ -1,15 +1,23 @@
 body{
   font-family: 'Hiragino Maru Gothic ProN' !important;
 }
+.content-wrapper h1{
+  margin: 0 !important;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  font-size: 30px;
+}
+.templete_copyright {
+  float:right;
+}
 .logo-lg img{
   height: -webkit-fill-available;
 }
 .logo-mini img{
   height: 100%;
   float: left;
-}
-.content-wrapper h1{
-  margin: 0 !important;
 }
 img.user-image{
   background-color: white;
