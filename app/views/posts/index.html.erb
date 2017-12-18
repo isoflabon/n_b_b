@@ -36,9 +36,9 @@
     <% @posts.each do |post| %>
     <% reply_count = Reply.where(post_id: post.id,p_id: 0).count %>
       <div class="posts-index-item box7">
-        <p>title:   <%= post.title%></p>
+        <p>タイトル:   <%= post.title%></p>
         <br>
-        <p>content: <%= post.content.truncate(40) %>
+        <p> <%= post.content.truncate(40) %>
         <%= link_to("もっと見る", "/posts/#{post.id}") %></p>
         <br>
         <p class="comment-num">コメント数 (<%= reply_count%>)</p>
