@@ -19,6 +19,7 @@
           <% if Post.find(@post.id).postscript.present? %>
             <p id="font_size">追記: <%= @post.postscript %></p>
           <% end %>
+
           <div style = "float:right;">
             <% if current_user && current_user == @post.user %>
               <%= link_to "", @resource, class:"glyphicon glyphicon-trash", method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
@@ -26,9 +27,14 @@
           </div>
           <div style = "padding-top:9px;">
           </div>
+
         </div>
+        <font size="4">この悩みをシェアする</font>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-text="<%=@post.title%>" class="twitter-share-button" data-hashtags="アトオス" data-lang="ja" data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </div>
+
   </div>
   <!-- 投稿した男性のみ追記と削除ができる-->
 
