@@ -2,10 +2,7 @@
 </head>
 
 <body>
-  <% if current_user && current_user == @post.user %>
-    <span class="migi_gomi_1"><%= link_to image_tag('/gomi.jpg'), @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%></span>
-  <% end %>
-  <h1>詳細ページ</h1>
+  <h1>悩みの詳しい内容</h1>
   <%= link_to("投稿一覧ページ", "/posts") %>
 
   <div class="posts-index-item">
@@ -20,7 +17,9 @@
             <p id="font_size">追記: <%= @post.postscript %></p>
           <% end %>
           <div style = "float:right;">
-            <%= link_to "", @resource, class:"glyphicon glyphicon-trash", method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
+            <% if current_user && current_user == @post.user %>
+              <%= link_to "", @resource, class:"glyphicon glyphicon-trash", method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
+            <% end %>
           </div>
           <div style = "padding-top:9px;">
           </div>
