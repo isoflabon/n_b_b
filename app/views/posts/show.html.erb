@@ -19,6 +19,13 @@
           <% if Post.find(@post.id).postscript.present? %>
             <p id="font_size">追記: <%= @post.postscript %></p>
           <% end %>
+          <div style = "float:right;">
+            <% if current_user && current_user == @post.user %>
+              <%= link_to "", @resource, class:"glyphicon glyphicon-trash", method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
+            <% end %>
+          </div>
+          <div style = "padding-top:9px;">
+          </div>
         </div>
       </div>
     </div>
@@ -42,7 +49,7 @@
 
   <%= render partial: "comment_form", :locals => { post_id: @post.id } %>
 
-
+<br>
 
 <% @replies.each do |reply| %>
   <!-- messagesの中はreplyに対するコメントが入っている -->
@@ -99,7 +106,7 @@
                 <div class="panel-heading" role="tab" id="headingOne">
                   <h4 class="panel-title">
                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= reply.id %>" aria-expanded="true" aria-controls="collapse<%= reply.id %>">
-                      コメントに対する返信
+                      <i class = "glyphicon glyphicon-triangle-bottom"></i> コメントに対する返信
                     </a>
                   </h4>
                 </div>
