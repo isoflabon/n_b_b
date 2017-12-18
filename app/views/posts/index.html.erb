@@ -1,7 +1,5 @@
-<div class="content-wrapper">
 <div class = "pase">
 <h1 class = "pase_name">お悩み一覧</h1>
-
 
   <div class="btn-group category-position">
     <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -22,11 +20,12 @@
     </ul>
   </div>
 
-
+<!-- 現在選択中のカテゴリーを表示   -->
+<div class="janru">
+  &emsp;&emsp;選択中のカテゴリー : <%= @janru %>
+</div>
 
 <!-- カテゴリーごとの一覧表示 -->
-
-
 <br class="main posts-index">
 <% if current_user %>
   <% if current_user.gender == "male" %>

@@ -9,7 +9,6 @@
   <%= link_to("投稿一覧ページ", "/posts") %>
 
   <div class="posts-index-item">
-
     <div id="wrapper">
       <div class="question_Box">
         <div class="answer_image"><img src="/man_user_default.png" alt="質問者の写真"/></div>
@@ -43,85 +42,99 @@
 
   <%= render partial: "comment_form", :locals => { post_id: @post.id } %>
 
-  <div class="container reply-main">
-    <div>
-      <% @replies.each do |reply| %>
-        <!-- messagesの中はreplyに対するコメントが入っている -->
-        <% @messages = messages(reply.id) %>
-        <div class="posts-index-item">
-          <% if reply.user_id != nil %>
-            <% reply_user = User.find_by(id: reply.user_id) %>
-          <% end %>
 
-          <% if reply.p_id == 0 %>
 
-            <div id="wrapper">
-              <div class="question_Box">
-                <div class="question_image">
-                  <img src="/woman_user_default.png" alt="質問者の写真"/>
-                </div>
-                <div class="arrow_question">
-                  <p id="font_size"><%= reply.content %></p> <br>
-                  [<%= reply.created_at.strftime("%Y/%m/%d %H:%M") %>]<br>
+<% @replies.each do |reply| %>
+  <!-- messagesの中はreplyに対するコメントが入っている -->
+  <% @messages = messages(reply.id) %>
+  <div class="posts-index-item">
+    <% if reply.user_id != nil %>
+      <% reply_user = User.find_by(id: reply.user_id) %>
+    <% end %>
 
-                  <% @naruhodo_count = Naruhodo.where(reply_id: reply.id).count%>
-                  <% @wakaru_count = Wakaru.where(reply_id: reply.id).count%>
-                  <!-- 現在ログインしている人が女性ならば「わかる」ボタンを押したり取り消せたりできる -->
-                  <% if current_user %>
-                    <% if current_user.gender == "female" %>
-                      <% if Wakaru.where(user_id: current_user, reply_id: reply.id).present? %>
-                        <button class="wakaru_after migi"> <%= @wakaru_count %>:<%= link_to("わかる ", "/posts/#{@post.id}/replies/#{reply.id}/wakarus/:id" , {method:"delete"}) %></button> <!-- 押された後 -->
-                      <% else %>
-                        <button class="wakaru_before migi"> <%= link_to("わかる ", "/posts/#{@post.id}/replies/#{reply.id}/wakarus" , {method:"post"}) %></button> <!-- 押される前 -->
-                      <% end %>
-                        <!-- カウント数が0の場合は表示しない-->
-                      <span class="naruho_men_before naruho_men_after migi"><%= "#{@naruhodo_count}" unless @naruhodo_count.zero? %> なるほど</span><br>
+    <% if reply.p_id == 0 %>
 
-                      <!-- 現在ログインしている人が男性ならば「なるほど」ボタンを押したり取り消せたりできる -->
-                    <% elsif current_user.gender == "male" %>
-                      <% if Naruhodo.where(user_id: current_user, reply_id: reply.id).present? %>
-                        <button class="naruho_after migi"> <%= @naruhodo_count %> <%= link_to("なるほど ", "/posts/#{@post.id}/replies/#{reply.id}/naruhodos/:id" , {method:"delete"}) %></button>　<!-- 押された後 -->
-                      <% else %>
-                        <button class="naruho_before migi">  <%= link_to "なるほど ", "/posts/#{@post.id}/replies/#{reply.id}/naruhodos",{method:"post"} %></button>　<!-- 押される前 -->
-                      <% end %>
-                         <!-- カウント数が0の場合は表示しない-->
-                      <span class="wakaru_girl_before wakaru_girl_after migi"><%= "#{@wakaru_count}" unless @wakaru_count.zero? %> わかる</span><br>
-                    <% end %>
-                    <!-- 現在ログインしていないならばボタンを見ることのみできる -->
-                  <% else %>
+      <div id="wrapper">
+        <div class="question_Box">
+          <div class="question_image">
+            <img src="/woman_user_default.png" alt="質問者の写真"/>
+          </div>
+          <div class="arrow_question">
+            <p id="font_size"><%= reply.content %></p> <br>
+            [<%= reply.created_at.strftime("%Y/%m/%d %H:%M") %>]<br>
 
-                    なるほど<%= ": #{@naruhodo_count}" unless @naruhodo_count.zero? %>
-                    わかる<%= ": #{@wakaru_count}" unless @wakaru_count.zero? %>
-                  <% end %>
-                </div>
-              </div>
-              <div class="reply-area">
-                  <!-- コメントにメッセージを送ることができる -->
-                <%= form_tag("/posts/#{@post.id}/replies") do %>
-                  <!-- 親コメントへの子コメント表示-->
-                  <div class="reply-content">
-                    <% @messages.each do |message| %>
-                      <p><%= message.content %></p>
-                      <p>[<%= message.created_at.strftime("%Y/%m/%d %H:%M") %>]</p>
-                    <% end %>
-                    <br>
-                    <% if @post.user == current_user || reply_user == current_user %>
-                      &emsp;&emsp;&emsp;コメントに返信する:<br>
-                      &emsp;&emsp;&emsp;<textarea name="reply-content" class="reply-form"></textarea>
-
-                      <!-- 現在のreplyのidを隠しパラメータとして渡す -->
-                      <input type="hidden" value="<%=reply.id%>" name="p_id">
-                      <input type="submit" value="返信する" class="button"><br>
-                    <% end %>
-                  </div>
+            <% @naruhodo_count = Naruhodo.where(reply_id: reply.id).count%>
+            <% @wakaru_count = Wakaru.where(reply_id: reply.id).count%>
+            <!-- 現在ログインしている人が女性ならば「わかる」ボタンを押したり取り消せたりできる -->
+            <% if current_user %>
+              <% if current_user.gender == "female" %>
+                <% if Wakaru.where(user_id: current_user, reply_id: reply.id).present? %>
+                  <button class="wakaru_after migi"> <%= @wakaru_count %>:<%= link_to("わかる ", "/posts/#{@post.id}/replies/#{reply.id}/wakarus/:id" , {method:"delete"}) %></button> <!-- 押された後 -->
+                <% else %>
+                  <button class="wakaru_before migi"> <%= link_to("わかる ", "/posts/#{@post.id}/replies/#{reply.id}/wakarus" , {method:"post"}) %></button> <!-- 押される前 -->
                 <% end %>
-              </div>
+                  <!-- カウント数が0の場合は表示しない-->
+                <span class="naruho_men_before naruho_men_after migi"><%= "#{@naruhodo_count}" unless @naruhodo_count.zero? %> なるほど</span><br>
+
+                <!-- 現在ログインしている人が男性ならば「なるほど」ボタンを押したり取り消せたりできる -->
+              <% elsif current_user.gender == "male" %>
+                <% if Naruhodo.where(user_id: current_user, reply_id: reply.id).present? %>
+                  <button class="naruho_after migi"> <%= @naruhodo_count %> <%= link_to("なるほど ", "/posts/#{@post.id}/replies/#{reply.id}/naruhodos/:id" , {method:"delete"}) %></button>　<!-- 押された後 -->
+                <% else %>
+                  <button class="naruho_before migi">  <%= link_to "なるほど ", "/posts/#{@post.id}/replies/#{reply.id}/naruhodos",{method:"post"} %></button>　<!-- 押される前 -->
+                <% end %>
+                   <!-- カウント数が0の場合は表示しない-->
+                <span class="wakaru_girl_before wakaru_girl_after migi"><%= "#{@wakaru_count}" unless @wakaru_count.zero? %> わかる</span><br>
+              <% end %>
+              <!-- 現在ログインしていないならばボタンを見ることのみできる -->
+            <% else %>
+
+              なるほど<%= ": #{@naruhodo_count}" unless @naruhodo_count.zero? %>
+              わかる<%= ": #{@wakaru_count}" unless @wakaru_count.zero? %>
+            <% end %>
+          </div>
+          <div class="reply-area">
+            <!-- <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true"> -->
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                  <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= reply.id %>" aria-expanded="true" aria-controls="collapse<%= reply.id %>">
+                      コメントに対する返信
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapse<%= reply.id %>" class="panel-collapse collapse <% if current_user %> in <% end %>" role="tabpanel" aria-labelledby="heading<%= reply.id %>">
+                  <div class="panel-body">
+                        <!-- コメントにメッセージを送ることができる -->
+                      <%= form_tag("/posts/#{@post.id}/replies") do %>
+                        <!-- 親コメントへの子コメント表示-->
+                        <div class="reply-content">
+                          <% @messages.each do |message| %>
+                            <p><%= message.content %></p>
+                            <p>[<%= message.created_at.strftime("%Y/%m/%d %H:%M") %>]</p>
+                          <% end %>
+                          <br>
+                          <% if @post.user == current_user || reply_user == current_user %>
+                            &emsp;&emsp;&emsp;コメントに返信する:<br>
+                            &emsp;&emsp;&emsp;<textarea name="reply-content" class="reply-form"></textarea>
+
+                            <!-- 現在のreplyのidを隠しパラメータとして渡す -->
+                            <input type="hidden" value="<%=reply.id%>" name="p_id">
+                            <input type="submit" value="返信する" class="button"><br>
+                          <% end %>
+                          </div>
+                      <% end %>
+                    </div>
+                  </div>
+                </div>
+              <!-- </div> -->
             </div>
-                    <!-- コメントにメッセージを送ることができる -->
-          <% end %>
+          </div>
         </div>
-      <% end %>
-    </div>
-      <!--ここにもともとわかるなるほどのソース書かれてた-->
+              <!-- コメントにメッセージを送ることができる -->
+    <% end %>
   </div>
+<% end %>
+<!--ここにもともとわかるなるほどのソース書かれてた-->
+
 </body>
