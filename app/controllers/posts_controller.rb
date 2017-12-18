@@ -11,6 +11,28 @@ class PostsController < ApplicationController
         # ジャンルのカテゴリに合わせた一覧表示
         @posts = Post.where(category: params[:category]).order(created_at: :desc)
       end
+      
+      # 選択中のカテゴリーを表示するための受け渡し
+      if params[:category] == '0' || params[:category] == nil
+        @janru = "すべて"
+      elsif params[:category] == '1'
+        @janru = "片想い"
+      elsif params[:category] == '2'
+        @janru = "交際中"
+      elsif params[:category] == '3'
+        @janru = "デート"
+      elsif params[:category] == '4'
+        @janru = "プレゼント"
+      elsif params[:category] == '5'
+        @janru = "恋愛観"
+      elsif params[:category] == '6'
+        @janru = "ケンカ"
+      elsif params[:category] == '7'
+        @janru = "浮気"
+      elsif params[:category] == '8'
+        @janru = "性事情"
+      end
+        
   end
 
   def new
