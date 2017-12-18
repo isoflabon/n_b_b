@@ -2,9 +2,7 @@
 </head>
 
 <body>
-  <% if current_user && current_user == @post.user %>
-    <span class="migi_gomi_1"><%= link_to image_tag('/gomi.jpg'), @resource, method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%></span>
-  <% end %>
+
   <h1>悩みの詳しい内容</h1>
   <%= link_to("投稿一覧ページ", "/posts") %>
 
@@ -19,9 +17,22 @@
           <% if Post.find(@post.id).postscript.present? %>
             <p id="font_size">追記: <%= @post.postscript %></p>
           <% end %>
+
+          <div style = "float:right;">
+            <% if current_user && current_user == @post.user %>
+              <%= link_to "", @resource, class:"glyphicon glyphicon-trash", method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
+            <% end %>
+          </div>
+          <div style = "padding-top:9px;">
+          </div>
+
         </div>
+        <font size="4">この悩みをシェアする</font>
+        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" data-text="<%=@post.title%>" class="twitter-share-button" data-hashtags="アトオス" data-lang="ja" data-show-count="false">Tweet</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </div>
+
   </div>
   <!-- 投稿した男性のみ追記と削除ができる-->
 
@@ -42,7 +53,7 @@
 
   <%= render partial: "comment_form", :locals => { post_id: @post.id } %>
 
-
+<br>
 
 <% @replies.each do |reply| %>
   <!-- messagesの中はreplyに対するコメントが入っている -->
@@ -99,7 +110,7 @@
                 <div class="panel-heading" role="tab" id="headingOne">
                   <h4 class="panel-title">
                     <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= reply.id %>" aria-expanded="true" aria-controls="collapse<%= reply.id %>">
-                      コメントに対する返信
+                      <i class = "glyphicon glyphicon-triangle-bottom"></i> コメントに対する返信
                     </a>
                   </h4>
                 </div>
