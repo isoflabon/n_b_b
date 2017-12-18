@@ -16,10 +16,12 @@ class HomeController < ApplicationController
         # replyを元に投稿を探し出す
         temp = reply.post
         # 配列に追加
-        @posts << temp
-        # 1つの投稿にコメントをいくつかすると探し出した投稿に重複が起きるので重複を削除
-        @posts = @posts.uniq
+        if temp != nil
+          @posts << temp
+        end
       end
+      # 1つの投稿にコメントをいくつかすると探し出した投稿に重複が起きるので重複を削除
+      @posts = @posts.uniq
     end
   end
 
