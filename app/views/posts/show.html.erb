@@ -80,9 +80,9 @@
             <% if current_user %>
               <% if current_user.gender == "female" %>
                 <% if Wakaru.where(user_id: current_user, reply_id: reply.id).present? %>
-                  <button class="wakaru_after migi"> <%= @wakaru_count %>:<%= link_to("わかる ", "/posts/#{@post.id}/replies/#{reply.id}/wakarus/:id" , {method:"delete"}) %></button> <!-- 押された後 -->
+                  <button class="wakaru_after migi"> <%= @wakaru_count %> <%= link_to("わかる ", "/posts/#{@post.id}/replies/#{reply.id}/wakarus/:id" , {method:"delete"}) %></button> <!-- 押された後 -->
                 <% else %>
-                  <button class="wakaru_before migi"> <%= link_to("わかる ", "/posts/#{@post.id}/replies/#{reply.id}/wakarus" , {method:"post"}) %></button> <!-- 押される前 -->
+                  <button class="wakaru_before migi"> <%= @wakaru_count %> <%= link_to("わかる ", "/posts/#{@post.id}/replies/#{reply.id}/wakarus" , {method:"post"}) %></button> <!-- 押される前 -->
                 <% end %>
                   <!-- カウント数が0の場合は表示しない-->
                 <span class="naruho_men_before naruho_men_after migi"><%= "#{@naruhodo_count}" unless @naruhodo_count.zero? %> なるほど</span><br>
@@ -92,7 +92,7 @@
                 <% if Naruhodo.where(user_id: current_user, reply_id: reply.id).present? %>
                   <button class="naruho_after migi"> <%= @naruhodo_count %> <%= link_to("なるほど ", "/posts/#{@post.id}/replies/#{reply.id}/naruhodos/:id" , {method:"delete"}) %></button>　<!-- 押された後 -->
                 <% else %>
-                  <button class="naruho_before migi">  <%= link_to "なるほど ", "/posts/#{@post.id}/replies/#{reply.id}/naruhodos",{method:"post"} %></button>　<!-- 押される前 -->
+                  <button class="naruho_before migi"> <%= @naruhodo_count %>  <%= link_to "なるほど ", "/posts/#{@post.id}/replies/#{reply.id}/naruhodos",{method:"post"} %></button>　<!-- 押される前 -->
                 <% end %>
                    <!-- カウント数が0の場合は表示しない-->
                 <span class="wakaru_girl_before wakaru_girl_after migi"><%= "#{@wakaru_count}" unless @wakaru_count.zero? %> わかる</span><br>
