@@ -3,7 +3,7 @@
 
   <div class="btn-group category-position">
     <button class="btn btn-default btn-xs dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      カテゴリー <span class="caret"></span>
+      カテゴリー : <%= @janru %> <span class="caret"></span>
     </button>
     <ul class="dropdown-menu">
       <div class="category">
@@ -19,11 +19,6 @@
       </div>
     </ul>
   </div>
-
-<!-- 現在選択中のカテゴリーを表示   -->
-<div class="janru">
-  &emsp;&emsp;選択中のカテゴリー : <%= @janru %>
-</div>
 
 <!-- カテゴリーごとの一覧表示 -->
 <br class="main posts-index">
