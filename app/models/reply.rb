@@ -2,7 +2,7 @@ class Reply < ApplicationRecord
   belongs_to :post
   has_many :naruhodos
   has_many :wakarus
-  validates :content, {presence: true}
+  validates :content, {presence: true, uniqueness: true}
 
   # replyのuser_idを元に返信したuserを特定
   def user
