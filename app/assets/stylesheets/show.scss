@@ -11,7 +11,11 @@ body{
 .title-info{
   text-decoration: underline;
 }
-
+.posts-index-item h5{
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: center;
+}
 #wrapper{
      margin: 20px auto;
      width:96%;
@@ -168,8 +172,8 @@ textarea.reply-form{
   width: 70px;
   line-height: 9px;
   text-align: center;
-  color: #fff;
-  background: #EEFFFF;
+  color:#eb6ea0;
+  background: #fef9fb;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -186,8 +190,8 @@ textarea.reply-form{
   width: 70px;
   line-height: 9px;
   text-align: center;
-  color: #fff;
   background: #FFBEDA;
+  color:white;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -207,6 +211,7 @@ textarea.reply-form{
   line-height: 25px;
   text-align: center;
   background: #EEFFFF;
+  color:white;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -215,11 +220,9 @@ textarea.reply-form{
   border-radius: 20px;
 }
 .wakaru_before a{
-  color:#FFBEDA;
+  color:#eb6ea0;
 }
-.wakaru_before{
-  color:#FFBEDA;
-}
+
 .wakaru_girl_after{
   margin-top: 8px;
   display: block;
@@ -246,7 +249,7 @@ textarea.reply-form{
   width: 70px;
   line-height: 9px;
   text-align: center;
-  color: #fff;
+  color: #00a1e9;
   background: #EEFFFF;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -254,6 +257,9 @@ textarea.reply-form{
   -ms-transition: 0.3s;
   transition: 0.3s;
   border-radius: 20px;
+}
+.naruho_before a{
+  color: #00a1e9;
 }
 
 .naruho_after{
@@ -273,7 +279,9 @@ textarea.reply-form{
   transition: 0.3s;
   border-radius: 20px;
 }
-
+.naruho_after a{
+  color: white;
+}
 .naruho_men_before{
   margin-top: 8px;
   display: block;
