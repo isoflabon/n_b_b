@@ -31,11 +31,31 @@
     <% @posts.each do |post| %>
     <% reply_count = Reply.where(post_id: post.id,p_id: 0).count %>
       <div class="posts-index-item box7">
-        <p>タイトル:   <%= post.title%></p>
+        <p>タイトル:   <%= post.title %></p>
         <br>
         <p> <%= post.content.truncate(40) %>
         <%= link_to("もっと見る", "/posts/#{post.id}") %></p>
         <br>
+        <% if post.category == "onewaylove" %>
+          <span class="label label-onewaylove">片思い</span>
+        <% elsif post.category == "date" %>
+          <span class="label label-danger">デート</span>
+        <% elsif post.category == "together" %>
+          <span class="label label-info">交際中</span>
+        <% elsif post.category == "present" %>
+          <span class="label label-success">プレゼント</span>
+        <% elsif post.category == "lovevision" %>
+          <span class="label label-warning">恋愛観</span>
+        <% elsif post.category == "battle" %>
+          <span class="label label-battle">ケンカ</span>
+        <% elsif post.category == "sexual" %>
+          <span class="label label-primary">性事情</span>
+        <% elsif post.category == "affair" %>
+          <span class="label label-affair">浮気</span>
+        <% elsif post.category == "other" %>
+          <span class="label label-default">その他</span>
+        <% end %>
+
         <p class="comment-num">コメント数 (<%= reply_count%>)</p>
         <br>
       </div>

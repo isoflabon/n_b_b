@@ -27,7 +27,7 @@
 
           <div style = "float:right;">
             <% if current_user && current_user == @post.user %>
-              <%= link_to "", @resource, class:"glyphicon glyphicon-trash", method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
+              <%= link_to "", @resource, class:"glyphicon glyphicon-trash", method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認" ,style: "color :red;"%>
             <% end %>
           </div>
           <div style = "padding-top:9px;">
