@@ -11,7 +11,7 @@ class PostsController < ApplicationController
         # ジャンルのカテゴリに合わせた一覧表示
         @posts = Post.where(category: params[:category]).order(created_at: :desc)
       end
-      
+
       # 選択中のカテゴリーを表示するための受け渡し
       if params[:category] == '0' || params[:category] == nil
         @janru = "すべて"
@@ -32,7 +32,7 @@ class PostsController < ApplicationController
       elsif params[:category] == '8'
         @janru = "性事情"
       end
-        
+
   end
 
   def new
@@ -50,7 +50,7 @@ class PostsController < ApplicationController
       flash[:notice] = "悩みを投稿しました"
       redirect_to("/posts/#{@post.id}")
     else
-      flash[:notice] = "タイトルと内容は必須入力です。タイトルは日本語で20文字以下、内容は日本語で20文字以上の制限があります。"
+      flash[:notice] = "タイトルと内容は必須入力です。タイトルは日本語で40文字以下、内容は日本語で40文字以上の制限があります。"
       render("posts/new")
     end
   end
