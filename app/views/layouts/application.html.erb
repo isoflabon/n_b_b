@@ -21,213 +21,213 @@
     <!-- Ionicons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   </head>
-  <body class="hold-transition skin-blue sidebar-mini">
+  <body class="hold-transition skin-blue sidebar-mini sidebar-collapse">
 
-<div class="wrapper">
-  <header class="main-header">
-    <!-- Logo -->
-    <a href="/posts" class="logo">
-      <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><img src="/atoos_min1.png" alt="アトオス"></span>
-      <!-- logo for regular state and mobile devices -->
-      <span class="logo-lg"><img src="/ato-su.png" alt="アトオス"></span>
-    </a>
+    <div class="wrapper">
+      <header class="main-header">
+        <!-- Logo -->
+        <a href="/posts" class="logo">
+          <!-- mini logo for sidebar mini 50x50 pixels -->
+          <span class="logo-mini"><img src="/atoos_min1.png" alt="アトオス"></span>
+          <!-- logo for regular state and mobile devices -->
+          <span class="logo-lg"><img src="/ato-su.png" alt="アトオス"></span>
+        </a>
 
-    <!-- Header Navbar: style can be found in header.less -->
-    <nav class="navbar navbar-static-top">
-      <!-- Sidebar toggle button-->
-      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-        <span class="sr-only">Toggle navigation</span>
-      </a>
-      <!-- Navbar Right Menu -->
-      <div class="navbar-custom-menu">
-        <ul class="nav navbar-nav">
+        <!-- Header Navbar: style can be found in header.less -->
+        <nav class="navbar navbar-static-top">
+          <!-- Sidebar toggle button-->
+          <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+            <span class="sr-only">Toggle navigation</span>
+          </a>
+          <!-- Navbar Right Menu -->
+          <div class="navbar-custom-menu">
+            <ul class="nav navbar-nav">
 
-          <!-- Tasks: style can be found in dropdown.less -->
-          <!--Facebooklogin-->
-          <% if current_user && current_user.gender == "male"%>
-            <li class="user user-menu">
-              <a href="/posts/new">
-                <img src="/toukou.png" class="user-image" alt="User Image">
-                <span class="hidden-xs">悩みを相談する</span>
-              </a>
-            </li>
-          <% end %>
-          <% if current_user == nil%>
-            <li class="user user-menu">
-              <a href="/users/auth/facebook">
-                <img src="/logo-facebook.png" class="user-image" alt="User Image">
-                <span class="hidden-xs">Facebookでログイン</span>
-              </a>
-            </li>
-          <% else %>
-          <!-- User Account: style can be found in dropdown.less -->
-            <li class="dropdown user user-menu">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <!-- Tasks: style can be found in dropdown.less -->
+              <!--Facebooklogin-->
+              <% if current_user && current_user.gender == "male"%>
+                <li class="user user-menu">
+                  <a href="/posts/new">
+                    <img src="/toukou.png" class="user-image" alt="User Image">
+                    <span class="hidden-xs">悩みを相談する</span>
+                  </a>
+                </li>
+              <% end %>
+              <% if current_user == nil%>
+                <li class="user user-menu">
+                  <a href="/users/auth/facebook">
+                    <img src="/logo-facebook.png" class="user-image" alt="User Image">
+                    <span class="hidden-xs">Facebookでログイン</span>
+                  </a>
+                </li>
+              <% else %>
+              <!-- User Account: style can be found in dropdown.less -->
+                <li class="dropdown user user-menu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <% if current_user && current_user.gender == "male"%>
+                      <img src="/man_user_default.png" class="user-image" alt="User Image">
+                    <% elsif current_user && current_user.gender == "female"%>
+                      <img src="/woman_user_default.png" class="user-image" alt="User Image">
+                    <% end %>
+                    <span class="hidden-xs">
+                      <% if current_user %>
+                        <%= current_user.gender %>
+                        <!-- <p>User_name</p> -->
+                      <% end %>
+                    </span>
+                  </a>
+                  <ul class="dropdown-menu">
+                    <!-- User image -->
+                    <li class="user-header">
+                      <% if current_user && current_user.gender == "male"%>
+                        <img src="/man_user_default.png" class="user-image" alt="User Image">
+                      <% elsif current_user && current_user.gender == "female"%>
+                        <img src="/woman_user_default.png" class="user-image" alt="User Image">
+                      <% end %>
+                        <% if current_user %>
+                          <p><%= current_user.gender %></p>
+                          <!-- <p>User_name</p> -->
+                        <% end %><!--<small>Member since Nov. 2012</small>-->
+                    </li>
+                    <!-- Menu Body -->
+
+                    <!-- Menu Footer-->
+                    <li class="user-footer">
+                      <div class="pull-left">
+
+                          <% if current_user %>
+                            <%= link_to "マイページ","/mypage/#{current_user.id}",class: "btn btn-default btn-flat" %>
+                          <% end %>
+
+                      </div>
+                      <div class="pull-right">
+                        <a class="btn btn-default btn-flat" rel="nofollow" data-method="delete" href="/users/sign_out">
+                          ログアウト
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              <% end %>
+              <!-- Control Sidebar Toggle Button -->
+            </ul>
+          </div>
+
+        </nav>
+      </header>
+      <!-- Left side column. contains the logo and sidebar -->
+      <aside class="main-sidebar">
+        <!-- sidebar: style can be found in sidebar.less -->
+        <section class="sidebar">
+          <!-- Sidebar user panel -->
+          <% if current_user %>
+            <div class="user-panel">
+              <div class="pull-left image">
                 <% if current_user && current_user.gender == "male"%>
                   <img src="/man_user_default.png" class="user-image" alt="User Image">
                 <% elsif current_user && current_user.gender == "female"%>
-                  <img src="/woman_user_default.png" class="user-image" alt="User Image">
+                <img src="/woman_user_default.png" class="user-image" alt="User Image">
                 <% end %>
-                <span class="hidden-xs">
-                  <% if current_user %>
-                    <%= current_user.gender %>
-                    <!-- <p>User_name</p> -->
-                  <% end %>
+              </div>
+              <div class="pull-left info">
+                <% if current_user %>
+                  <p><%= current_user.gender %></p>
+                  <!-- <p>User_name</p> -->
+                <% end %>
+              </div>
+            </div>
+          <% end %>
+          <!-- search form -->
+          <!-- <form action="#" method="get" class="sidebar-form">
+            <div class="input-group">
+              <input type="text" name="q" class="form-control" placeholder="Search...">
+              <span class="input-group-btn">
+                    <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                      <i class="fa fa-search"></i>
+                    </button>
+                  </span>
+            </div>
+          </form> -->
+          <!-- /.search form -->
+          <!-- sidebar menu: : style can be found in sidebar.less -->
+          <ul class="sidebar-menu" data-widget="tree">
+            <li>
+              <a href="/">
+                <!--<i class="fa fa-dashboard"></i>--> <span>トップページ</span>
+                <span class="pull-right-container">
+                  <!--<small class="label pull-right bg-green">new</small>-->
                 </span>
               </a>
-              <ul class="dropdown-menu">
-                <!-- User image -->
-                <li class="user-header">
-                  <% if current_user && current_user.gender == "male"%>
-                    <img src="/man_user_default.png" class="user-image" alt="User Image">
-                  <% elsif current_user && current_user.gender == "female"%>
-                    <img src="/woman_user_default.png" class="user-image" alt="User Image">
-                  <% end %>
-                    <% if current_user %>
-                      <p><%= current_user.gender %></p>
-                      <!-- <p>User_name</p> -->
-                    <% end %><!--<small>Member since Nov. 2012</small>-->
-                </li>
-                <!-- Menu Body -->
-
-                <!-- Menu Footer-->
-                <li class="user-footer">
-                  <div class="pull-left">
-
-                      <% if current_user %>
-                        <%= link_to "マイページ","/mypage/#{current_user.id}",class: "btn btn-default btn-flat" %>
-                      <% end %>
-
-                  </div>
-                  <div class="pull-right">
-                    <a class="btn btn-default btn-flat" rel="nofollow" data-method="delete" href="/users/sign_out">
-                      ログアウト
-                    </a>
-                  </div>
-                </li>
-              </ul>
             </li>
+            <li>
+              <a href="/posts">
+                <!--<i class="fa fa-book"></i>--> <span>投稿一覧</span>
+                <!-- <span class="pull-right-container">
+                  <small class="label pull-right bg-green">new</small>
+                </span> -->
+              </a>
+            </li>
+            <li>
+              <% if current_user && current_user.gender == "male"%>
+              <a href="/posts/new">
+                <!--<i class="fa fa-dashboard"></i>--> <span>悩みを相談する</span>
+                <span class="pull-right-container">
+                  <!--<small class="label pull-right bg-green">new</small>-->
+                </span>
+              </a>
+              <% end %>
+            </li>
+            <li>
+              <%= link_to("通知設定","/users/edit") %>
+            </li>
+            <!-- ログインユーザごとのマイページ -->
+            <li>
+              <% if current_user %>
+              <%= link_to("マイページ","/mypage/#{current_user.id}") %>
+              <% end %>
+                <!--<i class="fa fa-dashboard"></i>-->
+                <span class="pull-right-container">
+                </span>
+              </a>
+            </li>
+            <!-- <li>
+              <a href="pages/mailbox/mailbox.html">
+                <span>設定</span>
+                <span class="pull-right-container">
+                  <small class="label pull-right bg-yellow">12</small>
+                  <small class="label pull-right bg-green">16</small>
+                  <small class="label pull-right bg-red">5</small>
+                </span>
+              </a>
+            </li> -->
+
+            <li>
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdavIxJwjk_Hh86r4YjyneDMx8lLGzz5bUhafHzXl7QnY61zQ/viewform?embedded=true">
+                 <span>お問い合わせ</span>
+              </a>
+            </li>
+
+          </ul>
+        </section>
+        <!-- /.sidebar -->
+      </aside>
+      <div class="content-wrapper">
+        <!--アラートやメッセーじを表示する -->
+        <div class = "message-alert">
+          <% if notice %>
+            <p class="alert alert-success"><%= notice %></p>
+            <% end %>
+          <% if alert %>
+            <p class="alert alert-danger"><%= alert %></p>
           <% end %>
-          <!-- Control Sidebar Toggle Button -->
-        </ul>
+        </div>
+
+        <%= yield %>
+
+        <div class = "templete_copyright">
+          <p>Copyright © 2014-2016 Almsaeed Studio. All rights reserved.</p>
+        </div>
       </div>
-
-    </nav>
-  </header>
-  <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
-    <!-- sidebar: style can be found in sidebar.less -->
-    <section class="sidebar">
-      <!-- Sidebar user panel -->
-      <% if current_user %>
-        <div class="user-panel">
-          <div class="pull-left image">
-            <% if current_user && current_user.gender == "male"%>
-              <img src="/man_user_default.png" class="user-image" alt="User Image">
-            <% elsif current_user && current_user.gender == "female"%>
-            <img src="/woman_user_default.png" class="user-image" alt="User Image">
-            <% end %>
-          </div>
-          <div class="pull-left info">
-            <% if current_user %>
-              <p><%= current_user.gender %></p>
-              <!-- <p>User_name</p> -->
-            <% end %>
-          </div>
-        </div>
-      <% end %>
-      <!-- search form -->
-      <!-- <form action="#" method="get" class="sidebar-form">
-        <div class="input-group">
-          <input type="text" name="q" class="form-control" placeholder="Search...">
-          <span class="input-group-btn">
-                <button type="submit" name="search" id="search-btn" class="btn btn-flat">
-                  <i class="fa fa-search"></i>
-                </button>
-              </span>
-        </div>
-      </form> -->
-      <!-- /.search form -->
-      <!-- sidebar menu: : style can be found in sidebar.less -->
-      <ul class="sidebar-menu" data-widget="tree">
-        <li>
-          <a href="/">
-            <!--<i class="fa fa-dashboard"></i>--> <span>トップページ</span>
-            <span class="pull-right-container">
-              <!--<small class="label pull-right bg-green">new</small>-->
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href="/posts">
-            <!--<i class="fa fa-book"></i>--> <span>投稿一覧</span>
-            <!-- <span class="pull-right-container">
-              <small class="label pull-right bg-green">new</small>
-            </span> -->
-          </a>
-        </li>
-        <li>
-          <% if current_user && current_user.gender == "male"%>
-          <a href="/posts/new">
-            <!--<i class="fa fa-dashboard"></i>--> <span>悩みを相談する</span>
-            <span class="pull-right-container">
-              <!--<small class="label pull-right bg-green">new</small>-->
-            </span>
-          </a>
-          <% end %>
-        </li>
-        <li>
-          <%= link_to("通知設定","/users/edit") %>
-        </li>
-        <!-- ログインユーザごとのマイページ -->
-        <li>
-          <% if current_user %>
-          <%= link_to("マイページ","/mypage/#{current_user.id}") %>
-          <% end %>
-            <!--<i class="fa fa-dashboard"></i>-->
-            <span class="pull-right-container">
-            </span>
-          </a>
-        </li>
-        <!-- <li>
-          <a href="pages/mailbox/mailbox.html">
-            <span>設定</span>
-            <span class="pull-right-container">
-              <small class="label pull-right bg-yellow">12</small>
-              <small class="label pull-right bg-green">16</small>
-              <small class="label pull-right bg-red">5</small>
-            </span>
-          </a>
-        </li> -->
-
-        <li>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdavIxJwjk_Hh86r4YjyneDMx8lLGzz5bUhafHzXl7QnY61zQ/viewform?embedded=true">
-             <span>お問い合わせ</span>
-          </a>
-        </li>
-
-      </ul>
-    </section>
-    <!-- /.sidebar -->
-  </aside>
-  <div class="content-wrapper">
-    <!--アラートやメッセーじを表示する -->
-    <div class = "message-alert">
-      <% if notice %>
-        <p class="alert alert-success"><%= notice %></p>
-        <% end %>
-      <% if alert %>
-        <p class="alert alert-danger"><%= alert %></p>
-      <% end %>
     </div>
-
-    <%= yield %>
-
-    <div class = "templete_copyright">
-      <p>Copyright © 2014-2016 Almsaeed Studio. All rights reserved.</p>
-    </div>
-  </div>
-</div>
   </body>
 </html>
