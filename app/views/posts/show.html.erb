@@ -20,7 +20,7 @@
           <span id="font_size">タイトル:<span><span id="font_size" class="title-info"><%= @post.title %></span><br><br>
 
           <p id="font_size"><%= @post.content %> </p>
-          <p><%= @post.created_at.strftime("%Y/%m/%d %H:%M") %></p>
+          <p>[<%= @post.created_at.strftime("%Y/%m/%d %H:%M") %>]</p>
           <% if Post.find(@post.id).postscript.present? %>
             <p id="font_size">追記: <%= @post.postscript %></p>
           <% end %>
