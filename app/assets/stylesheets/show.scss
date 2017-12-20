@@ -195,7 +195,9 @@ textarea.reply-form{
   transition: 0.3s;
   border-radius: 20px;
 }
-
+.wakaru_after a{
+  color:white;
+}
 .wakaru_girl_before{
   margin-top: 8px;
   display: block;
@@ -204,7 +206,6 @@ textarea.reply-form{
   width: 70px;
   line-height: 25px;
   text-align: center;
-  color: #fff;
   background: #EEFFFF;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -213,7 +214,12 @@ textarea.reply-form{
   transition: 0.3s;
   border-radius: 20px;
 }
-
+.wakaru_before a{
+  color:#FFBEDA;
+}
+.wakaru_before{
+  color:#FFBEDA;
+}
 .wakaru_girl_after{
   margin-top: 8px;
   display: block;
@@ -330,9 +336,7 @@ textarea.reply-form{
 }
 
 .reply-content{
-  border: solid 1px #aaa;
   background-color: white;
-  border-radius: 10px;
 }
 
 
@@ -341,7 +345,9 @@ img.logo{
   margin-left: 9px;
 }
 
-
+.panel-body{
+  padding: 5px;
+}
 
 
 #show_comment .form-comment{
