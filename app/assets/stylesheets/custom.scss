@@ -1,6 +1,43 @@
 body{
   font-family: 'Hiragino Maru Gothic ProN' !important;
 }
+
+@media (max-width: 767px){
+  .main-header {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: .3s;
+  }
+  .content-wrapper{
+    margin-top: 100px;
+  }
+  .main-sidebar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    transition: .3s;
+  }
+}
+@media (min-width: 767px){
+  .main-header {
+    position: fixed !important;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    transition: .3s;
+  }
+  .content-wrapper{
+    margin-top: 50px;
+  }
+  .main-sidebar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    transition: .3s;
+  }
+}
 .content-wrapper h1{
   margin: 0 !important;
   text-align: center;
@@ -40,7 +77,14 @@ span.label-battle{
 
 @media (min-width: 768px) {
   .sidebar-mini.sidebar-collapse .main-header .navbar {
-      margin-left: 0px;
+    margin-left: 60px !important;
+  }
+  .sidebar-mini.sidebar-collapse .main-header .logo {
+    width: 60px;
+  }
+  span.logo-mini{
+    padding-top: 8px !important;
+    padding-left: 10px;
   }
   .sidebar-mini.sidebar-collapse .content-wrapper, .sidebar-mini.sidebar-collapse .right-side, .sidebar-mini.sidebar-collapse .main-footer {
       margin-left: 0px !important;
