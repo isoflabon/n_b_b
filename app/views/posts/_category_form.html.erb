@@ -8,40 +8,41 @@
   <ul>
     <div class="radio-inline">
       <%= f.radio_button :category, :onewaylove %>
-      <li><%= f.label :片想い %></li>
+      <!-- <label for="post_category_onewaylove">片想い</label> -->
+      <li><%= f.label :category_onewaylove, '片想い' %></li>
     </div>
     <div class="radio-inline">
       <%= f.radio_button :category, :together %>
-      <li><%= f.label :交際中 %></li>
+      <li><%= f.label :category_together, '交際中' %></li>
     </div>
     <div class="radio-inline">
       <%= f.radio_button :category, :date %>
-      <li><%= f.label :デート %></li>
+      <li><%= f.label :category_date, 'デート' %></li>
     </div>
     <div class="radio-inline">
       <%= f.radio_button :category, :present %>
-      <li><%= f.label :プレゼント %></li>
+      <li><%= f.label :category_present , 'プレゼント' %></li>
     </div>
     <div class="radio-inline">
       <%= f.radio_button :category, :lovevision %>
-      <li><%= f.label :恋愛観 %></li>
+      <li><%= f.label :category_lovevision , '恋愛観' %></li>
     </div>
     <div class="radio-inline">
       <%= f.radio_button :category, :battle %>
-      <li><%= f.label :ケンカ %></li>
+      <li><%= f.label :category_battle, 'ケンカ' %></li>
     </div>
     <div class="radio-inline">
       <%= f.radio_button :category, :sexual %>
-      <li><%= f.label :性事情 %></li>
+      <li><%= f.label :category_sexual, '性事情' %></li>
     </div>
     <div class="radio-inline">
       <%= f.radio_button :category, :affair %>
-      <li><%= f.label :浮気 %></li>
+      <li><%= f.label :category_affair, '浮気' %></li>
     </div>
     <br>
     <div class="radio-inline">
       <%= f.radio_button :category, :other %>
-      <li><%= f.label :その他 %></li>
+      <li><%= f.label :category_other, 'その他' %></li>
     </div>
   </ul>
 </div>
