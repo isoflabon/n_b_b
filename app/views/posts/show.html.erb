@@ -4,7 +4,13 @@
 <body>
 
   <h1>悩みの詳しい内容</h1>
-  <%= link_to("投稿一覧ページ", "/posts") %>
+
+  <nav aria-label="...">
+    <ul class="pager">
+      <li class="previous"><a href="/posts"><span aria-hidden="true">&larr;</span> 投稿一覧ページ</a></li>
+    </ul>
+  </nav>
+  <!-- <%= link_to("投稿一覧ページ", "/posts") %> -->
 
   <div class="posts-index-item">
     <div id="wrapper">
@@ -12,15 +18,16 @@
         <div class="answer_image"><img src="/man_user_default.png" alt="質問者の写真"/></div>
         <div class="arrow_answer">
           <span id="font_size">タイトル:<span><span id="font_size" class="title-info"><%= @post.title %></span><br><br>
+
           <p id="font_size"><%= @post.content %> </p>
-          <p><%= @post.created_at.strftime("%Y/%m/%d %H:%M") %></p>
+          <p>[<%= @post.created_at.strftime("%Y/%m/%d %H:%M") %>]</p>
           <% if Post.find(@post.id).postscript.present? %>
             <p id="font_size">追記: <%= @post.postscript %></p>
           <% end %>
 
           <div style = "float:right;">
             <% if current_user && current_user == @post.user %>
-              <%= link_to "", @resource, class:"glyphicon glyphicon-trash", method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認"%>
+              <%= link_to "", @resource, class:"glyphicon glyphicon-trash", method: :delete, data: {confirm: "この投稿を削除しますか？", cancel: "やめる", commit: "削除する"}, title: "削除の確認" ,style: "color :red;"%>
             <% end %>
           </div>
           <div style = "padding-top:9px;">
@@ -92,7 +99,7 @@
                 <% if Naruhodo.where(user_id: current_user, reply_id: reply.id).present? %>
                   <button class="naruho_after migi"> <%= @naruhodo_count %> <%= link_to("なるほど ", "/posts/#{@post.id}/replies/#{reply.id}/naruhodos/:id" , {method:"delete"}) %></button>　<!-- 押された後 -->
                 <% else %>
-                  <button class="naruho_before migi"> <%= @naruhodo_count %>  <%= link_to "なるほど ", "/posts/#{@post.id}/replies/#{reply.id}/naruhodos",{method:"post"} %></button>　<!-- 押される前 -->
+                  <button class="naruho_before migi"> <%= @naruhodo_count %> <%= link_to "なるほど ", "/posts/#{@post.id}/replies/#{reply.id}/naruhodos",{method:"post"} %></button>　<!-- 押される前 -->
                 <% end %>
                    <!-- カウント数が0の場合は表示しない-->
                 <span class="wakaru_girl_before wakaru_girl_after migi"><%= "#{@wakaru_count}" unless @wakaru_count.zero? %> わかる</span><br>

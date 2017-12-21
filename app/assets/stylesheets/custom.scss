@@ -27,6 +27,17 @@ img.user-image{
   margin: 0 !important;
 }
 
+// ラベルの色の設定
+span.label-onewaylove{
+  background-color: #eb6ea0;
+}
+span.label-affair{
+  background-color: #4d4398;
+}
+span.label-battle{
+  background-color: #000000;
+}
+
 @media (min-width: 768px) {
   .sidebar-mini.sidebar-collapse .main-header .navbar {
       margin-left: 0px;

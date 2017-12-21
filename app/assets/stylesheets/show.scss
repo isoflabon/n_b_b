@@ -11,7 +11,11 @@ body{
 .title-info{
   text-decoration: underline;
 }
-
+.posts-index-item h5{
+  text-decoration: underline;
+  font-weight: bold;
+  text-align: center;
+}
 #wrapper{
      margin: 20px auto;
      width:96%;
@@ -165,11 +169,11 @@ textarea.reply-form{
   display: block;
   text-decoration: none;
   height:25px;
-  width: 70px;
+  width: 71px;
   line-height: 9px;
   text-align: center;
-  color: #fff;
-  background: #EEFFFF;
+  color:#eb6ea0;
+  background: #fef9fb;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -183,11 +187,11 @@ textarea.reply-form{
   display: block;
   text-decoration: none;
   height:25px;
-  width: 70px;
+  width: 71px;
   line-height: 9px;
   text-align: center;
-  color: #fff;
   background: #FFBEDA;
+  color:white;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
@@ -195,23 +199,28 @@ textarea.reply-form{
   transition: 0.3s;
   border-radius: 20px;
 }
-
+.wakaru_after a{
+  color:white;
+}
 .wakaru_girl_before{
   margin-top: 8px;
   display: block;
   text-decoration: none;
   height:25px;
-  width: 70px;
+  width: 71px;
   line-height: 25px;
   text-align: center;
-  color: #fff;
   background: #EEFFFF;
+  color:white;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
   -ms-transition: 0.3s;
   transition: 0.3s;
   border-radius: 20px;
+}
+.wakaru_before a{
+  color:#eb6ea0;
 }
 
 .wakaru_girl_after{
@@ -219,7 +228,7 @@ textarea.reply-form{
   display: block;
   text-decoration: none;
   height:25px;
-  width: 70px;
+  width: 71px;
   line-height: 25px;
   text-align: center;
   color: #fff;
@@ -237,10 +246,10 @@ textarea.reply-form{
   display: block;
   text-decoration: none;
   height:25px;
-  width: 70px;
+  width: 71px;
   line-height: 9px;
   text-align: center;
-  color: #fff;
+  color: #00a1e9;
   background: #EEFFFF;
   -webkit-transition: 0.3s;
   -moz-transition: 0.3s;
@@ -249,13 +258,16 @@ textarea.reply-form{
   transition: 0.3s;
   border-radius: 20px;
 }
+.naruho_before a{
+  color: #00a1e9;
+}
 
 .naruho_after{
   margin-top: 8px;
   display: block;
   text-decoration: none;
   height:25px;
-  width: 70px;
+  width: 71px;
   line-height: 9px;
   text-align: center;
   color: #fff;
@@ -267,13 +279,15 @@ textarea.reply-form{
   transition: 0.3s;
   border-radius: 20px;
 }
-
+.naruho_after a{
+  color: white;
+}
 .naruho_men_before{
   margin-top: 8px;
   display: block;
   text-decoration: none;
   height:25px;
-  width: 70px;
+  width: 71px;
   line-height: 25px;
   text-align: center;
   color: #fff;
@@ -291,7 +305,7 @@ textarea.reply-form{
   display: block;
   text-decoration: none;
   height:25px;
-  width: 70px;
+  width: 71px;
   line-height: 25px;
   text-align: center;
   color: #fff;
@@ -330,9 +344,7 @@ textarea.reply-form{
 }
 
 .reply-content{
-  border: solid 1px #aaa;
   background-color: white;
-  border-radius: 10px;
 }
 
 
@@ -341,7 +353,9 @@ img.logo{
   margin-left: 9px;
 }
 
-
+.panel-body{
+  padding: 5px;
+}
 
 
 #show_comment .form-comment{

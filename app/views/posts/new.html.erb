@@ -8,10 +8,6 @@
 <div id = "toukou_syousai">
   <div class="main">
     <h1>悩みを投稿する</h1>
-      <!--<ul>
-    <li class="center"><a href="/"><img src="/back5.jpg" width="20" height="30" class="logo"></a></li>
-    <li class = " section">悩みを投稿する</li>
-    </ul>-->
      <div class="main posts-new">
        <div class="container">
          <p class="form-heading"></p>
@@ -23,10 +19,10 @@
              </div>
              <div class="form-body">
                <label class="title">内容</label>
-               <textarea name="content" class="round_off form-control" rows="5" cols="60"> <%= @post.content%></textarea>
+               <textarea name="content" class="round_off form-control" rows="5" cols="60"><%= @post.content %></textarea>
              </div>
              <%= render partial: "category_form", :locals => { post: @post } %>
-             <li class="contribution"> <input type="submit" value="投稿"></li>
+             <li class="contribution"> <button type="button submit" class="btn btn-default btn-sm" value="投稿">投稿する</button></li>
            </div>
          <% end %>
        </div>
