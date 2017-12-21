@@ -152,29 +152,14 @@
           <!-- sidebar menu: : style can be found in sidebar.less -->
           <ul class="sidebar-menu" data-widget="tree">
             <li>
-              <a href="/">
-                <!--<i class="fa fa-dashboard"></i>--> <span>トップページ</span>
-                <span class="pull-right-container">
-                  <!--<small class="label pull-right bg-green">new</small>-->
-                </span>
-              </a>
+                <%= link_to("トップページ","/") %>
             </li>
             <li>
-              <a href="/posts">
-                <!--<i class="fa fa-book"></i>--> <span>投稿一覧</span>
-                <!-- <span class="pull-right-container">
-                  <small class="label pull-right bg-green">new</small>
-                </span> -->
-              </a>
+                <%= link_to("投稿一覧","/posts") %>
             </li>
             <li>
               <% if current_user && current_user.gender == "male"%>
-              <a href="/posts/new">
-                <!--<i class="fa fa-dashboard"></i>--> <span>悩みを相談する</span>
-                <span class="pull-right-container">
-                  <!--<small class="label pull-right bg-green">new</small>-->
-                </span>
-              </a>
+                <%= link_to("悩みを投稿する","/posts/new") %>
               <% end %>
             </li>
             <li>
@@ -183,23 +168,9 @@
             <!-- ログインユーザごとのマイページ -->
             <li>
               <% if current_user %>
-              <%= link_to("マイページ","/mypage/#{current_user.id}") %>
+                <%= link_to("マイページ","/mypage/#{current_user.id}") %>
               <% end %>
-                <!--<i class="fa fa-dashboard"></i>-->
-                <span class="pull-right-container">
-                </span>
-              </a>
             </li>
-            <!-- <li>
-              <a href="pages/mailbox/mailbox.html">
-                <span>設定</span>
-                <span class="pull-right-container">
-                  <small class="label pull-right bg-yellow">12</small>
-                  <small class="label pull-right bg-green">16</small>
-                  <small class="label pull-right bg-red">5</small>
-                </span>
-              </a>
-            </li> -->
 
             <li>
               <a href="https://docs.google.com/forms/d/e/1FAIpQLSdavIxJwjk_Hh86r4YjyneDMx8lLGzz5bUhafHzXl7QnY61zQ/viewform?embedded=true">
