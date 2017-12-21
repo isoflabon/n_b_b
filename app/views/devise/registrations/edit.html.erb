@@ -21,8 +21,11 @@
   <%= devise_error_messages! %>
 
 <div class="field" style="width:80%; margin:0 10%;">
-  <label class = "form_name"><%= f.label :メールアドレス %>
-  <%= f.email_field :email %></label>
+
+  <label class = "form_name">
+    <%= f.label :メールアドレス %>
+    <%= f.email_field :email, {:style => "width: 100%;"} %>
+  </label>
 
 
   <% @content = @user.notice ? "する" : "しない" %>
@@ -31,11 +34,11 @@
   </p>
   <div class="radio-inline">
     <%= f.radio_button :notice, true %>
-    <%= f.label :通知する %>
+    <%= f.label :notice_true, '通知する' %>
   </div>
   <div class="radio-inline">
     <%= f.radio_button :notice, false %>
-    <%= f.label :通知しない %>
+    <%= f.label :notice_false, '通知しない' %>
   </div>
 
 

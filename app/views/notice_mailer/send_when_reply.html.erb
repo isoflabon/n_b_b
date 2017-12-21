@@ -23,7 +23,7 @@
   <% if @user.gender == "male" %>
     あなたの投稿に女性からコメントがきました。 <br />
     <div style="border:1px dotted #093;padding:10px;border-radius:10px;"><%= @reply.content %></div>
-  <% else %> 
+  <% else %>
     あなたのコメントに男性から返信がきました。 <br />
     <div style="border:1px dotted #093;padding:10px;border-radius:10px;"><%= @reply.content %></div>
   <% end %>
@@ -31,7 +31,9 @@
   <p>
   <%= link_to "アトオス", "https://ato-su.herokuapp.com/posts/#{@post.id}" %>で確認する。
   </p>
-
+  <p>
+    通知を止める場合は<%= link_to "こちら", "https://ato-su.herokuapp.com/users/edit" %>から
+  </p>
   <!-- <p>
   ↓ローカルでやるとき用 <br />
   <%= link_to "アトオス", "http://localhost:3000/posts/#{@post.id}" %>で確認する。
