@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get '/users/auth/:provider' => 'user/omniauth_callbacks#passthru'
   end
   root "home#top"
+  get "/privacy" => "home#privacy"
   get "/mypage/:user_id" => "home#mypage"
   resources :posts do
     resources :replies, only: [:create] do
